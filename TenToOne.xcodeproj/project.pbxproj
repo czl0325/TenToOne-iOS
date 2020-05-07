@@ -3,14 +3,24 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		82DCE963C7645315EABDAFF8 /* Pods_TenToOne.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 283066B6D0F43245AE27F49F /* Pods_TenToOne.framework */; };
+		BEDC76DF2463E58B0041D862 /* TOBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEDC76DE2463E58B0041D862 /* TOBaseViewController.m */; };
+		BEDC76E32463E5DB0041D862 /* UIResponder+deliver.m in Sources */ = {isa = PBXBuildFile; fileRef = BEDC76E12463E5DB0041D862 /* UIResponder+deliver.m */; };
+		BEDC76E72463E9B30041D862 /* TOMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEDC76E62463E9B30041D862 /* TOMainViewController.m */; };
+		BEDC76EA2463EBE90041D862 /* TOTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEDC76E92463EBE90041D862 /* TOTabBarController.m */; };
+		BEDC76EE2463EC810041D862 /* TOWelfareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEDC76ED2463EC810041D862 /* TOWelfareViewController.m */; };
+		BEDC76F72463ECBE0041D862 /* TOMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEDC76F62463ECBE0041D862 /* TOMessageViewController.m */; };
+		BEDC76FA2463ECC90041D862 /* TOMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEDC76F92463ECC90041D862 /* TOMeViewController.m */; };
+		BEDC76FD2463ECD90041D862 /* TOHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEDC76FC2463ECD90041D862 /* TOHomeViewController.m */; };
+		BEDC77002463ECE40041D862 /* TOHotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEDC76FF2463ECE40041D862 /* TOHotViewController.m */; };
+		BEDC77022463F4B60041D862 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEDC77012463F4B60041D862 /* Main.storyboard */; };
+		BEDC77052463FF2D0041D862 /* TOMeHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = BEDC77042463FF2D0041D862 /* TOMeHeaderView.m */; };
 		BEFE387D24639CC0009B6DD3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BEFE387C24639CC0009B6DD3 /* AppDelegate.m */; };
 		BEFE388024639CC0009B6DD3 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BEFE387F24639CC0009B6DD3 /* SceneDelegate.m */; };
-		BEFE388324639CC0009B6DD3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEFE388224639CC0009B6DD3 /* ViewController.m */; };
-		BEFE388624639CC0009B6DD3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEFE388424639CC0009B6DD3 /* Main.storyboard */; };
 		BEFE388824639CC4009B6DD3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEFE388724639CC4009B6DD3 /* Assets.xcassets */; };
 		BEFE388B24639CC4009B6DD3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEFE388924639CC4009B6DD3 /* LaunchScreen.storyboard */; };
 		BEFE388E24639CC4009B6DD3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BEFE388D24639CC4009B6DD3 /* main.m */; };
@@ -36,14 +46,35 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		283066B6D0F43245AE27F49F /* Pods_TenToOne.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TenToOne.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		684F99793778088B742E8D2E /* Pods-TenToOne.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TenToOne.release.xcconfig"; path = "Target Support Files/Pods-TenToOne/Pods-TenToOne.release.xcconfig"; sourceTree = "<group>"; };
+		BEDC76DD2463E58B0041D862 /* TOBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TOBaseViewController.h; sourceTree = "<group>"; };
+		BEDC76DE2463E58B0041D862 /* TOBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TOBaseViewController.m; sourceTree = "<group>"; };
+		BEDC76E12463E5DB0041D862 /* UIResponder+deliver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIResponder+deliver.m"; sourceTree = "<group>"; };
+		BEDC76E22463E5DB0041D862 /* UIResponder+deliver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIResponder+deliver.h"; sourceTree = "<group>"; };
+		BEDC76E42463E6670041D862 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		BEDC76E52463E9B30041D862 /* TOMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TOMainViewController.h; sourceTree = "<group>"; };
+		BEDC76E62463E9B30041D862 /* TOMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TOMainViewController.m; sourceTree = "<group>"; };
+		BEDC76E82463EBE90041D862 /* TOTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TOTabBarController.h; sourceTree = "<group>"; };
+		BEDC76E92463EBE90041D862 /* TOTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TOTabBarController.m; sourceTree = "<group>"; };
+		BEDC76EC2463EC810041D862 /* TOWelfareViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TOWelfareViewController.h; sourceTree = "<group>"; };
+		BEDC76ED2463EC810041D862 /* TOWelfareViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TOWelfareViewController.m; sourceTree = "<group>"; };
+		BEDC76F52463ECBE0041D862 /* TOMessageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TOMessageViewController.h; sourceTree = "<group>"; };
+		BEDC76F62463ECBE0041D862 /* TOMessageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TOMessageViewController.m; sourceTree = "<group>"; };
+		BEDC76F82463ECC90041D862 /* TOMeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TOMeViewController.h; sourceTree = "<group>"; };
+		BEDC76F92463ECC90041D862 /* TOMeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TOMeViewController.m; sourceTree = "<group>"; };
+		BEDC76FB2463ECD90041D862 /* TOHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TOHomeViewController.h; sourceTree = "<group>"; };
+		BEDC76FC2463ECD90041D862 /* TOHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TOHomeViewController.m; sourceTree = "<group>"; };
+		BEDC76FE2463ECE40041D862 /* TOHotViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TOHotViewController.h; sourceTree = "<group>"; };
+		BEDC76FF2463ECE40041D862 /* TOHotViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TOHotViewController.m; sourceTree = "<group>"; };
+		BEDC77012463F4B60041D862 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		BEDC77032463FF2D0041D862 /* TOMeHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TOMeHeaderView.h; sourceTree = "<group>"; };
+		BEDC77042463FF2D0041D862 /* TOMeHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TOMeHeaderView.m; sourceTree = "<group>"; };
 		BEFE387824639CC0009B6DD3 /* TenToOne.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TenToOne.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEFE387B24639CC0009B6DD3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BEFE387C24639CC0009B6DD3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		BEFE387E24639CC0009B6DD3 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		BEFE387F24639CC0009B6DD3 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		BEFE388124639CC0009B6DD3 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		BEFE388224639CC0009B6DD3 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		BEFE388524639CC0009B6DD3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BEFE388724639CC4009B6DD3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BEFE388A24639CC4009B6DD3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BEFE388C24639CC4009B6DD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -54,6 +85,7 @@
 		BEFE389E24639CC5009B6DD3 /* TenToOneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TenToOneUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEFE38A224639CC5009B6DD3 /* TenToOneUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TenToOneUITests.m; sourceTree = "<group>"; };
 		BEFE38A424639CC5009B6DD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F72412F439DC99EC5956BA76 /* Pods-TenToOne.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TenToOne.debug.xcconfig"; path = "Target Support Files/Pods-TenToOne/Pods-TenToOne.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82DCE963C7645315EABDAFF8 /* Pods_TenToOne.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +114,143 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2A47B9C442A933E2F6562050 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F72412F439DC99EC5956BA76 /* Pods-TenToOne.debug.xcconfig */,
+				684F99793778088B742E8D2E /* Pods-TenToOne.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		BEDC76D32463E5500041D862 /* 我的板块 */ = {
+			isa = PBXGroup;
+			children = (
+				BEDC76D42463E5500041D862 /* model */,
+				BEDC76D52463E5500041D862 /* view */,
+				BEDC76D62463E5500041D862 /* viewcontroller */,
+			);
+			path = "我的板块";
+			sourceTree = "<group>";
+		};
+		BEDC76D42463E5500041D862 /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		BEDC76D52463E5500041D862 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				BEDC77032463FF2D0041D862 /* TOMeHeaderView.h */,
+				BEDC77042463FF2D0041D862 /* TOMeHeaderView.m */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		BEDC76D62463E5500041D862 /* viewcontroller */ = {
+			isa = PBXGroup;
+			children = (
+				BEDC76F82463ECC90041D862 /* TOMeViewController.h */,
+				BEDC76F92463ECC90041D862 /* TOMeViewController.m */,
+			);
+			path = viewcontroller;
+			sourceTree = "<group>";
+		};
+		BEDC76D72463E5500041D862 /* 消息板块 */ = {
+			isa = PBXGroup;
+			children = (
+				BEDC76F42463ECAF0041D862 /* viewcontroller */,
+			);
+			path = "消息板块";
+			sourceTree = "<group>";
+		};
+		BEDC76D82463E5500041D862 /* 登录板块 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "登录板块";
+			sourceTree = "<group>";
+		};
+		BEDC76D92463E5500041D862 /* 福利板块 */ = {
+			isa = PBXGroup;
+			children = (
+				BEDC76EB2463EC5E0041D862 /* viewcontroller */,
+			);
+			path = "福利板块";
+			sourceTree = "<group>";
+		};
+		BEDC76DA2463E5500041D862 /* 热卖板块 */ = {
+			isa = PBXGroup;
+			children = (
+				BEDC76F22463EC9F0041D862 /* viewcontroller */,
+			);
+			path = "热卖板块";
+			sourceTree = "<group>";
+		};
+		BEDC76DB2463E5500041D862 /* 首页板块 */ = {
+			isa = PBXGroup;
+			children = (
+				BEDC76F32463ECA60041D862 /* viewcontroller */,
+			);
+			path = "首页板块";
+			sourceTree = "<group>";
+		};
+		BEDC76DC2463E5700041D862 /* base */ = {
+			isa = PBXGroup;
+			children = (
+				BEDC76DD2463E58B0041D862 /* TOBaseViewController.h */,
+				BEDC76DE2463E58B0041D862 /* TOBaseViewController.m */,
+			);
+			path = base;
+			sourceTree = "<group>";
+		};
+		BEDC76E02463E5DB0041D862 /* 工具类 */ = {
+			isa = PBXGroup;
+			children = (
+				BEDC76E22463E5DB0041D862 /* UIResponder+deliver.h */,
+				BEDC76E12463E5DB0041D862 /* UIResponder+deliver.m */,
+			);
+			path = "工具类";
+			sourceTree = "<group>";
+		};
+		BEDC76EB2463EC5E0041D862 /* viewcontroller */ = {
+			isa = PBXGroup;
+			children = (
+				BEDC76EC2463EC810041D862 /* TOWelfareViewController.h */,
+				BEDC76ED2463EC810041D862 /* TOWelfareViewController.m */,
+			);
+			path = viewcontroller;
+			sourceTree = "<group>";
+		};
+		BEDC76F22463EC9F0041D862 /* viewcontroller */ = {
+			isa = PBXGroup;
+			children = (
+				BEDC76FE2463ECE40041D862 /* TOHotViewController.h */,
+				BEDC76FF2463ECE40041D862 /* TOHotViewController.m */,
+			);
+			path = viewcontroller;
+			sourceTree = "<group>";
+		};
+		BEDC76F32463ECA60041D862 /* viewcontroller */ = {
+			isa = PBXGroup;
+			children = (
+				BEDC76FB2463ECD90041D862 /* TOHomeViewController.h */,
+				BEDC76FC2463ECD90041D862 /* TOHomeViewController.m */,
+			);
+			path = viewcontroller;
+			sourceTree = "<group>";
+		};
+		BEDC76F42463ECAF0041D862 /* viewcontroller */ = {
+			isa = PBXGroup;
+			children = (
+				BEDC76F52463ECBE0041D862 /* TOMessageViewController.h */,
+				BEDC76F62463ECBE0041D862 /* TOMessageViewController.m */,
+			);
+			path = viewcontroller;
+			sourceTree = "<group>";
+		};
 		BEFE386F24639CC0009B6DD3 = {
 			isa = PBXGroup;
 			children = (
@@ -88,6 +258,8 @@
 				BEFE389624639CC5009B6DD3 /* TenToOneTests */,
 				BEFE38A124639CC5009B6DD3 /* TenToOneUITests */,
 				BEFE387924639CC0009B6DD3 /* Products */,
+				2A47B9C442A933E2F6562050 /* Pods */,
+				ED6C028AC1B541FB288D4E92 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -104,17 +276,28 @@
 		BEFE387A24639CC0009B6DD3 /* TenToOne */ = {
 			isa = PBXGroup;
 			children = (
+				BEDC77012463F4B60041D862 /* Main.storyboard */,
+				BEDC76D82463E5500041D862 /* 登录板块 */,
+				BEDC76D92463E5500041D862 /* 福利板块 */,
+				BEDC76DA2463E5500041D862 /* 热卖板块 */,
+				BEDC76DB2463E5500041D862 /* 首页板块 */,
+				BEDC76D32463E5500041D862 /* 我的板块 */,
+				BEDC76D72463E5500041D862 /* 消息板块 */,
 				BEFE387B24639CC0009B6DD3 /* AppDelegate.h */,
 				BEFE387C24639CC0009B6DD3 /* AppDelegate.m */,
 				BEFE387E24639CC0009B6DD3 /* SceneDelegate.h */,
 				BEFE387F24639CC0009B6DD3 /* SceneDelegate.m */,
-				BEFE388124639CC0009B6DD3 /* ViewController.h */,
-				BEFE388224639CC0009B6DD3 /* ViewController.m */,
-				BEFE388424639CC0009B6DD3 /* Main.storyboard */,
+				BEDC76E02463E5DB0041D862 /* 工具类 */,
+				BEDC76DC2463E5700041D862 /* base */,
 				BEFE388724639CC4009B6DD3 /* Assets.xcassets */,
 				BEFE388924639CC4009B6DD3 /* LaunchScreen.storyboard */,
 				BEFE388C24639CC4009B6DD3 /* Info.plist */,
 				BEFE388D24639CC4009B6DD3 /* main.m */,
+				BEDC76E42463E6670041D862 /* PrefixHeader.pch */,
+				BEDC76E52463E9B30041D862 /* TOMainViewController.h */,
+				BEDC76E62463E9B30041D862 /* TOMainViewController.m */,
+				BEDC76E82463EBE90041D862 /* TOTabBarController.h */,
+				BEDC76E92463EBE90041D862 /* TOTabBarController.m */,
 			);
 			path = TenToOne;
 			sourceTree = "<group>";
@@ -137,6 +320,14 @@
 			path = TenToOneUITests;
 			sourceTree = "<group>";
 		};
+		ED6C028AC1B541FB288D4E92 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				283066B6D0F43245AE27F49F /* Pods_TenToOne.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -144,9 +335,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BEFE38A724639CC5009B6DD3 /* Build configuration list for PBXNativeTarget "TenToOne" */;
 			buildPhases = (
+				F2A7DA8427E5D3F16636BD06 /* [CP] Check Pods Manifest.lock */,
 				BEFE387424639CC0009B6DD3 /* Sources */,
 				BEFE387524639CC0009B6DD3 /* Frameworks */,
 				BEFE387624639CC0009B6DD3 /* Resources */,
+				8B97B7E518FA35DCCC9FB9CC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -199,6 +392,7 @@
 		BEFE387024639CC0009B6DD3 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = TO;
 				LastUpgradeCheck = 1140;
 				ORGANIZATIONNAME = "zhaoliang chen";
 				TargetAttributes = {
@@ -240,9 +434,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEDC77022463F4B60041D862 /* Main.storyboard in Resources */,
 				BEFE388B24639CC4009B6DD3 /* LaunchScreen.storyboard in Resources */,
 				BEFE388824639CC4009B6DD3 /* Assets.xcassets in Resources */,
-				BEFE388624639CC0009B6DD3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,15 +456,66 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		8B97B7E518FA35DCCC9FB9CC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TenToOne/Pods-TenToOne-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TenToOne/Pods-TenToOne-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TenToOne/Pods-TenToOne-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F2A7DA8427E5D3F16636BD06 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TenToOne-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BEFE387424639CC0009B6DD3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BEFE388324639CC0009B6DD3 /* ViewController.m in Sources */,
+				BEDC77002463ECE40041D862 /* TOHotViewController.m in Sources */,
+				BEDC76FA2463ECC90041D862 /* TOMeViewController.m in Sources */,
+				BEDC77052463FF2D0041D862 /* TOMeHeaderView.m in Sources */,
+				BEDC76E32463E5DB0041D862 /* UIResponder+deliver.m in Sources */,
+				BEDC76EA2463EBE90041D862 /* TOTabBarController.m in Sources */,
+				BEDC76FD2463ECD90041D862 /* TOHomeViewController.m in Sources */,
+				BEDC76EE2463EC810041D862 /* TOWelfareViewController.m in Sources */,
 				BEFE387D24639CC0009B6DD3 /* AppDelegate.m in Sources */,
 				BEFE388E24639CC4009B6DD3 /* main.m in Sources */,
 				BEFE388024639CC0009B6DD3 /* SceneDelegate.m in Sources */,
+				BEDC76DF2463E58B0041D862 /* TOBaseViewController.m in Sources */,
+				BEDC76E72463E9B30041D862 /* TOMainViewController.m in Sources */,
+				BEDC76F72463ECBE0041D862 /* TOMessageViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,14 +551,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		BEFE388424639CC0009B6DD3 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BEFE388524639CC0009B6DD3 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		BEFE388924639CC4009B6DD3 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -437,10 +674,13 @@
 		};
 		BEFE38A824639CC5009B6DD3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F72412F439DC99EC5956BA76 /* Pods-TenToOne.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/TenToOne/PrefixHeader.pch";
 				INFOPLIST_FILE = TenToOne/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -453,10 +693,13 @@
 		};
 		BEFE38A924639CC5009B6DD3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 684F99793778088B742E8D2E /* Pods-TenToOne.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/TenToOne/PrefixHeader.pch";
 				INFOPLIST_FILE = TenToOne/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

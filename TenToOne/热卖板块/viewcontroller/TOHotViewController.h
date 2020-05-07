@@ -1,5 +1,5 @@
 //
-//  AppDelegate.h
+//  TOHotViewController.h
 //  TenToOne
 //
 //  Created by zhaoliang chen on 2020/5/7.
@@ -8,9 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+NS_ASSUME_NONNULL_BEGIN
 
-@property (strong, nonatomic) UIWindow *window;
+@interface TOHotViewController : UIViewController
 
 @end
 
+NS_ASSUME_NONNULL_END

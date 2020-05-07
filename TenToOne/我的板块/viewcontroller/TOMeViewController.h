@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  TOMeViewController.h
 //  TenToOne
 //
 //  Created by zhaoliang chen on 2020/5/7.
@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+NS_ASSUME_NONNULL_BEGIN
 
+@interface TOMeViewController : UIViewController
 
 @end
 
+NS_ASSUME_NONNULL_END

@@ -7,6 +7,9 @@
 //
 
 #import "AppDelegate.h"
+#import "IQKeyboardManager.h"
+#import "PLeakSniffer.h"
+#import "TOMainViewController.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +19,24 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    if (@available(iOS 13.0, *)) {
+      
+    } else {
+        self.window = [[UIWindow alloc]initWithFrame:[[UIScreen mainScreen]bounds]];
+        self.window.backgroundColor = [UIColor whiteColor];
+        TOMainViewController *mainVC = [[TOMainViewController alloc]init];
+        self.window.rootViewController = mainVC;
+        [self.window makeKeyAndVisible];
+    }
+    
+    [[UINavigationBar appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor whiteColor],NSForegroundColorAttributeName,nil]];
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
+    
+    [IQKeyboardManager sharedManager].shouldResignOnTouchOutside = YES;
+    
+    #if DEBUG
+        [[PLeakSniffer sharedInstance] installLeakSniffer];
+    #endif
     return YES;
 }
 
