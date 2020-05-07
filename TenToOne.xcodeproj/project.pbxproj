@@ -1,0 +1,584 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BEFE387D24639CC0009B6DD3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BEFE387C24639CC0009B6DD3 /* AppDelegate.m */; };
+		BEFE388024639CC0009B6DD3 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BEFE387F24639CC0009B6DD3 /* SceneDelegate.m */; };
+		BEFE388324639CC0009B6DD3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEFE388224639CC0009B6DD3 /* ViewController.m */; };
+		BEFE388624639CC0009B6DD3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEFE388424639CC0009B6DD3 /* Main.storyboard */; };
+		BEFE388824639CC4009B6DD3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEFE388724639CC4009B6DD3 /* Assets.xcassets */; };
+		BEFE388B24639CC4009B6DD3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEFE388924639CC4009B6DD3 /* LaunchScreen.storyboard */; };
+		BEFE388E24639CC4009B6DD3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BEFE388D24639CC4009B6DD3 /* main.m */; };
+		BEFE389824639CC5009B6DD3 /* TenToOneTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BEFE389724639CC5009B6DD3 /* TenToOneTests.m */; };
+		BEFE38A324639CC5009B6DD3 /* TenToOneUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = BEFE38A224639CC5009B6DD3 /* TenToOneUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BEFE389424639CC5009B6DD3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BEFE387024639CC0009B6DD3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BEFE387724639CC0009B6DD3;
+			remoteInfo = TenToOne;
+		};
+		BEFE389F24639CC5009B6DD3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BEFE387024639CC0009B6DD3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BEFE387724639CC0009B6DD3;
+			remoteInfo = TenToOne;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BEFE387824639CC0009B6DD3 /* TenToOne.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TenToOne.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEFE387B24639CC0009B6DD3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BEFE387C24639CC0009B6DD3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BEFE387E24639CC0009B6DD3 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		BEFE387F24639CC0009B6DD3 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		BEFE388124639CC0009B6DD3 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		BEFE388224639CC0009B6DD3 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		BEFE388524639CC0009B6DD3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BEFE388724639CC4009B6DD3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BEFE388A24639CC4009B6DD3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BEFE388C24639CC4009B6DD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BEFE388D24639CC4009B6DD3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BEFE389324639CC5009B6DD3 /* TenToOneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TenToOneTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEFE389724639CC5009B6DD3 /* TenToOneTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TenToOneTests.m; sourceTree = "<group>"; };
+		BEFE389924639CC5009B6DD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BEFE389E24639CC5009B6DD3 /* TenToOneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TenToOneUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEFE38A224639CC5009B6DD3 /* TenToOneUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TenToOneUITests.m; sourceTree = "<group>"; };
+		BEFE38A424639CC5009B6DD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BEFE387524639CC0009B6DD3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEFE389024639CC5009B6DD3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEFE389B24639CC5009B6DD3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BEFE386F24639CC0009B6DD3 = {
+			isa = PBXGroup;
+			children = (
+				BEFE387A24639CC0009B6DD3 /* TenToOne */,
+				BEFE389624639CC5009B6DD3 /* TenToOneTests */,
+				BEFE38A124639CC5009B6DD3 /* TenToOneUITests */,
+				BEFE387924639CC0009B6DD3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BEFE387924639CC0009B6DD3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BEFE387824639CC0009B6DD3 /* TenToOne.app */,
+				BEFE389324639CC5009B6DD3 /* TenToOneTests.xctest */,
+				BEFE389E24639CC5009B6DD3 /* TenToOneUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BEFE387A24639CC0009B6DD3 /* TenToOne */ = {
+			isa = PBXGroup;
+			children = (
+				BEFE387B24639CC0009B6DD3 /* AppDelegate.h */,
+				BEFE387C24639CC0009B6DD3 /* AppDelegate.m */,
+				BEFE387E24639CC0009B6DD3 /* SceneDelegate.h */,
+				BEFE387F24639CC0009B6DD3 /* SceneDelegate.m */,
+				BEFE388124639CC0009B6DD3 /* ViewController.h */,
+				BEFE388224639CC0009B6DD3 /* ViewController.m */,
+				BEFE388424639CC0009B6DD3 /* Main.storyboard */,
+				BEFE388724639CC4009B6DD3 /* Assets.xcassets */,
+				BEFE388924639CC4009B6DD3 /* LaunchScreen.storyboard */,
+				BEFE388C24639CC4009B6DD3 /* Info.plist */,
+				BEFE388D24639CC4009B6DD3 /* main.m */,
+			);
+			path = TenToOne;
+			sourceTree = "<group>";
+		};
+		BEFE389624639CC5009B6DD3 /* TenToOneTests */ = {
+			isa = PBXGroup;
+			children = (
+				BEFE389724639CC5009B6DD3 /* TenToOneTests.m */,
+				BEFE389924639CC5009B6DD3 /* Info.plist */,
+			);
+			path = TenToOneTests;
+			sourceTree = "<group>";
+		};
+		BEFE38A124639CC5009B6DD3 /* TenToOneUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BEFE38A224639CC5009B6DD3 /* TenToOneUITests.m */,
+				BEFE38A424639CC5009B6DD3 /* Info.plist */,
+			);
+			path = TenToOneUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BEFE387724639CC0009B6DD3 /* TenToOne */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BEFE38A724639CC5009B6DD3 /* Build configuration list for PBXNativeTarget "TenToOne" */;
+			buildPhases = (
+				BEFE387424639CC0009B6DD3 /* Sources */,
+				BEFE387524639CC0009B6DD3 /* Frameworks */,
+				BEFE387624639CC0009B6DD3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TenToOne;
+			productName = TenToOne;
+			productReference = BEFE387824639CC0009B6DD3 /* TenToOne.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BEFE389224639CC5009B6DD3 /* TenToOneTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BEFE38AA24639CC5009B6DD3 /* Build configuration list for PBXNativeTarget "TenToOneTests" */;
+			buildPhases = (
+				BEFE388F24639CC5009B6DD3 /* Sources */,
+				BEFE389024639CC5009B6DD3 /* Frameworks */,
+				BEFE389124639CC5009B6DD3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BEFE389524639CC5009B6DD3 /* PBXTargetDependency */,
+			);
+			name = TenToOneTests;
+			productName = TenToOneTests;
+			productReference = BEFE389324639CC5009B6DD3 /* TenToOneTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BEFE389D24639CC5009B6DD3 /* TenToOneUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BEFE38AD24639CC5009B6DD3 /* Build configuration list for PBXNativeTarget "TenToOneUITests" */;
+			buildPhases = (
+				BEFE389A24639CC5009B6DD3 /* Sources */,
+				BEFE389B24639CC5009B6DD3 /* Frameworks */,
+				BEFE389C24639CC5009B6DD3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BEFE38A024639CC5009B6DD3 /* PBXTargetDependency */,
+			);
+			name = TenToOneUITests;
+			productName = TenToOneUITests;
+			productReference = BEFE389E24639CC5009B6DD3 /* TenToOneUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BEFE387024639CC0009B6DD3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = "zhaoliang chen";
+				TargetAttributes = {
+					BEFE387724639CC0009B6DD3 = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+					BEFE389224639CC5009B6DD3 = {
+						CreatedOnToolsVersion = 11.4.1;
+						TestTargetID = BEFE387724639CC0009B6DD3;
+					};
+					BEFE389D24639CC5009B6DD3 = {
+						CreatedOnToolsVersion = 11.4.1;
+						TestTargetID = BEFE387724639CC0009B6DD3;
+					};
+				};
+			};
+			buildConfigurationList = BEFE387324639CC0009B6DD3 /* Build configuration list for PBXProject "TenToOne" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BEFE386F24639CC0009B6DD3;
+			productRefGroup = BEFE387924639CC0009B6DD3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BEFE387724639CC0009B6DD3 /* TenToOne */,
+				BEFE389224639CC5009B6DD3 /* TenToOneTests */,
+				BEFE389D24639CC5009B6DD3 /* TenToOneUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BEFE387624639CC0009B6DD3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEFE388B24639CC4009B6DD3 /* LaunchScreen.storyboard in Resources */,
+				BEFE388824639CC4009B6DD3 /* Assets.xcassets in Resources */,
+				BEFE388624639CC0009B6DD3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEFE389124639CC5009B6DD3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEFE389C24639CC5009B6DD3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BEFE387424639CC0009B6DD3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEFE388324639CC0009B6DD3 /* ViewController.m in Sources */,
+				BEFE387D24639CC0009B6DD3 /* AppDelegate.m in Sources */,
+				BEFE388E24639CC4009B6DD3 /* main.m in Sources */,
+				BEFE388024639CC0009B6DD3 /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEFE388F24639CC5009B6DD3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEFE389824639CC5009B6DD3 /* TenToOneTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEFE389A24639CC5009B6DD3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEFE38A324639CC5009B6DD3 /* TenToOneUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BEFE389524639CC5009B6DD3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BEFE387724639CC0009B6DD3 /* TenToOne */;
+			targetProxy = BEFE389424639CC5009B6DD3 /* PBXContainerItemProxy */;
+		};
+		BEFE38A024639CC5009B6DD3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BEFE387724639CC0009B6DD3 /* TenToOne */;
+			targetProxy = BEFE389F24639CC5009B6DD3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BEFE388424639CC0009B6DD3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BEFE388524639CC0009B6DD3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BEFE388924639CC4009B6DD3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BEFE388A24639CC4009B6DD3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BEFE38A524639CC5009B6DD3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		BEFE38A624639CC5009B6DD3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BEFE38A824639CC5009B6DD3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TenToOne/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.github.TenToOne;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BEFE38A924639CC5009B6DD3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TenToOne/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.github.TenToOne;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BEFE38AB24639CC5009B6DD3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TenToOneTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.github.TenToOneTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TenToOne.app/TenToOne";
+			};
+			name = Debug;
+		};
+		BEFE38AC24639CC5009B6DD3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TenToOneTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.github.TenToOneTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TenToOne.app/TenToOne";
+			};
+			name = Release;
+		};
+		BEFE38AE24639CC5009B6DD3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TenToOneUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.github.TenToOneUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TenToOne;
+			};
+			name = Debug;
+		};
+		BEFE38AF24639CC5009B6DD3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TenToOneUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.github.TenToOneUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TenToOne;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BEFE387324639CC0009B6DD3 /* Build configuration list for PBXProject "TenToOne" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEFE38A524639CC5009B6DD3 /* Debug */,
+				BEFE38A624639CC5009B6DD3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BEFE38A724639CC5009B6DD3 /* Build configuration list for PBXNativeTarget "TenToOne" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEFE38A824639CC5009B6DD3 /* Debug */,
+				BEFE38A924639CC5009B6DD3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BEFE38AA24639CC5009B6DD3 /* Build configuration list for PBXNativeTarget "TenToOneTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEFE38AB24639CC5009B6DD3 /* Debug */,
+				BEFE38AC24639CC5009B6DD3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BEFE38AD24639CC5009B6DD3 /* Build configuration list for PBXNativeTarget "TenToOneUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEFE38AE24639CC5009B6DD3 /* Debug */,
+				BEFE38AF24639CC5009B6DD3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BEFE387024639CC0009B6DD3 /* Project object */;
+}
