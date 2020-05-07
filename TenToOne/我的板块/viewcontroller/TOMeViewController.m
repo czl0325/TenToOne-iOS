@@ -7,8 +7,11 @@
 //
 
 #import "TOMeViewController.h"
+#import "TOMeHeaderView.h"
 
 @interface TOMeViewController ()
+
+@property(nonatomic,strong)TOMeHeaderView* headerMe;
 
 @end
 
@@ -17,16 +20,50 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    [self.navigationController.navigationBar setBarStyle:UIBarStyleBlack];
+    
+    UIScrollView* scrollView = [UIScrollView new];
+    [self.view addSubview:scrollView];
+    [scrollView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.mas_equalTo(self.view);
+    }];
+    [scrollView adjustBehavior];
+    
+    UIView* contentView = [UIView new];
+    [scrollView addSubview:contentView];
+    [contentView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.mas_equalTo(scrollView);
+        make.width.mas_equalTo(scrollView);
+    }];
+    
+    [contentView addSubview:self.headerMe];
+    [self.headerMe mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.left.right.mas_equalTo(contentView);
+    }];
+    
+    [contentView mas_makeConstraints:^(MASConstraintMaker *make) {
+        
+    }];
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [self.navigationController setNavigationBarHidden:YES];
 }
-*/
 
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    [self.navigationController setNavigationBarHidden:NO];
+}
+
+- (TOMeHeaderView *)headerMe{
+    if(!_headerMe){
+        _headerMe = ({
+            TOMeHeaderView * object = [[TOMeHeaderView alloc]init];
+            object;
+       });
+    }
+    return _headerMe;
+}
 @end

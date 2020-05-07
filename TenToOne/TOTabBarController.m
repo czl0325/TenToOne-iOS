@@ -16,12 +16,6 @@
 @interface TOTabBarController ()
 <UITabBarControllerDelegate, CYLTabBarControllerDelegate>
 
-@property(nonatomic,strong)TOWelfareViewController* welfareVC;
-@property(nonatomic,strong)TOHotViewController* hotVC;
-@property(nonatomic,strong)TOHomeViewController* homeVC;
-@property(nonatomic,strong)TOMessageViewController* messageVC;
-@property(nonatomic,strong)TOMeViewController* meVC;
-
 @end
 
 @implementation TOTabBarController
@@ -38,6 +32,7 @@
 
     self.delegate = self;
     [self customizeInterface];
+    self.selectedIndex = 4;
 }
 
 - (void)viewWillAppear:(BOOL)animated {
