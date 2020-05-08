@@ -11,6 +11,8 @@
 		BE59E338246527B400B3524C /* TOUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = BE59E337246527B400B3524C /* TOUtils.m */; };
 		BE59E33B24652BB700B3524C /* TOMyWalletView.m in Sources */ = {isa = PBXBuildFile; fileRef = BE59E33A24652BB700B3524C /* TOMyWalletView.m */; };
 		BE59E33E2465374400B3524C /* TOMyMemberView.m in Sources */ = {isa = PBXBuildFile; fileRef = BE59E33D2465374400B3524C /* TOMyMemberView.m */; };
+		BE59E34124653AB600B3524C /* TOMerchantBusinessView.m in Sources */ = {isa = PBXBuildFile; fileRef = BE59E34024653AB600B3524C /* TOMerchantBusinessView.m */; };
+		BE59E3442465430000B3524C /* TOTabBarController1.m in Sources */ = {isa = PBXBuildFile; fileRef = BE59E3432465430000B3524C /* TOTabBarController1.m */; };
 		BEDC76DF2463E58B0041D862 /* TOBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEDC76DE2463E58B0041D862 /* TOBaseViewController.m */; };
 		BEDC76E32463E5DB0041D862 /* UIResponder+deliver.m in Sources */ = {isa = PBXBuildFile; fileRef = BEDC76E12463E5DB0041D862 /* UIResponder+deliver.m */; };
 		BEDC76E72463E9B30041D862 /* TOMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEDC76E62463E9B30041D862 /* TOMainViewController.m */; };
@@ -57,6 +59,10 @@
 		BE59E33A24652BB700B3524C /* TOMyWalletView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TOMyWalletView.m; sourceTree = "<group>"; };
 		BE59E33C2465374400B3524C /* TOMyMemberView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TOMyMemberView.h; sourceTree = "<group>"; };
 		BE59E33D2465374400B3524C /* TOMyMemberView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TOMyMemberView.m; sourceTree = "<group>"; };
+		BE59E33F24653AB600B3524C /* TOMerchantBusinessView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TOMerchantBusinessView.h; sourceTree = "<group>"; };
+		BE59E34024653AB600B3524C /* TOMerchantBusinessView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TOMerchantBusinessView.m; sourceTree = "<group>"; };
+		BE59E3422465430000B3524C /* TOTabBarController1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TOTabBarController1.h; sourceTree = "<group>"; };
+		BE59E3432465430000B3524C /* TOTabBarController1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TOTabBarController1.m; sourceTree = "<group>"; };
 		BEDC76DD2463E58B0041D862 /* TOBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TOBaseViewController.h; sourceTree = "<group>"; };
 		BEDC76DE2463E58B0041D862 /* TOBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TOBaseViewController.m; sourceTree = "<group>"; };
 		BEDC76E12463E5DB0041D862 /* UIResponder+deliver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIResponder+deliver.m"; sourceTree = "<group>"; };
@@ -158,6 +164,8 @@
 				BE59E33A24652BB700B3524C /* TOMyWalletView.m */,
 				BE59E33C2465374400B3524C /* TOMyMemberView.h */,
 				BE59E33D2465374400B3524C /* TOMyMemberView.m */,
+				BE59E33F24653AB600B3524C /* TOMerchantBusinessView.h */,
+				BE59E34024653AB600B3524C /* TOMerchantBusinessView.m */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -313,6 +321,8 @@
 				BEDC76E62463E9B30041D862 /* TOMainViewController.m */,
 				BEDC76E82463EBE90041D862 /* TOTabBarController.h */,
 				BEDC76E92463EBE90041D862 /* TOTabBarController.m */,
+				BE59E3422465430000B3524C /* TOTabBarController1.h */,
+				BE59E3432465430000B3524C /* TOTabBarController1.m */,
 			);
 			path = TenToOne;
 			sourceTree = "<group>";
@@ -529,8 +539,10 @@
 				BEFE387D24639CC0009B6DD3 /* AppDelegate.m in Sources */,
 				BEFE388E24639CC4009B6DD3 /* main.m in Sources */,
 				BEFE388024639CC0009B6DD3 /* SceneDelegate.m in Sources */,
+				BE59E34124653AB600B3524C /* TOMerchantBusinessView.m in Sources */,
 				BEDC76DF2463E58B0041D862 /* TOBaseViewController.m in Sources */,
 				BE59E33B24652BB700B3524C /* TOMyWalletView.m in Sources */,
+				BE59E3442465430000B3524C /* TOTabBarController1.m in Sources */,
 				BE59E338246527B400B3524C /* TOUtils.m in Sources */,
 				BEDC76E72463E9B30041D862 /* TOMainViewController.m in Sources */,
 				BEDC76F72463ECBE0041D862 /* TOMessageViewController.m in Sources */,

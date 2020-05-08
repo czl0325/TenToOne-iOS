@@ -10,12 +10,14 @@
 #import "TOMeHeaderView.h"
 #import "TOMyWalletView.h"
 #import "TOMyMemberView.h"
+#import "TOMerchantBusinessView.h"
 
 @interface TOMeViewController ()
 
 @property(nonatomic,strong)TOMeHeaderView* headerMe;
 @property(nonatomic,strong)TOMyWalletView* walletView;
 @property(nonatomic,strong)TOMyMemberView* memberView;
+@property(nonatomic,strong)TOMerchantBusinessView* businessView;
 
 @end
 
@@ -26,6 +28,7 @@
     // Do any additional setup after loading the view.
     
     UIScrollView* scrollView = [UIScrollView new];
+    scrollView.bounces = NO;
     scrollView.backgroundColor = WindowsBackColor;
     [self.view addSubview:scrollView];
     [scrollView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -42,7 +45,7 @@
     
     [contentView addSubview:self.headerMe];
     [self.headerMe mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.left.right.mas_equalTo(contentView);
+        make.top.left.right.mas_equalTo(0);
     }];
     
     [contentView addSubview:self.walletView];
@@ -57,8 +60,14 @@
         make.top.mas_equalTo(self.walletView.mas_bottom).offset(5);
     }];
     
+    [contentView addSubview:self.businessView];
+    [self.businessView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.right.mas_equalTo(contentView);
+        make.top.mas_equalTo(self.memberView.mas_bottom).offset(5);
+    }];
+    
     [contentView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.bottom.mas_equalTo(self.memberView.mas_bottom);
+        make.bottom.mas_equalTo(self.businessView.mas_bottom).offset(5);
     }];
 }
 
@@ -100,5 +109,15 @@
        });
     }
     return _memberView;
+}
+
+- (TOMerchantBusinessView *)businessView{
+    if(!_businessView){
+        _businessView = ({
+            TOMerchantBusinessView * object = [[TOMerchantBusinessView alloc]init];
+            object;
+       });
+    }
+    return _businessView;
 }
 @end

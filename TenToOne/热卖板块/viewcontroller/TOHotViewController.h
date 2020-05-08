@@ -6,11 +6,11 @@
 //  Copyright © 2020 zhaoliang chen. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "TOBaseViewController.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface TOHotViewController : UIViewController
+@interface TOHotViewController : TOBaseViewController
 
 @end
 
