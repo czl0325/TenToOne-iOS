@@ -77,7 +77,7 @@ DEPENDENCIES:
   - ZLPhotoBrowser
 
 SPEC REPOS:
-  trunk:
+  https://github.com/CocoaPods/Specs.git:
     - AFNetworking
     - Aspects
     - AXIndicatorView
@@ -131,6 +131,6 @@ SPEC CHECKSUMS:
   ZLCollectionViewFlowLayout: 3d11b3fffde1fc8fb3265392e35fd8cfe5e88d77
   ZLPhotoBrowser: 638189d99c51f78013c9a0369e385db4a4b9673f
 
-PODFILE CHECKSUM: 8ae2849042529f77c23fa6b0240b53117ec91710
+PODFILE CHECKSUM: 89df1d5ecec359b2e70187f6e3e55c8b1acf20eb
 
 COCOAPODS: 1.9.1

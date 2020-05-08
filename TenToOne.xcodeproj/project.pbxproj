@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		65706C582465875F0087B6C1 /* TOMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65706C562465875F0087B6C1 /* TOMessageViewController.m */; };
+		65706C5B246587780087B6C1 /* TOMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 65706C5A246587780087B6C1 /* TOMessageCell.m */; };
 		82DCE963C7645315EABDAFF8 /* Pods_TenToOne.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 283066B6D0F43245AE27F49F /* Pods_TenToOne.framework */; };
 		BE59E338246527B400B3524C /* TOUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = BE59E337246527B400B3524C /* TOUtils.m */; };
 		BE59E33B24652BB700B3524C /* TOMyWalletView.m in Sources */ = {isa = PBXBuildFile; fileRef = BE59E33A24652BB700B3524C /* TOMyWalletView.m */; };
@@ -24,7 +26,6 @@
 		BEDC76E72463E9B30041D862 /* TOMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEDC76E62463E9B30041D862 /* TOMainViewController.m */; };
 		BEDC76EA2463EBE90041D862 /* TOTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEDC76E92463EBE90041D862 /* TOTabBarController.m */; };
 		BEDC76EE2463EC810041D862 /* TOWelfareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEDC76ED2463EC810041D862 /* TOWelfareViewController.m */; };
-		BEDC76F72463ECBE0041D862 /* TOMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEDC76F62463ECBE0041D862 /* TOMessageViewController.m */; };
 		BEDC76FA2463ECC90041D862 /* TOMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEDC76F92463ECC90041D862 /* TOMeViewController.m */; };
 		BEDC76FD2463ECD90041D862 /* TOHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEDC76FC2463ECD90041D862 /* TOHomeViewController.m */; };
 		BEDC77002463ECE40041D862 /* TOHotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEDC76FF2463ECE40041D862 /* TOHotViewController.m */; };
@@ -58,6 +59,10 @@
 
 /* Begin PBXFileReference section */
 		283066B6D0F43245AE27F49F /* Pods_TenToOne.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TenToOne.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		65706C552465875F0087B6C1 /* TOMessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOMessageViewController.h; sourceTree = "<group>"; };
+		65706C562465875F0087B6C1 /* TOMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOMessageViewController.m; sourceTree = "<group>"; };
+		65706C59246587770087B6C1 /* TOMessageCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TOMessageCell.h; sourceTree = "<group>"; };
+		65706C5A246587780087B6C1 /* TOMessageCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TOMessageCell.m; sourceTree = "<group>"; };
 		684F99793778088B742E8D2E /* Pods-TenToOne.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TenToOne.release.xcconfig"; path = "Target Support Files/Pods-TenToOne/Pods-TenToOne.release.xcconfig"; sourceTree = "<group>"; };
 		BE59E336246527B400B3524C /* TOUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TOUtils.h; sourceTree = "<group>"; };
 		BE59E337246527B400B3524C /* TOUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TOUtils.m; sourceTree = "<group>"; };
@@ -92,8 +97,6 @@
 		BEDC76E92463EBE90041D862 /* TOTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TOTabBarController.m; sourceTree = "<group>"; };
 		BEDC76EC2463EC810041D862 /* TOWelfareViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TOWelfareViewController.h; sourceTree = "<group>"; };
 		BEDC76ED2463EC810041D862 /* TOWelfareViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TOWelfareViewController.m; sourceTree = "<group>"; };
-		BEDC76F52463ECBE0041D862 /* TOMessageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TOMessageViewController.h; sourceTree = "<group>"; };
-		BEDC76F62463ECBE0041D862 /* TOMessageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TOMessageViewController.m; sourceTree = "<group>"; };
 		BEDC76F82463ECC90041D862 /* TOMeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TOMeViewController.h; sourceTree = "<group>"; };
 		BEDC76F92463ECC90041D862 /* TOMeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TOMeViewController.m; sourceTree = "<group>"; };
 		BEDC76FB2463ECD90041D862 /* TOHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TOHomeViewController.h; sourceTree = "<group>"; };
@@ -154,6 +157,24 @@
 				684F99793778088B742E8D2E /* Pods-TenToOne.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		65706C542465875F0087B6C1 /* viewcontroller */ = {
+			isa = PBXGroup;
+			children = (
+				65706C552465875F0087B6C1 /* TOMessageViewController.h */,
+				65706C562465875F0087B6C1 /* TOMessageViewController.m */,
+			);
+			path = viewcontroller;
+			sourceTree = "<group>";
+		};
+		65706C572465875F0087B6C1 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				65706C59246587770087B6C1 /* TOMessageCell.h */,
+				65706C5A246587780087B6C1 /* TOMessageCell.m */,
+			);
+			path = view;
 			sourceTree = "<group>";
 		};
 		BE59E3452465499D00B3524C /* view */ = {
@@ -233,7 +254,8 @@
 		BEDC76D72463E5500041D862 /* 消息板块 */ = {
 			isa = PBXGroup;
 			children = (
-				BEDC76F42463ECAF0041D862 /* viewcontroller */,
+				65706C572465875F0087B6C1 /* view */,
+				65706C542465875F0087B6C1 /* viewcontroller */,
 			);
 			path = "消息板块";
 			sourceTree = "<group>";
@@ -315,15 +337,6 @@
 			children = (
 				BEDC76FB2463ECD90041D862 /* TOHomeViewController.h */,
 				BEDC76FC2463ECD90041D862 /* TOHomeViewController.m */,
-			);
-			path = viewcontroller;
-			sourceTree = "<group>";
-		};
-		BEDC76F42463ECAF0041D862 /* viewcontroller */ = {
-			isa = PBXGroup;
-			children = (
-				BEDC76F52463ECBE0041D862 /* TOMessageViewController.h */,
-				BEDC76F62463ECBE0041D862 /* TOMessageViewController.m */,
 			);
 			path = viewcontroller;
 			sourceTree = "<group>";
@@ -583,6 +596,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BEDC77002463ECE40041D862 /* TOHotViewController.m in Sources */,
+				65706C5B246587780087B6C1 /* TOMessageCell.m in Sources */,
 				BE59E348246549EE00B3524C /* TOWelfareHeader.m in Sources */,
 				BEDC76FA2463ECC90041D862 /* TOMeViewController.m in Sources */,
 				BEDC77052463FF2D0041D862 /* TOMeHeaderView.m in Sources */,
@@ -601,11 +615,11 @@
 				BEFE388024639CC0009B6DD3 /* SceneDelegate.m in Sources */,
 				BE59E34124653AB600B3524C /* TOMerchantBusinessView.m in Sources */,
 				BEDC76DF2463E58B0041D862 /* TOBaseViewController.m in Sources */,
+				65706C582465875F0087B6C1 /* TOMessageViewController.m in Sources */,
 				BE59E33B24652BB700B3524C /* TOMyWalletView.m in Sources */,
 				BE59E3442465430000B3524C /* TOTabBarController1.m in Sources */,
 				BE59E338246527B400B3524C /* TOUtils.m in Sources */,
 				BEDC76E72463E9B30041D862 /* TOMainViewController.m in Sources */,
-				BEDC76F72463ECBE0041D862 /* TOMessageViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

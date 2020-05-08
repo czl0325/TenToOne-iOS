@@ -46,23 +46,24 @@
             make.right.mas_equalTo(-5);
             make.top.mas_equalTo(self.ivCover.mas_bottom).offset(5);
         }];
-        
+
         [self.contentView addSubview:self.tvNewPrice];
         [self.tvNewPrice mas_makeConstraints:^(MASConstraintMaker *make) {
             make.left.mas_equalTo(self.tvName);
             make.top.mas_equalTo(self.tvName.mas_bottom).offset(5);
         }];
-        
+
         [self.contentView addSubview:self.tvOldPrice];
         [self.tvOldPrice mas_makeConstraints:^(MASConstraintMaker *make) {
             make.left.mas_equalTo(self.tvNewPrice.mas_right).offset(5);
             make.baseline.mas_equalTo(self.tvNewPrice);
         }];
-        
+
         [self.contentView addSubview:self.tvPayCount];
         [self.tvPayCount mas_makeConstraints:^(MASConstraintMaker *make) {
             make.left.mas_equalTo(self.tvName);
             make.top.mas_equalTo(self.tvNewPrice.mas_bottom).offset(5);
+            make.bottom.mas_equalTo(-5);
         }];
     }
     return self;
@@ -73,7 +74,6 @@
     self.tvNewPrice.text = @"￥20.00";
     self.tvOldPrice.text = @"￥50.00";
     self.tvPayCount.text = @"5万人购买";
-    //从这里开始就是设置富文本的属性
     NSMutableAttributedString *attri = [[NSMutableAttributedString alloc] initWithString:self.tvOldPrice.text];
     [attri addAttribute:NSStrikethroughStyleAttributeName value:@(NSUnderlinePatternSolid | NSUnderlineStyleSingle)  range:NSMakeRange(0, self.tvOldPrice.text.length)];
     [attri addAttribute:NSStrikethroughColorAttributeName value:MainColor range:NSMakeRange(0, self.tvOldPrice.text.length)];

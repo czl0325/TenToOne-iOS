@@ -26,7 +26,6 @@
     self.title = @"福利";
     
     UIButton* btQuestion = to_create_button_image(@"icon_question");
-    btQuestion.frame = CGRectMake(0, 0, 30, 30);
     [self addLeftNavigationButtons:@[btQuestion]];
     
     [self.view addSubview:self.walfareHeader];
