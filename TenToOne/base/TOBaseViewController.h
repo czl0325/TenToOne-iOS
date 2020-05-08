@@ -12,8 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface TOBaseViewController : UIViewController
 
-- (void)addLeftNavigationButtons:(NSArray<UIButton*>*)buttons;
-- (void)addRightNavigationButtons:(NSArray<UIButton*>*)buttons;
+- (void)addLeftNavigationButtons:(NSArray<UIView*>*)views;
+- (void)addRightNavigationButtons:(NSArray<UIView*>*)views;
 
 @end
 

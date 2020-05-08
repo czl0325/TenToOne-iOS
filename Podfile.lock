@@ -47,6 +47,7 @@ PODS:
     - SDWebImage/Core (= 5.7.4)
   - SDWebImage/Core (5.7.4)
   - SVProgressHUD (2.2.5)
+  - TencentMap-SDK (4.3.2)
   - WMZDialog (1.1.0)
   - ZLCategory (0.1.9)
   - ZLCellDataSource (0.4.0)
@@ -70,6 +71,7 @@ DEPENDENCIES:
   - SDCycleScrollView
   - SDWebImage
   - SVProgressHUD
+  - TencentMap-SDK
   - WMZDialog
   - ZLCategory
   - ZLCellDataSource
@@ -98,6 +100,7 @@ SPEC REPOS:
     - SDCycleScrollView
     - SDWebImage
     - SVProgressHUD
+    - TencentMap-SDK
     - WMZDialog
     - ZLCategory
     - ZLCellDataSource
@@ -125,12 +128,13 @@ SPEC CHECKSUMS:
   SDCycleScrollView: b3c9a5ed840c771c4938978174c7c9d9feefeb96
   SDWebImage: 48b88379b798fd1e4298f95bb25d2cdabbf4deb3
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  TencentMap-SDK: 385e59541a65ea6ed1a38ae08f29d775ccf6e0a8
   WMZDialog: 325b15889eb920277d5a85ecbe423cdc4976d5e8
   ZLCategory: 658de819e591604a4e848bb7a25e3aa938ed9882
   ZLCellDataSource: 3d6a5eb2cd0c3cfba85c195cf6729e9354216d79
   ZLCollectionViewFlowLayout: 3d11b3fffde1fc8fb3265392e35fd8cfe5e88d77
   ZLPhotoBrowser: 638189d99c51f78013c9a0369e385db4a4b9673f
 
-PODFILE CHECKSUM: 89df1d5ecec359b2e70187f6e3e55c8b1acf20eb
+PODFILE CHECKSUM: ebd3a57994b9ef3851602c012bbf705dccafb3d0
 
 COCOAPODS: 1.9.1

@@ -28,4 +28,5 @@ target 'TenToOne' do
   pod 'FTPopOverMenu'
   pod 'AXWebViewController'
   pod 'WMZDialog'
+  pod 'TencentMap-SDK'
 end

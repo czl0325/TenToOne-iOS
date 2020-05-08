@@ -25,36 +25,42 @@
     }
 }
 
-- (void)addLeftNavigationButtons:(NSArray<UIButton*>*)buttons {
+- (void)addLeftNavigationButtons:(NSArray<UIView*>*)views {
     NSMutableArray* arrayButton = [NSMutableArray new];
-    for (UIButton* btn in buttons) {
-        if (btn.titleLabel.text.length <= 0 || btn.titleLabel.text == nil) {
-            btn.frame = CGRectMake(0, 0, 22, 22);
-            UIView *view = [UIView new];
-            view.backgroundColor = [UIColor clearColor];
-            view.frame = CGRectMake(0, 0, 22, 22);
-            [view addSubview:btn];
-            [arrayButton addObject:[[UIBarButtonItem alloc] initWithCustomView:view]];
-        } else {
-            [arrayButton addObject:[[UIBarButtonItem alloc] initWithCustomView:btn]];
+    for (UIView* view in views) {
+        if ([view isKindOfClass:[UIButton class]]) {
+            UIButton *btn = (UIButton*)view;
+            if (btn.titleLabel.text.length <= 0 || btn.titleLabel.text == nil) {
+                btn.frame = CGRectMake(0, 0, 22, 22);
+                UIView *v = [UIView new];
+                v.backgroundColor = [UIColor clearColor];
+                v.frame = CGRectMake(0, 0, 22, 22);
+                [v addSubview:btn];
+                [arrayButton addObject:[[UIBarButtonItem alloc] initWithCustomView:v]];
+                continue;
+            }
         }
+        [arrayButton addObject:[[UIBarButtonItem alloc] initWithCustomView:view]];
     }
     self.navigationItem.leftBarButtonItems = arrayButton;
 }
 
-- (void)addRightNavigationButtons:(NSArray<UIButton*>*)buttons {
+- (void)addRightNavigationButtons:(NSArray<UIView*>*)views {
     NSMutableArray* arrayButton = [NSMutableArray new];
-    for (UIButton* btn in buttons) {
-        if (btn.titleLabel.text.length <= 0 || btn.titleLabel.text == nil) {
-            btn.frame = CGRectMake(0, 0, 22, 22);
-            UIView *view = [UIView new];
-            view.backgroundColor = [UIColor clearColor];
-            view.frame = CGRectMake(0, 0, 22, 22);
-            [view addSubview:btn];
-            [arrayButton addObject:[[UIBarButtonItem alloc] initWithCustomView:view]];
-        } else {
-            [arrayButton addObject:[[UIBarButtonItem alloc] initWithCustomView:btn]];
+    for (UIView* view in views) {
+        if ([view isKindOfClass:[UIButton class]]) {
+            UIButton *btn = (UIButton*)view;
+            if (btn.titleLabel.text.length <= 0 || btn.titleLabel.text == nil) {
+                btn.frame = CGRectMake(0, 0, 22, 22);
+                UIView *v = [UIView new];
+                v.backgroundColor = [UIColor clearColor];
+                v.frame = CGRectMake(0, 0, 22, 22);
+                [v addSubview:btn];
+                [arrayButton addObject:[[UIBarButtonItem alloc] initWithCustomView:v]];
+                continue;
+            }
         }
+        [arrayButton addObject:[[UIBarButtonItem alloc] initWithCustomView:view]];
     }
     self.navigationItem.rightBarButtonItems = arrayButton;
 }
@@ -79,6 +85,72 @@
     } else {
         // 无法响应，继续传递
         [self.nextResponder action_deliverEventsWithName:eventName parameter:parameter];
+    }
+}
+
+-(void)viewDidLayoutSubviews{
+    if (SystemVersion.floatValue < 11.0)
+        return;
+    UINavigationItem * item=self.navigationItem;
+    NSArray * array=item.leftBarButtonItems;
+    if (array&&array.count!=0){
+        UIBarButtonItem * buttonItem=array[0];
+        UIView * view =[[[buttonItem.customView superview] superview] superview];
+        NSArray * arrayConstraint=view.constraints;
+        for (NSLayoutConstraint * constant in arrayConstraint) {
+            if (fabs(constant.constant)==16) {
+                constant.constant=0;
+            }
+        }
+    }
+ 
+}
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    if (SystemVersion.floatValue < 11.0)
+          return;
+    UINavigationItem * item=self.navigationItem;
+    NSArray * array=item.leftBarButtonItems;
+    if (array&&array.count!=0){
+        UIBarButtonItem * buttonItem=array[0];
+        UIView * view =[[[buttonItem.customView superview] superview] superview];
+        NSArray * arrayConstraint=view.constraints;
+        for (NSLayoutConstraint * constant in arrayConstraint) {
+            if (fabs(constant.constant)==16) {
+                constant.constant=0;
+            }
+        }
+    }
+    
+}
+
+//防止侧滑出现问题
+- (void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+    if (SystemVersion.floatValue < 11.0)
+        return;
+    UINavigationItem * item=self.navigationItem;
+    NSArray * array = item.leftBarButtonItems;
+    if (array && array.count!=0){
+        UIBarButtonItem * buttonItem = array[0];
+        UIView * view = [[[buttonItem.customView superview] superview] superview];
+        NSArray * arrayConstraint=view.constraints;
+        for (NSLayoutConstraint * constant in arrayConstraint) {
+            if (fabs(constant.constant)==16) {
+                constant.constant=0;
+            }
+        }
+    }
+    NSArray * array2 = item.rightBarButtonItems;
+    if (array2 && array2.count!=0){
+        UIBarButtonItem * buttonItem = array2[0];
+        UIView * view = [[[buttonItem.customView superview] superview] superview];
+        NSArray * arrayConstraint = view.constraints;
+        for (NSLayoutConstraint * constant in arrayConstraint) {
+            if (fabs(constant.constant) == 16) {
+                constant.constant=0;
+            }
+        }
     }
 }
 

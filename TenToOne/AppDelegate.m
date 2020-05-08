@@ -10,6 +10,7 @@
 #import "IQKeyboardManager.h"
 #import "PLeakSniffer.h"
 #import "TOMainViewController.h"
+#import <QMapKit/QMapKit.h>
 
 @interface AppDelegate ()
 
@@ -29,7 +30,10 @@
         [self.window makeKeyAndVisible];
     }
     
+    //
+    
     [self setNavigationBar];
+    [QMapServices sharedServices].APIKey = @"ZCZBZ-PNWK4-K4KUJ-XKOBD-BOIW3-OHBWX";
     
     [IQKeyboardManager sharedManager].shouldResignOnTouchOutside = YES;
     
