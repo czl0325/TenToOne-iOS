@@ -22,13 +22,14 @@
 #import "ReactiveObjC.h"
 #import "ZLCellDataSource.h"
 #import "ZLSectionDataSource.h"
+#import "TOUtils.h"
 
 #define MainColor           UIColorFromRGB(0xe02e24)
 #define DividerColor        UIColorFromRGB(0xf2f2f2)
 #define WindowsBackColor    DividerColor
 
 #define SystemVersion       [[UIDevice currentDevice] systemVersion]
-#define DefaultFont         [UIFont systemFontOfSize:14]
+#define DefaultFont         [UIFont systemFontOfSize:12]
 #define DefaultTextColor    UIColorFromRGB(0x444444)
 
 //无网

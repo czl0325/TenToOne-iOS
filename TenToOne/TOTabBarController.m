@@ -94,11 +94,24 @@
    // 选中状态下的文字属性
    NSMutableDictionary *selectedAttrs = [NSMutableDictionary dictionary];
    selectedAttrs[NSForegroundColorAttributeName] = MainColor;
-   
-   // 设置文字属性
-   UITabBarItem *tabBar = [UITabBarItem appearance];
-   [tabBar setTitleTextAttributes:normalAttrs forState:UIControlStateNormal];
-   [tabBar setTitleTextAttributes:selectedAttrs forState:UIControlStateSelected];
+    
+    if (@available(iOS 13.0, *)) {
+        UITabBarItemAppearance *inlineLayoutAppearance = [[UITabBarItemAppearance  alloc] init];
+        // set the text Attributes
+        // 设置文字属性
+        [inlineLayoutAppearance.normal setTitleTextAttributes:normalAttrs];
+        [inlineLayoutAppearance.selected setTitleTextAttributes:selectedAttrs];
+
+        UITabBarAppearance *standardAppearance = [[UITabBarAppearance alloc] init];
+        standardAppearance.stackedLayoutAppearance = inlineLayoutAppearance;
+        standardAppearance.backgroundColor = [UIColor cyl_systemBackgroundColor];
+        standardAppearance.shadowColor = [UIColor cyl_systemGreenColor];
+        self.tabBar.standardAppearance = standardAppearance;
+    } else {
+        UITabBarItem *tabBar = [UITabBarItem appearance];
+        [tabBar setTitleTextAttributes:normalAttrs forState:UIControlStateNormal];
+        [tabBar setTitleTextAttributes:selectedAttrs forState:UIControlStateSelected];
+    }
 }
 
 - (void)tabBarController:(UITabBarController *)tabBarController didSelectControl:(UIControl *)control {

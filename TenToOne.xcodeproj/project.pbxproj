@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		82DCE963C7645315EABDAFF8 /* Pods_TenToOne.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 283066B6D0F43245AE27F49F /* Pods_TenToOne.framework */; };
+		BE59E338246527B400B3524C /* TOUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = BE59E337246527B400B3524C /* TOUtils.m */; };
+		BE59E33B24652BB700B3524C /* TOMyWalletView.m in Sources */ = {isa = PBXBuildFile; fileRef = BE59E33A24652BB700B3524C /* TOMyWalletView.m */; };
+		BE59E33E2465374400B3524C /* TOMyMemberView.m in Sources */ = {isa = PBXBuildFile; fileRef = BE59E33D2465374400B3524C /* TOMyMemberView.m */; };
 		BEDC76DF2463E58B0041D862 /* TOBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEDC76DE2463E58B0041D862 /* TOBaseViewController.m */; };
 		BEDC76E32463E5DB0041D862 /* UIResponder+deliver.m in Sources */ = {isa = PBXBuildFile; fileRef = BEDC76E12463E5DB0041D862 /* UIResponder+deliver.m */; };
 		BEDC76E72463E9B30041D862 /* TOMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEDC76E62463E9B30041D862 /* TOMainViewController.m */; };
@@ -48,6 +51,12 @@
 /* Begin PBXFileReference section */
 		283066B6D0F43245AE27F49F /* Pods_TenToOne.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TenToOne.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		684F99793778088B742E8D2E /* Pods-TenToOne.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TenToOne.release.xcconfig"; path = "Target Support Files/Pods-TenToOne/Pods-TenToOne.release.xcconfig"; sourceTree = "<group>"; };
+		BE59E336246527B400B3524C /* TOUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TOUtils.h; sourceTree = "<group>"; };
+		BE59E337246527B400B3524C /* TOUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TOUtils.m; sourceTree = "<group>"; };
+		BE59E33924652BB700B3524C /* TOMyWalletView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TOMyWalletView.h; sourceTree = "<group>"; };
+		BE59E33A24652BB700B3524C /* TOMyWalletView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TOMyWalletView.m; sourceTree = "<group>"; };
+		BE59E33C2465374400B3524C /* TOMyMemberView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TOMyMemberView.h; sourceTree = "<group>"; };
+		BE59E33D2465374400B3524C /* TOMyMemberView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TOMyMemberView.m; sourceTree = "<group>"; };
 		BEDC76DD2463E58B0041D862 /* TOBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TOBaseViewController.h; sourceTree = "<group>"; };
 		BEDC76DE2463E58B0041D862 /* TOBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TOBaseViewController.m; sourceTree = "<group>"; };
 		BEDC76E12463E5DB0041D862 /* UIResponder+deliver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIResponder+deliver.m"; sourceTree = "<group>"; };
@@ -145,6 +154,10 @@
 			children = (
 				BEDC77032463FF2D0041D862 /* TOMeHeaderView.h */,
 				BEDC77042463FF2D0041D862 /* TOMeHeaderView.m */,
+				BE59E33924652BB700B3524C /* TOMyWalletView.h */,
+				BE59E33A24652BB700B3524C /* TOMyWalletView.m */,
+				BE59E33C2465374400B3524C /* TOMyMemberView.h */,
+				BE59E33D2465374400B3524C /* TOMyMemberView.m */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -211,6 +224,8 @@
 			children = (
 				BEDC76E22463E5DB0041D862 /* UIResponder+deliver.h */,
 				BEDC76E12463E5DB0041D862 /* UIResponder+deliver.m */,
+				BE59E336246527B400B3524C /* TOUtils.h */,
+				BE59E337246527B400B3524C /* TOUtils.m */,
 			);
 			path = "工具类";
 			sourceTree = "<group>";
@@ -510,10 +525,13 @@
 				BEDC76EA2463EBE90041D862 /* TOTabBarController.m in Sources */,
 				BEDC76FD2463ECD90041D862 /* TOHomeViewController.m in Sources */,
 				BEDC76EE2463EC810041D862 /* TOWelfareViewController.m in Sources */,
+				BE59E33E2465374400B3524C /* TOMyMemberView.m in Sources */,
 				BEFE387D24639CC0009B6DD3 /* AppDelegate.m in Sources */,
 				BEFE388E24639CC4009B6DD3 /* main.m in Sources */,
 				BEFE388024639CC0009B6DD3 /* SceneDelegate.m in Sources */,
 				BEDC76DF2463E58B0041D862 /* TOBaseViewController.m in Sources */,
+				BE59E33B24652BB700B3524C /* TOMyWalletView.m in Sources */,
+				BE59E338246527B400B3524C /* TOUtils.m in Sources */,
 				BEDC76E72463E9B30041D862 /* TOMainViewController.m in Sources */,
 				BEDC76F72463ECBE0041D862 /* TOMessageViewController.m in Sources */,
 			);
@@ -678,6 +696,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SGRM3SK667;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/TenToOne/PrefixHeader.pch";
 				INFOPLIST_FILE = TenToOne/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
@@ -697,6 +716,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SGRM3SK667;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/TenToOne/PrefixHeader.pch";
 				INFOPLIST_FILE = TenToOne/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.4;

@@ -75,6 +75,58 @@
             make.centerY.mas_equalTo(self.ivAvatar);
         }];
         
+        [self addSubview:self.tvFreeCount];
+        [self.tvFreeCount mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.centerX.mas_equalTo(self.mas_right).multipliedBy(0.25*0.5);
+            make.top.mas_equalTo(self.ivAvatar.mas_bottom).offset(20);
+        }];
+        
+        UILabel* l1 = to_createLabel_white(@"免单次数");
+        [self addSubview:l1];
+        [l1 mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.centerX.mas_equalTo(self.tvFreeCount);
+            make.top.mas_equalTo(self.tvFreeCount.mas_bottom).offset(5);
+        }];
+        
+        [self addSubview:self.tvConsumeCount];
+        [self.tvConsumeCount mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.centerX.mas_equalTo(self.mas_right).multipliedBy(0.25*1.5);
+            make.centerY.mas_equalTo(self.tvFreeCount);
+        }];
+        
+        UILabel* l2 = to_createLabel_white(@"消费金额");
+        [self addSubview:l2];
+        [l2 mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.centerX.mas_equalTo(self.tvConsumeCount);
+            make.centerY.mas_equalTo(l1);
+        }];
+        
+        [self addSubview:self.tvFreeAmount];
+        [self.tvFreeAmount mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.centerX.mas_equalTo(self.mas_right).multipliedBy(0.5+0.25*0.5);
+            make.centerY.mas_equalTo(self.tvFreeCount);
+        }];
+        
+        UILabel* l3 = to_createLabel_white(@"免单金额");
+        [self addSubview:l3];
+        [l3 mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.centerX.mas_equalTo(self.tvFreeAmount);
+            make.centerY.mas_equalTo(l1);
+        }];
+        
+        [self addSubview:self.tvRedAmount];
+        [self.tvRedAmount mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.centerX.mas_equalTo(self.mas_right).multipliedBy(0.75+0.25*0.5);
+            make.centerY.mas_equalTo(self.tvFreeCount);
+        }];
+        
+        UILabel* l4 = to_createLabel_white(@"红包金额");
+        [self addSubview:l4];
+        [l4 mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.centerX.mas_equalTo(self.tvRedAmount);
+            make.centerY.mas_equalTo(l1);
+        }];
+        
         UIView* bottomView = createView([UIColor whiteColor]);
         [self addSubview:bottomView];
         [bottomView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -83,42 +135,64 @@
             make.height.mas_equalTo(70);
         }];
         
-        [bottomView addSubview:self.btOnAll];
+        UIView* v1 = createView([UIColor clearColor]);
+        [bottomView addSubview:v1];
+        [v1 mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.width.mas_equalTo(bottomView.mas_width).dividedBy(5.0);
+            make.left.top.height.mas_equalTo(bottomView);
+        }];
+        
+        [v1 addSubview:self.btOnAll];
         [self.btOnAll mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.centerY.mas_equalTo(bottomView);
-            make.centerX.mas_equalTo(bottomView.mas_right).dividedBy(6.0);
-            make.size.mas_equalTo(CGSizeMake(50, 70));
+            make.center.height.mas_equalTo(v1);
         }];
         
-        [bottomView addSubview:self.btOnPay];
+        UIView* v2 = createView([UIColor clearColor]);
+        [bottomView addSubview:v2];
+        [v2 mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.height.top.width.mas_equalTo(v1);
+            make.left.mas_equalTo(v1.mas_right);
+        }];
+        
+        [v2 addSubview:self.btOnPay];
         [self.btOnPay mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.centerY.mas_equalTo(bottomView);
-            make.centerX.mas_equalTo(bottomView.mas_right).dividedBy(3.0);
-            make.size.mas_equalTo(CGSizeMake(50, 70));
+            make.center.height.mas_equalTo(v2);
         }];
         
+        UIView* v3 = createView([UIColor clearColor]);
+        [bottomView addSubview:v3];
+        [v3 mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.height.top.width.mas_equalTo(v1);
+            make.left.mas_equalTo(v2.mas_right);
+        }];
         
-        
-        [bottomView addSubview:self.btOnSend];
+        [v3 addSubview:self.btOnSend];
         [self.btOnSend mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.centerY.mas_equalTo(bottomView);
-            make.centerX.mas_equalTo(bottomView.mas_right).dividedBy(2.0);
-            make.size.mas_equalTo(CGSizeMake(50, 70));
+            make.center.height.mas_equalTo(v3);
         }];
         
+        UIView* v4 = createView([UIColor clearColor]);
+        [bottomView addSubview:v4];
+        [v4 mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.height.top.width.mas_equalTo(v1);
+            make.left.mas_equalTo(v3.mas_right);
+        }];
         
-        [bottomView addSubview:self.btOnReceive];
+        [v4 addSubview:self.btOnReceive];
         [self.btOnReceive mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.centerY.mas_equalTo(bottomView);
-            make.centerX.mas_equalTo(bottomView.mas_right).multipliedBy(4/6.0);
-            make.size.mas_equalTo(CGSizeMake(50, 70));
+            make.center.height.mas_equalTo(v4);
         }];
         
-        [bottomView addSubview:self.btOnFinish];
+        UIView* v5 = createView([UIColor clearColor]);
+        [bottomView addSubview:v5];
+        [v5 mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.height.top.width.mas_equalTo(v1);
+            make.left.mas_equalTo(v4.mas_right);
+        }];
+        
+        [v5 addSubview:self.btOnFinish];
         [self.btOnFinish mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.centerY.mas_equalTo(bottomView);
-            make.centerX.mas_equalTo(bottomView.mas_right).multipliedBy(5/6.0);
-            make.size.mas_equalTo(CGSizeMake(50, 70));
+            make.center.height.mas_equalTo(v5);
         }];
         
         [self mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -189,6 +263,7 @@
             object.textColor = [UIColor whiteColor];
             object.font = [UIFont systemFontOfSize:12];
             object.textAlignment = NSTextAlignmentCenter;
+            object.text = @"0次";
             object;
        });
     }
@@ -202,6 +277,7 @@
             object.textColor = [UIColor whiteColor];
             object.font = [UIFont systemFontOfSize:12];
             object.textAlignment = NSTextAlignmentCenter;
+            object.text = @"0次";
             object;
        });
     }
@@ -215,6 +291,7 @@
             object.textColor = [UIColor whiteColor];
             object.font = [UIFont systemFontOfSize:12];
             object.textAlignment = NSTextAlignmentCenter;
+            object.text = @"0元";
             object;
        });
     }
@@ -228,6 +305,7 @@
             object.textColor = [UIColor whiteColor];
             object.font = [UIFont systemFontOfSize:12];
             object.textAlignment = NSTextAlignmentCenter;
+            object.text = @"0元";
             object;
        });
     }
@@ -240,9 +318,9 @@
             UIButton * object = [[UIButton alloc]init];
             [object setTitleColor:DefaultTextColor forState:UIControlStateNormal];
             [object setImage:[UIImage imageNamed:@"icon_onall"] forState:UIControlStateNormal];
-            [object layoutButtonWithEdgeInsetsStyle:ZLButtonEdgeInsetsStyleTop imageTitleSpace:5];
             [object setTitle:@"查看全部" forState:UIControlStateNormal];
             object.titleLabel.font = [UIFont systemFontOfSize:12];
+            [object layoutButtonWithEdgeInsetsStyle:ZLButtonEdgeInsetsStyleTop imageTitleSpace:5 small:20];
             object;
        });
     }
@@ -255,9 +333,9 @@
             UIButton * object = [[UIButton alloc]init];
             [object setTitleColor:DefaultTextColor forState:UIControlStateNormal];
             [object setImage:[UIImage imageNamed:@"icon_onpay"] forState:UIControlStateNormal];
-            [object layoutButtonWithEdgeInsetsStyle:ZLButtonEdgeInsetsStyleTop imageTitleSpace:5];
             [object setTitle:@"待付款" forState:UIControlStateNormal];
             object.titleLabel.font = [UIFont systemFontOfSize:12];
+            [object layoutButtonWithEdgeInsetsStyle:ZLButtonEdgeInsetsStyleTop imageTitleSpace:5 small:20];
             object;
        });
     }
@@ -270,9 +348,9 @@
             UIButton * object = [[UIButton alloc]init];
             [object setTitleColor:DefaultTextColor forState:UIControlStateNormal];
             [object setImage:[UIImage imageNamed:@"icon_onsend"] forState:UIControlStateNormal];
-            [object layoutButtonWithEdgeInsetsStyle:ZLButtonEdgeInsetsStyleTop imageTitleSpace:5];
             [object setTitle:@"待发货" forState:UIControlStateNormal];
             object.titleLabel.font = [UIFont systemFontOfSize:12];
+            [object layoutButtonWithEdgeInsetsStyle:ZLButtonEdgeInsetsStyleTop imageTitleSpace:5 small:20];
             object;
        });
     }
@@ -285,9 +363,9 @@
             UIButton * object = [[UIButton alloc]init];
             [object setTitleColor:DefaultTextColor forState:UIControlStateNormal];
             [object setImage:[UIImage imageNamed:@"icon_onreceive"] forState:UIControlStateNormal];
-            [object layoutButtonWithEdgeInsetsStyle:ZLButtonEdgeInsetsStyleTop imageTitleSpace:5];
             [object setTitle:@"待收货" forState:UIControlStateNormal];
             object.titleLabel.font = [UIFont systemFontOfSize:12];
+            [object layoutButtonWithEdgeInsetsStyle:ZLButtonEdgeInsetsStyleTop imageTitleSpace:5 small:20];
             object;
        });
     }
@@ -300,9 +378,9 @@
             UIButton * object = [[UIButton alloc]init];
             [object setTitleColor:DefaultTextColor forState:UIControlStateNormal];
             [object setImage:[UIImage imageNamed:@"icon_onfinish"] forState:UIControlStateNormal];
-            [object layoutButtonWithEdgeInsetsStyle:ZLButtonEdgeInsetsStyleTop imageTitleSpace:5];
             [object setTitle:@"已完成" forState:UIControlStateNormal];
             object.titleLabel.font = [UIFont systemFontOfSize:12];
+            [object layoutButtonWithEdgeInsetsStyle:ZLButtonEdgeInsetsStyleTop imageTitleSpace:5 small:20];
             object;
        });
     }

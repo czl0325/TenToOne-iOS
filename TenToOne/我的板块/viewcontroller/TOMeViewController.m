@@ -8,10 +8,14 @@
 
 #import "TOMeViewController.h"
 #import "TOMeHeaderView.h"
+#import "TOMyWalletView.h"
+#import "TOMyMemberView.h"
 
 @interface TOMeViewController ()
 
 @property(nonatomic,strong)TOMeHeaderView* headerMe;
+@property(nonatomic,strong)TOMyWalletView* walletView;
+@property(nonatomic,strong)TOMyMemberView* memberView;
 
 @end
 
@@ -21,16 +25,15 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    [self.navigationController.navigationBar setBarStyle:UIBarStyleBlack];
-    
     UIScrollView* scrollView = [UIScrollView new];
+    scrollView.backgroundColor = WindowsBackColor;
     [self.view addSubview:scrollView];
     [scrollView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.mas_equalTo(self.view);
     }];
     [scrollView adjustBehavior];
     
-    UIView* contentView = [UIView new];
+    UIView* contentView = createView([UIColor clearColor]);
     [scrollView addSubview:contentView];
     [contentView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.mas_equalTo(scrollView);
@@ -42,8 +45,20 @@
         make.top.left.right.mas_equalTo(contentView);
     }];
     
+    [contentView addSubview:self.walletView];
+    [self.walletView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.right.mas_equalTo(contentView);
+        make.top.mas_equalTo(self.headerMe.mas_bottom).offset(5);
+    }];
+    
+    [contentView addSubview:self.memberView];
+    [self.memberView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.right.mas_equalTo(contentView);
+        make.top.mas_equalTo(self.walletView.mas_bottom).offset(5);
+    }];
+    
     [contentView mas_makeConstraints:^(MASConstraintMaker *make) {
-        
+        make.bottom.mas_equalTo(self.memberView.mas_bottom);
     }];
 }
 
@@ -65,5 +80,25 @@
        });
     }
     return _headerMe;
+}
+
+- (TOMyWalletView *)walletView{
+    if(!_walletView){
+        _walletView = ({
+            TOMyWalletView * object = [[TOMyWalletView alloc]init];
+            object;
+       });
+    }
+    return _walletView;
+}
+
+- (TOMyMemberView *)memberView{
+    if(!_memberView){
+        _memberView = ({
+            TOMyMemberView * object = [[TOMyMemberView alloc]init];
+            object;
+       });
+    }
+    return _memberView;
 }
 @end

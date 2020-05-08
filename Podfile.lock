@@ -48,7 +48,7 @@ PODS:
   - SDWebImage/Core (5.7.4)
   - SVProgressHUD (2.2.5)
   - WMZDialog (1.1.0)
-  - ZLCategory (0.1.8.1)
+  - ZLCategory (0.1.9)
   - ZLCellDataSource (0.4.0)
   - ZLCollectionViewFlowLayout (1.4.1)
   - ZLPhotoBrowser (3.1.4):
@@ -126,7 +126,7 @@ SPEC CHECKSUMS:
   SDWebImage: 48b88379b798fd1e4298f95bb25d2cdabbf4deb3
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   WMZDialog: 325b15889eb920277d5a85ecbe423cdc4976d5e8
-  ZLCategory: 3573dd667940e5ba1e2f51d13e4ba86c18834aeb
+  ZLCategory: 658de819e591604a4e848bb7a25e3aa938ed9882
   ZLCellDataSource: 3d6a5eb2cd0c3cfba85c195cf6729e9354216d79
   ZLCollectionViewFlowLayout: 3d11b3fffde1fc8fb3265392e35fd8cfe5e88d77
   ZLPhotoBrowser: 638189d99c51f78013c9a0369e385db4a4b9673f
