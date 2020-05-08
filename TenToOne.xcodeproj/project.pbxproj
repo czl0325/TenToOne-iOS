@@ -13,6 +13,12 @@
 		BE59E33E2465374400B3524C /* TOMyMemberView.m in Sources */ = {isa = PBXBuildFile; fileRef = BE59E33D2465374400B3524C /* TOMyMemberView.m */; };
 		BE59E34124653AB600B3524C /* TOMerchantBusinessView.m in Sources */ = {isa = PBXBuildFile; fileRef = BE59E34024653AB600B3524C /* TOMerchantBusinessView.m */; };
 		BE59E3442465430000B3524C /* TOTabBarController1.m in Sources */ = {isa = PBXBuildFile; fileRef = BE59E3432465430000B3524C /* TOTabBarController1.m */; };
+		BE59E348246549EE00B3524C /* TOWelfareHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = BE59E347246549EE00B3524C /* TOWelfareHeader.m */; };
+		BE59E34B2465518700B3524C /* TOWalfareContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = BE59E34A2465518700B3524C /* TOWalfareContentView.m */; };
+		BE59E34E246552E700B3524C /* TOFreeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BE59E34D246552E700B3524C /* TOFreeCell.m */; };
+		BE59E351246553D500B3524C /* TOFreeHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = BE59E350246553D500B3524C /* TOFreeHeader.m */; };
+		BE59E355246559D100B3524C /* TOHotCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BE59E354246559D100B3524C /* TOHotCell.m */; };
+		BE59E359246559FA00B3524C /* UICollectionView+ARDynamicCacheHeightLayoutCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BE59E358246559FA00B3524C /* UICollectionView+ARDynamicCacheHeightLayoutCell.m */; };
 		BEDC76DF2463E58B0041D862 /* TOBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEDC76DE2463E58B0041D862 /* TOBaseViewController.m */; };
 		BEDC76E32463E5DB0041D862 /* UIResponder+deliver.m in Sources */ = {isa = PBXBuildFile; fileRef = BEDC76E12463E5DB0041D862 /* UIResponder+deliver.m */; };
 		BEDC76E72463E9B30041D862 /* TOMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEDC76E62463E9B30041D862 /* TOMainViewController.m */; };
@@ -63,6 +69,18 @@
 		BE59E34024653AB600B3524C /* TOMerchantBusinessView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TOMerchantBusinessView.m; sourceTree = "<group>"; };
 		BE59E3422465430000B3524C /* TOTabBarController1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TOTabBarController1.h; sourceTree = "<group>"; };
 		BE59E3432465430000B3524C /* TOTabBarController1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TOTabBarController1.m; sourceTree = "<group>"; };
+		BE59E346246549EE00B3524C /* TOWelfareHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TOWelfareHeader.h; sourceTree = "<group>"; };
+		BE59E347246549EE00B3524C /* TOWelfareHeader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TOWelfareHeader.m; sourceTree = "<group>"; };
+		BE59E3492465518700B3524C /* TOWalfareContentView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TOWalfareContentView.h; sourceTree = "<group>"; };
+		BE59E34A2465518700B3524C /* TOWalfareContentView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TOWalfareContentView.m; sourceTree = "<group>"; };
+		BE59E34C246552E700B3524C /* TOFreeCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TOFreeCell.h; sourceTree = "<group>"; };
+		BE59E34D246552E700B3524C /* TOFreeCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TOFreeCell.m; sourceTree = "<group>"; };
+		BE59E34F246553D500B3524C /* TOFreeHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TOFreeHeader.h; sourceTree = "<group>"; };
+		BE59E350246553D500B3524C /* TOFreeHeader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TOFreeHeader.m; sourceTree = "<group>"; };
+		BE59E353246559D100B3524C /* TOHotCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TOHotCell.h; sourceTree = "<group>"; };
+		BE59E354246559D100B3524C /* TOHotCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TOHotCell.m; sourceTree = "<group>"; };
+		BE59E357246559FA00B3524C /* UICollectionView+ARDynamicCacheHeightLayoutCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UICollectionView+ARDynamicCacheHeightLayoutCell.h"; sourceTree = "<group>"; };
+		BE59E358246559FA00B3524C /* UICollectionView+ARDynamicCacheHeightLayoutCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICollectionView+ARDynamicCacheHeightLayoutCell.m"; sourceTree = "<group>"; };
 		BEDC76DD2463E58B0041D862 /* TOBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TOBaseViewController.h; sourceTree = "<group>"; };
 		BEDC76DE2463E58B0041D862 /* TOBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TOBaseViewController.m; sourceTree = "<group>"; };
 		BEDC76E12463E5DB0041D862 /* UIResponder+deliver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIResponder+deliver.m"; sourceTree = "<group>"; };
@@ -138,6 +156,39 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		BE59E3452465499D00B3524C /* view */ = {
+			isa = PBXGroup;
+			children = (
+				BE59E346246549EE00B3524C /* TOWelfareHeader.h */,
+				BE59E347246549EE00B3524C /* TOWelfareHeader.m */,
+				BE59E3492465518700B3524C /* TOWalfareContentView.h */,
+				BE59E34A2465518700B3524C /* TOWalfareContentView.m */,
+				BE59E34C246552E700B3524C /* TOFreeCell.h */,
+				BE59E34D246552E700B3524C /* TOFreeCell.m */,
+				BE59E34F246553D500B3524C /* TOFreeHeader.h */,
+				BE59E350246553D500B3524C /* TOFreeHeader.m */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		BE59E352246559BA00B3524C /* view */ = {
+			isa = PBXGroup;
+			children = (
+				BE59E353246559D100B3524C /* TOHotCell.h */,
+				BE59E354246559D100B3524C /* TOHotCell.m */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		BE59E356246559FA00B3524C /* UICollectionView+ARDynamicHeightLayoutCell */ = {
+			isa = PBXGroup;
+			children = (
+				BE59E357246559FA00B3524C /* UICollectionView+ARDynamicCacheHeightLayoutCell.h */,
+				BE59E358246559FA00B3524C /* UICollectionView+ARDynamicCacheHeightLayoutCell.m */,
+			);
+			path = "UICollectionView+ARDynamicHeightLayoutCell";
+			sourceTree = "<group>";
+		};
 		BEDC76D32463E5500041D862 /* 我的板块 */ = {
 			isa = PBXGroup;
 			children = (
@@ -197,6 +248,7 @@
 		BEDC76D92463E5500041D862 /* 福利板块 */ = {
 			isa = PBXGroup;
 			children = (
+				BE59E3452465499D00B3524C /* view */,
 				BEDC76EB2463EC5E0041D862 /* viewcontroller */,
 			);
 			path = "福利板块";
@@ -205,6 +257,7 @@
 		BEDC76DA2463E5500041D862 /* 热卖板块 */ = {
 			isa = PBXGroup;
 			children = (
+				BE59E352246559BA00B3524C /* view */,
 				BEDC76F22463EC9F0041D862 /* viewcontroller */,
 			);
 			path = "热卖板块";
@@ -230,6 +283,7 @@
 		BEDC76E02463E5DB0041D862 /* 工具类 */ = {
 			isa = PBXGroup;
 			children = (
+				BE59E356246559FA00B3524C /* UICollectionView+ARDynamicHeightLayoutCell */,
 				BEDC76E22463E5DB0041D862 /* UIResponder+deliver.h */,
 				BEDC76E12463E5DB0041D862 /* UIResponder+deliver.m */,
 				BE59E336246527B400B3524C /* TOUtils.h */,
@@ -529,15 +583,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				BEDC77002463ECE40041D862 /* TOHotViewController.m in Sources */,
+				BE59E348246549EE00B3524C /* TOWelfareHeader.m in Sources */,
 				BEDC76FA2463ECC90041D862 /* TOMeViewController.m in Sources */,
 				BEDC77052463FF2D0041D862 /* TOMeHeaderView.m in Sources */,
 				BEDC76E32463E5DB0041D862 /* UIResponder+deliver.m in Sources */,
+				BE59E34E246552E700B3524C /* TOFreeCell.m in Sources */,
 				BEDC76EA2463EBE90041D862 /* TOTabBarController.m in Sources */,
+				BE59E359246559FA00B3524C /* UICollectionView+ARDynamicCacheHeightLayoutCell.m in Sources */,
 				BEDC76FD2463ECD90041D862 /* TOHomeViewController.m in Sources */,
 				BEDC76EE2463EC810041D862 /* TOWelfareViewController.m in Sources */,
+				BE59E34B2465518700B3524C /* TOWalfareContentView.m in Sources */,
 				BE59E33E2465374400B3524C /* TOMyMemberView.m in Sources */,
+				BE59E355246559D100B3524C /* TOHotCell.m in Sources */,
 				BEFE387D24639CC0009B6DD3 /* AppDelegate.m in Sources */,
 				BEFE388E24639CC4009B6DD3 /* main.m in Sources */,
+				BE59E351246553D500B3524C /* TOFreeHeader.m in Sources */,
 				BEFE388024639CC0009B6DD3 /* SceneDelegate.m in Sources */,
 				BE59E34124653AB600B3524C /* TOMerchantBusinessView.m in Sources */,
 				BEDC76DF2463E58B0041D862 /* TOBaseViewController.m in Sources */,

@@ -49,10 +49,24 @@ UIButton* to_create_button_Right(NSString* title,NSString* imageName ) {
 
 UIButton* to_create_button_normal(NSString* title) {
     UIButton* button = [UIButton buttonWithType:UIButtonTypeCustom];
-    [button setTitle:@"去提现" forState:UIControlStateNormal];
+    [button setTitle:title forState:UIControlStateNormal];
     [button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     button.titleLabel.font = [UIFont systemFontOfSize:14];
     button.backgroundColor = MainColor;
     button.layer.cornerRadius = 5;
     return button;
 }
+
+UIButton* to_create_button_image(NSString* imageName) {
+    UIButton* button = [UIButton buttonWithType:UIButtonTypeCustom];
+    [button setImage:[UIImage imageNamed:imageName] forState:UIControlStateNormal];
+    return button;
+}
+
+
+UIButton* to_create_button_backImage(NSString* imageName) {
+    UIButton* button = [UIButton buttonWithType:UIButtonTypeCustom];
+    [button setBackgroundImage:[UIImage imageNamed:imageName] forState:UIControlStateNormal];
+    return button;
+}
+

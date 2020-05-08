@@ -28,7 +28,16 @@
 - (void)addLeftNavigationButtons:(NSArray<UIButton*>*)buttons {
     NSMutableArray* arrayButton = [NSMutableArray new];
     for (UIButton* btn in buttons) {
-        [arrayButton addObject:[[UIBarButtonItem alloc] initWithCustomView:btn]];
+        if (btn.titleLabel.text.length <= 0 || btn.titleLabel.text == nil) {
+            btn.frame = CGRectMake(0, 0, 22, 22);
+            UIView *view = [UIView new];
+            view.backgroundColor = [UIColor clearColor];
+            view.frame = CGRectMake(0, 0, 22, 22);
+            [view addSubview:btn];
+            [arrayButton addObject:[[UIBarButtonItem alloc] initWithCustomView:view]];
+        } else {
+            [arrayButton addObject:[[UIBarButtonItem alloc] initWithCustomView:btn]];
+        }
     }
     self.navigationItem.leftBarButtonItems = arrayButton;
 }

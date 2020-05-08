@@ -16,6 +16,8 @@ UILabel* to_createLabel_black(NSString* text);
 UIButton* to_create_button_left(NSString* title,NSString* imageName );
 UIButton* to_create_button_Right(NSString* title,NSString* imageName );
 UIButton* to_create_button_normal(NSString* title);
+UIButton* to_create_button_image(NSString* imageName);
+UIButton* to_create_button_backImage(NSString* imageName);
 
 
 NS_ASSUME_NONNULL_END
