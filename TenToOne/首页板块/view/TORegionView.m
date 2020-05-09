@@ -37,6 +37,10 @@
             make.left.mas_equalTo(self.tvRegion);
             make.bottom.mas_equalTo(self.ivAvatar);
         }];
+        
+        [self mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.right.mas_equalTo(@[self.tvIdentity.mas_right, self.tvRegion.mas_right]);
+        }];
     }
     return self;
 }

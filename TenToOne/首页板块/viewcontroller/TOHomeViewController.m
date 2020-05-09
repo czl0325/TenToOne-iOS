@@ -72,7 +72,8 @@
             QMapView* object = [[QMapView alloc] initWithFrame:self.view.bounds];
             object.delegate = self;
             [object setShowsUserLocation:YES];
-            [object setUserTrackingMode:QUserTrackingModeFollowWithHeading];
+            object.zoomLevel = 16;
+            [object setUserTrackingMode:QUserTrackingModeFollow];
             object;
        });
     }

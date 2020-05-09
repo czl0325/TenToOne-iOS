@@ -27,7 +27,6 @@
         [self.regionView mas_makeConstraints:^(MASConstraintMaker *make) {
             make.bottom.mas_equalTo(self);
             make.left.mas_equalTo(5);
-            make.width.mas_greaterThanOrEqualTo(50);
             make.width.mas_lessThanOrEqualTo(100);
             make.height.mas_equalTo(44);
         }];
@@ -45,13 +44,11 @@
             make.size.mas_equalTo(CGSizeMake(132/5.0, 33/5.0));
         }];
         
-        UITextField* tfSearch = [UITextField new];
-        tfSearch.backgroundColor = [UIColor whiteColor];
-        tfSearch.placeholder = @"搜索";
-        tfSearch.layer.cornerRadius = 4;
-        [tfSearch setContentHuggingPriority:UILayoutPriorityRequired forAxis:UILayoutConstraintAxisHorizontal];
-        [self addSubview:tfSearch];
-        [tfSearch mas_makeConstraints:^(MASConstraintMaker *make) {
+        UIButton* btSearch = to_create_button_left(@"搜索关键字", @"icon_search");
+        btSearch.backgroundColor = [UIColor whiteColor];
+        btSearch.layer.cornerRadius = 4;
+        [self addSubview:btSearch];
+        [btSearch mas_makeConstraints:^(MASConstraintMaker *make) {
             make.right.mas_equalTo(btMore.mas_left).offset(-10);
             make.centerY.mas_equalTo(self.regionView);
             make.left.mas_equalTo(self.regionView.mas_right).offset(10);
@@ -73,7 +70,7 @@
     }];
     PopoverAction *action4 = [PopoverAction actionWithImage:[UIImage imageNamed:@"icon_scan"] title:@"扫一扫" handler:^(PopoverAction *action) {
         TOScanViewController* vc = [[TOScanViewController alloc]init];
-        [topViewController().navigationController pushViewController:vc animated:YES];
+        [self.viewController.navigationController pushViewController:vc animated:YES];
     }];
     PopoverView *popoverView = [PopoverView popoverView];
     [popoverView showToView:control withActions:@[action1, action2, action3, action4]];
