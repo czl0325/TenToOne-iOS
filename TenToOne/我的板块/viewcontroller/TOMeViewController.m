@@ -27,6 +27,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    self.fd_prefersNavigationBarHidden = YES;
+    
     UIScrollView* scrollView = [UIScrollView new];
     scrollView.bounces = NO;
     scrollView.backgroundColor = WindowsBackColor;

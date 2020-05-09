@@ -26,6 +26,7 @@
         [self.contentView addSubview:self.ivLocation];
         [self.ivLocation mas_makeConstraints:^(MASConstraintMaker *make) {
             make.left.mas_equalTo(10);
+            make.centerY.mas_equalTo(self.contentView);
         }];
     }
     return self;

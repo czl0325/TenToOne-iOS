@@ -5,11 +5,11 @@
       "scale" : "1x"
     },
     {
+      "filename" : "待收货.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "icon_onreceive@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

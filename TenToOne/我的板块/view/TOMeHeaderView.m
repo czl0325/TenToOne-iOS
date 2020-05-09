@@ -149,7 +149,8 @@
         
         [v1 addSubview:self.btOnAll];
         [self.btOnAll mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.center.height.mas_equalTo(v1);
+            make.centerY.height.mas_equalTo(v1);
+            make.centerX.mas_equalTo(v1).offset(15);
         }];
         
         UIView* v2 = createView([UIColor clearColor]);
@@ -161,7 +162,8 @@
         
         [v2 addSubview:self.btOnPay];
         [self.btOnPay mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.center.height.mas_equalTo(v2);
+            make.centerY.height.mas_equalTo(v2);
+            make.centerX.mas_equalTo(v2).offset(10);
         }];
         
         UIView* v3 = createView([UIColor clearColor]);
@@ -173,7 +175,8 @@
         
         [v3 addSubview:self.btOnSend];
         [self.btOnSend mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.center.height.mas_equalTo(v3);
+            make.centerY.height.mas_equalTo(v3);
+            make.centerX.mas_equalTo(v3).offset(10);
         }];
         
         UIView* v4 = createView([UIColor clearColor]);
@@ -185,7 +188,8 @@
         
         [v4 addSubview:self.btOnReceive];
         [self.btOnReceive mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.center.height.mas_equalTo(v4);
+            make.centerY.height.mas_equalTo(v4);
+            make.centerX.mas_equalTo(v4).offset(10);
         }];
         
         UIView* v5 = createView([UIColor clearColor]);
@@ -197,7 +201,8 @@
         
         [v5 addSubview:self.btOnFinish];
         [self.btOnFinish mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.center.height.mas_equalTo(v5);
+            make.centerY.height.mas_equalTo(v5);
+            make.centerX.mas_equalTo(v5).offset(10);
         }];
         
         [self mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -335,7 +340,7 @@
             [object setImage:[UIImage imageNamed:@"icon_onall"] forState:UIControlStateNormal];
             [object setTitle:@"查看全部" forState:UIControlStateNormal];
             object.titleLabel.font = [UIFont systemFontOfSize:12];
-            [object layoutButtonWithEdgeInsetsStyle:ZLButtonEdgeInsetsStyleTop imageTitleSpace:5 small:20];
+            [object layoutButtonWithEdgeInsetsStyle:ZLButtonEdgeInsetsStyleTop imageTitleSpace:5];
             object;
        });
     }
@@ -350,7 +355,7 @@
             [object setImage:[UIImage imageNamed:@"icon_onpay"] forState:UIControlStateNormal];
             [object setTitle:@"待付款" forState:UIControlStateNormal];
             object.titleLabel.font = [UIFont systemFontOfSize:12];
-            [object layoutButtonWithEdgeInsetsStyle:ZLButtonEdgeInsetsStyleTop imageTitleSpace:5 small:20];
+            [object layoutButtonWithEdgeInsetsStyle:ZLButtonEdgeInsetsStyleTop imageTitleSpace:5];
             object;
        });
     }
@@ -365,7 +370,7 @@
             [object setImage:[UIImage imageNamed:@"icon_onsend"] forState:UIControlStateNormal];
             [object setTitle:@"待发货" forState:UIControlStateNormal];
             object.titleLabel.font = [UIFont systemFontOfSize:12];
-            [object layoutButtonWithEdgeInsetsStyle:ZLButtonEdgeInsetsStyleTop imageTitleSpace:5 small:20];
+            [object layoutButtonWithEdgeInsetsStyle:ZLButtonEdgeInsetsStyleTop imageTitleSpace:5];
             object;
        });
     }
@@ -380,7 +385,7 @@
             [object setImage:[UIImage imageNamed:@"icon_onreceive"] forState:UIControlStateNormal];
             [object setTitle:@"待收货" forState:UIControlStateNormal];
             object.titleLabel.font = [UIFont systemFontOfSize:12];
-            [object layoutButtonWithEdgeInsetsStyle:ZLButtonEdgeInsetsStyleTop imageTitleSpace:5 small:20];
+            [object layoutButtonWithEdgeInsetsStyle:ZLButtonEdgeInsetsStyleTop imageTitleSpace:5];
             object;
        });
     }
@@ -395,7 +400,7 @@
             [object setImage:[UIImage imageNamed:@"icon_onfinish"] forState:UIControlStateNormal];
             [object setTitle:@"已完成" forState:UIControlStateNormal];
             object.titleLabel.font = [UIFont systemFontOfSize:12];
-            [object layoutButtonWithEdgeInsetsStyle:ZLButtonEdgeInsetsStyleTop imageTitleSpace:5 small:20];
+            [object layoutButtonWithEdgeInsetsStyle:ZLButtonEdgeInsetsStyleTop imageTitleSpace:5];
             object;
        });
     }
