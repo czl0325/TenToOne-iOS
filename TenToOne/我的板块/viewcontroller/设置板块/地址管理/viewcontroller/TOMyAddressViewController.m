@@ -67,6 +67,7 @@
             UITableView * object = [[UITableView alloc]initWithFrame:CGRectZero style:UITableViewStylePlain];
             object.dataSource = self.dataSource;
             object.delegate = self;
+            object.separatorStyle = UITableViewCellSeparatorStyleNone;
             [object registerClass:[TOAddressCell class] forCellReuseIdentifier:@"TOAddressCell"];
             object;
        });

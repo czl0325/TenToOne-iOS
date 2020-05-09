@@ -7,13 +7,14 @@
 //
 
 #import "TOMerchantBusinessView.h"
+#import "ZLButton.h"
 
 @interface TOMerchantBusinessView ()
 
-@property(nonatomic,strong)UIButton* btMargin;
-@property(nonatomic,strong)UIButton* btDeclaration;
-@property(nonatomic,strong)UIButton* btShop;
-@property(nonatomic,strong)UIButton* btTeam;
+@property(nonatomic,strong)ZLButton* btMargin;
+@property(nonatomic,strong)ZLButton* btDeclaration;
+@property(nonatomic,strong)ZLButton* btShop;
+@property(nonatomic,strong)ZLButton* btTeam;
 
 @end
 
@@ -34,87 +35,96 @@
         [self.btMargin mas_makeConstraints:^(MASConstraintMaker *make) {
             make.centerX.mas_equalTo(self.mas_right).multipliedBy(0.25*0.5);
             make.top.mas_equalTo(btTitle.mas_bottom).offset(20);
+            //make.height.mas_equalTo(60);
         }];
         
         [self addSubview:self.btDeclaration];
         [self.btDeclaration mas_makeConstraints:^(MASConstraintMaker *make) {
             make.centerX.mas_equalTo(self.mas_right).multipliedBy(0.25*1.5);
-            make.centerY.mas_equalTo(self.btMargin);
+            make.height.centerY.mas_equalTo(self.btMargin);
         }];
-        
+
         [self addSubview:self.btShop];
         [self.btShop mas_makeConstraints:^(MASConstraintMaker *make) {
             make.centerX.mas_equalTo(self.mas_right).multipliedBy(0.5*1.25);
-            make.centerY.mas_equalTo(self.btMargin);
+            make.height.centerY.mas_equalTo(self.btMargin);
         }];
-        
+
         [self addSubview:self.btTeam];
         [self.btTeam mas_makeConstraints:^(MASConstraintMaker *make) {
             make.centerX.mas_equalTo(self.mas_right).multipliedBy(0.25*0.5+0.75);
-            make.centerY.mas_equalTo(self.btMargin);
+            make.height.centerY.mas_equalTo(self.btMargin);
         }];
         
         [self mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.bottom.mas_equalTo(self.btTeam.mas_bottom).offset(20);
+            make.bottom.mas_equalTo(self.btMargin.mas_bottom).offset(30);
         }];
     }
     return self;
 }
 
-- (UIButton *)btMargin{
+- (ZLButton *)btMargin{
     if(!_btMargin){
         _btMargin = ({
-            UIButton * object = [[UIButton alloc]init];
+            ZLButton * object = [ZLButton buttonWithType:UIButtonTypeCustom];
             [object setTitle:@"保证金额" forState:UIControlStateNormal];
             [object setImage:[UIImage imageNamed:@"icon_margin"] forState:UIControlStateNormal];
             [object setTitleColor:DefaultTextColor forState:UIControlStateNormal];
             object.titleLabel.font = DefaultFont;
-            [object layoutButtonWithEdgeInsetsStyle:ZLButtonEdgeInsetsStyleTop imageTitleSpace:5 small:10];
+            object.space = 5;
+            object.buttonStyle = ZLButtonStyleTop;
+            object.imageSize = 25;
             object;
        });
     }
     return _btMargin;
 }
 
-- (UIButton *)btDeclaration{
+- (ZLButton *)btDeclaration{
     if(!_btDeclaration){
         _btDeclaration = ({
-            UIButton * object = [[UIButton alloc]init];
+            ZLButton * object = [[ZLButton alloc]init];
             [object setTitle:@"我要报单" forState:UIControlStateNormal];
             [object setImage:[UIImage imageNamed:@"icon_declaration"] forState:UIControlStateNormal];
             [object setTitleColor:DefaultTextColor forState:UIControlStateNormal];
             object.titleLabel.font = DefaultFont;
-            [object layoutButtonWithEdgeInsetsStyle:ZLButtonEdgeInsetsStyleTop imageTitleSpace:5 small:10];
+            object.space = 5;
+            object.buttonStyle = ZLButtonStyleTop;
+            object.imageSize = 25;
             object;
        });
     }
     return _btDeclaration;
 }
 
-- (UIButton *)btShop{
+- (ZLButton *)btShop{
     if(!_btShop){
         _btShop = ({
-            UIButton * object = [[UIButton alloc]init];
+            ZLButton * object = [[ZLButton alloc]init];
             [object setTitle:@"我的商城" forState:UIControlStateNormal];
             [object setImage:[UIImage imageNamed:@"icon_myshop"] forState:UIControlStateNormal];
             [object setTitleColor:DefaultTextColor forState:UIControlStateNormal];
             object.titleLabel.font = DefaultFont;
-            [object layoutButtonWithEdgeInsetsStyle:ZLButtonEdgeInsetsStyleTop imageTitleSpace:5 small:10];
+            object.space = 5;
+            object.buttonStyle = ZLButtonStyleTop;
+            object.imageSize = 25;
             object;
        });
     }
     return _btShop;
 }
 
-- (UIButton *)btTeam{
+- (ZLButton *)btTeam{
     if(!_btTeam){
         _btTeam = ({
-            UIButton * object = [[UIButton alloc]init];
+            ZLButton * object = [[ZLButton alloc]init];
             [object setTitle:@"业务团队" forState:UIControlStateNormal];
             [object setImage:[UIImage imageNamed:@"icon_myteam"] forState:UIControlStateNormal];
             [object setTitleColor:DefaultTextColor forState:UIControlStateNormal];
             object.titleLabel.font = DefaultFont;
-            [object layoutButtonWithEdgeInsetsStyle:ZLButtonEdgeInsetsStyleTop imageTitleSpace:5 small:10];
+            object.space = 5;
+            object.buttonStyle = ZLButtonStyleTop;
+            object.imageSize = 25;
             object;
        });
     }

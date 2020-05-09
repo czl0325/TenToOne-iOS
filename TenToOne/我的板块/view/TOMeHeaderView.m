@@ -9,6 +9,7 @@
 #import "TOMeHeaderView.h"
 #import "TOLoginViewController.h"
 #import "TOSettingViewController.h"
+#import "TOMyOrderViewController.h"
 
 @interface TOMeHeaderView ()
 
@@ -341,6 +342,11 @@
             [object setTitle:@"查看全部" forState:UIControlStateNormal];
             object.titleLabel.font = [UIFont systemFontOfSize:12];
             [object layoutButtonWithEdgeInsetsStyle:ZLButtonEdgeInsetsStyleTop imageTitleSpace:5];
+            WeakSelf;
+            [[object rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(__kindof UIControl * _Nullable x) {
+                TOMyOrderViewController* vc = [[TOMyOrderViewController alloc]init];
+                [weakSelf.viewController.navigationController pushViewController:vc animated:YES];
+            }];
             object;
        });
     }
@@ -356,6 +362,11 @@
             [object setTitle:@"待付款" forState:UIControlStateNormal];
             object.titleLabel.font = [UIFont systemFontOfSize:12];
             [object layoutButtonWithEdgeInsetsStyle:ZLButtonEdgeInsetsStyleTop imageTitleSpace:5];
+            WeakSelf;
+            [[object rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(__kindof UIControl * _Nullable x) {
+                TOMyOrderViewController* vc = [[TOMyOrderViewController alloc]init];
+                [weakSelf.viewController.navigationController pushViewController:vc animated:YES];
+            }];
             object;
        });
     }
@@ -371,6 +382,11 @@
             [object setTitle:@"待发货" forState:UIControlStateNormal];
             object.titleLabel.font = [UIFont systemFontOfSize:12];
             [object layoutButtonWithEdgeInsetsStyle:ZLButtonEdgeInsetsStyleTop imageTitleSpace:5];
+            WeakSelf;
+            [[object rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(__kindof UIControl * _Nullable x) {
+                TOMyOrderViewController* vc = [[TOMyOrderViewController alloc]init];
+                [weakSelf.viewController.navigationController pushViewController:vc animated:YES];
+            }];
             object;
        });
     }
@@ -386,6 +402,11 @@
             [object setTitle:@"待收货" forState:UIControlStateNormal];
             object.titleLabel.font = [UIFont systemFontOfSize:12];
             [object layoutButtonWithEdgeInsetsStyle:ZLButtonEdgeInsetsStyleTop imageTitleSpace:5];
+            WeakSelf;
+            [[object rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(__kindof UIControl * _Nullable x) {
+                TOMyOrderViewController* vc = [[TOMyOrderViewController alloc]init];
+                [weakSelf.viewController.navigationController pushViewController:vc animated:YES];
+            }];
             object;
        });
     }
@@ -401,6 +422,11 @@
             [object setTitle:@"已完成" forState:UIControlStateNormal];
             object.titleLabel.font = [UIFont systemFontOfSize:12];
             [object layoutButtonWithEdgeInsetsStyle:ZLButtonEdgeInsetsStyleTop imageTitleSpace:5];
+            WeakSelf;
+            [[object rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(__kindof UIControl * _Nullable x) {
+                TOMyOrderViewController* vc = [[TOMyOrderViewController alloc]init];
+                [weakSelf.viewController.navigationController pushViewController:vc animated:YES];
+            }];
             object;
        });
     }

@@ -23,11 +23,40 @@
 
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
-        [self.contentView addSubview:self.ivLocation];
+        self.contentView.backgroundColor = WindowsBackColor;
+        
+        UIView* backView = createView(MainColor);
+        backView.layer.cornerRadius = 5;
+        [self.contentView addSubview:backView];
+        [backView mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.edges.mas_equalTo(self.contentView).insets(UIEdgeInsetsMake(5, 10, 5, 10));
+        }];
+        
+        [backView addSubview:self.ivLocation];
         [self.ivLocation mas_makeConstraints:^(MASConstraintMaker *make) {
             make.left.mas_equalTo(10);
-            make.centerY.mas_equalTo(self.contentView);
+            make.centerY.mas_equalTo(backView);
         }];
+        
+        [backView addSubview:self.tvName];
+        [self.tvName mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.left.mas_equalTo(self.ivLocation.mas_right).offset(10);
+            make.top.mas_equalTo(self.ivLocation).offset(-5);
+        }];
+        
+        [backView addSubview:self.tvMobile];
+        [self.tvMobile mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.left.mas_equalTo(self.tvName.mas_right).offset(5);
+            make.baseline.mas_equalTo(self.tvName);
+        }];
+        
+        [backView addSubview:self.tvAddress];
+        [self.tvAddress mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.left.mas_equalTo(self.tvName);
+            make.centerY.mas_equalTo(self.ivLocation.mas_bottom);
+        }];
+        
+        
     }
     return self;
 }
