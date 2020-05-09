@@ -23,7 +23,7 @@
 #import "ZLCellDataSource.h"
 #import "ZLSectionDataSource.h"
 #import "TOUtils.h"
-#import "WMZDialog.h"
+#import "TOSingleton.h"
 
 #define MainColor           UIColorFromRGB(0xe02e24)
 #define DividerColor        UIColorFromRGB(0xf2f2f2)

@@ -22,7 +22,7 @@
     if (self == [super initWithFrame:frame]) {
         [self addSubview:self.ivAvatar];
         [self.ivAvatar mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.size.mas_equalTo(30);
+            make.size.mas_equalTo(35);
             make.left.centerY.mas_equalTo(self);
         }];
         

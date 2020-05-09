@@ -32,12 +32,12 @@
 
     self.delegate = self;
     [self customizeInterface];
-    self.selectedIndex = 4;
 }
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     [self.navigationController setNavigationBarHidden:YES];
+    self.selectedIndex = 2;
 }
 
 //- (void)viewWillDisappear:(BOOL)animated {

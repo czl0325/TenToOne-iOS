@@ -8,13 +8,13 @@
 
 #import "TOHomeViewController.h"
 #import <QMapKit/QMapKit.h>
-#import "TORegionView.h"
+#import "TOHomeNavbar.h"
 
 @interface TOHomeViewController ()
 <QMapViewDelegate, UISearchBarDelegate>
 
 @property(nonatomic,strong)QMapView *mapView;
-@property(nonatomic,strong)TORegionView* regionView;
+@property(nonatomic,strong)TOHomeNavbar* homeNavbar;
 
 
 @end
@@ -25,32 +25,46 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-//    UISearchBar *customSearchBar = [[UISearchBar alloc] initWithFrame:CGRectZero];
-//    customSearchBar.delegate = self;
-//    customSearchBar.showsCancelButton = NO;
-//    customSearchBar.searchBarStyle = UISearchBarStyleMinimal;
-//    customSearchBar.backgroundColor = [UIColor whiteColor];
-//    self.navigationItem.titleView = customSearchBar;
+    [self.view addSubview:self.homeNavbar];
+    [self.homeNavbar mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.top.right.mas_equalTo(self.view);
+        make.height.mas_equalTo(64);
+    }];
 
-    [self addLeftNavigationButtons:@[self.regionView]];
-    
     [self.view addSubview:self.mapView];
     [self.mapView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.edges.mas_equalTo(self.view);
+        make.right.left.bottom.mas_equalTo(self.view);
+        make.top.mas_equalTo(self.homeNavbar.mas_bottom);
     }];
-    
-    //Dialog().wTypeSet(DialogTypeNaviMenu).wDataSet(@[@{@"name":@"话费充值",@"image":@""},@{@"name":@"我要报单"},@{@"name":@"玩法攻略"},@{@"name":@"扫一扫"}]).wStart();
+
 }
 
-- (TORegionView *)regionView{
-    if(!_regionView){
-        _regionView = ({
-            TORegionView* object = [[TORegionView alloc] initWithFrame:CGRectMake(0, 0, 100, 44)];
-            object;
-       });
+- (void)viewWillLayoutSubviews {
+    [super viewWillLayoutSubviews];
+    UIEdgeInsets safeAreaInsets = UIEdgeInsetsZero;
+    if (@available(iOS 11.0, *)) {
+        safeAreaInsets = self.view.safeAreaInsets;
     }
-    return _regionView;
+    CGFloat statusHeight = self.view.window.windowScene.statusBarManager.statusBarFrame.size.height;
+    CGRect navRect = self.navigationController.navigationBar.frame;
+    NSLog(@"%.2f",statusHeight+navRect.size.height+safeAreaInsets.top);
+    [self.homeNavbar mas_remakeConstraints:^(MASConstraintMaker *make) {
+        make.right.left.top.mas_equalTo(self.view);
+        make.height.mas_equalTo(navRect.size.height+safeAreaInsets.top);
+    }];
+    [self.view layoutIfNeeded];
 }
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [self.navigationController setNavigationBarHidden:YES];
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    [self.navigationController setNavigationBarHidden:NO];
+}
+
 
 - (QMapView *)mapView{
     if(!_mapView){
@@ -65,4 +79,14 @@
     return _mapView;
 }
 
+
+- (TOHomeNavbar *)homeNavbar{
+    if(!_homeNavbar){
+        _homeNavbar = ({
+            TOHomeNavbar * object = [[TOHomeNavbar alloc]init];
+            object;
+       });
+    }
+    return _homeNavbar;
+}
 @end

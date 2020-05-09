@@ -13,6 +13,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 UILabel* to_createLabel_white(NSString* text);
 UILabel* to_createLabel_black(NSString* text);
+UILabel* to_createLabel_text_color(NSString* text, UIColor* color);
+UILabel* to_createLabel_text_color_font(NSString* text, UIColor* color, CGFloat fontSize);
 UIButton* to_create_button_left(NSString* title,NSString* imageName );
 UIButton* to_create_button_Right(NSString* title,NSString* imageName );
 UIButton* to_create_button_normal(NSString* title);

@@ -18,10 +18,18 @@ UILabel* to_createLabel_white(NSString* text) {
 }
 
 UILabel* to_createLabel_black(NSString* text) {
+    return to_createLabel_text_color(text, UIColorFromRGB(0x444444));
+}
+
+UILabel* to_createLabel_text_color(NSString* text, UIColor* color) {
+    return to_createLabel_text_color_font(text, color, 12);
+}
+
+UILabel* to_createLabel_text_color_font(NSString* text, UIColor* color, CGFloat fontSize) {
     UILabel *l = [UILabel new];
     l.text = text;
-    l.textColor = UIColorFromRGB(0x444444);
-    l.font = DefaultFont;
+    l.textColor = color;
+    l.font = [UIFont systemFontOfSize:fontSize];
     l.textAlignment = NSTextAlignmentCenter;
     return l;
 }

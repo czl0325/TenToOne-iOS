@@ -20,6 +20,12 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSCameraUsageDescription</key>
+	<string>十有一需要您的同意，来使用相机扫描二维码。</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>十有一需要您的同意，获取位置来搜索附近红包。</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>十有一需要您的同意，获取位置来搜索附近红包。</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>

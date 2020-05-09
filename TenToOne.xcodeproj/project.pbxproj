@@ -22,6 +22,20 @@
 		BE59E351246553D500B3524C /* TOFreeHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = BE59E350246553D500B3524C /* TOFreeHeader.m */; };
 		BE59E355246559D100B3524C /* TOHotCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BE59E354246559D100B3524C /* TOHotCell.m */; };
 		BE59E359246559FA00B3524C /* UICollectionView+ARDynamicCacheHeightLayoutCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BE59E358246559FA00B3524C /* UICollectionView+ARDynamicCacheHeightLayoutCell.m */; };
+		BE79F8FB2466448F006545F2 /* UINavigationBar+iOS11Spacing.m in Sources */ = {isa = PBXBuildFile; fileRef = BE79F8FA2466448F006545F2 /* UINavigationBar+iOS11Spacing.m */; };
+		BE79F90124664EA4006545F2 /* QiCodePreviewView.m in Sources */ = {isa = PBXBuildFile; fileRef = BE79F8FD24664EA4006545F2 /* QiCodePreviewView.m */; };
+		BE79F90224664EA4006545F2 /* QiCodeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BE79F8FE24664EA4006545F2 /* QiCodeManager.m */; };
+		BE79F90524664ED9006545F2 /* TOScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE79F90424664ED9006545F2 /* TOScanViewController.m */; };
+		BE79F90824665765006545F2 /* TOHomeNavbar.m in Sources */ = {isa = PBXBuildFile; fileRef = BE79F90724665765006545F2 /* TOHomeNavbar.m */; };
+		BE79F90B2466764A006545F2 /* TOLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE79F90A2466764A006545F2 /* TOLoginViewController.m */; };
+		BE79F91124667740006545F2 /* ZLTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = BE79F91024667740006545F2 /* ZLTextField.m */; };
+		BE79F91424667A00006545F2 /* TOSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = BE79F91324667A00006545F2 /* TOSingleton.m */; };
+		BE79F91824667A35006545F2 /* TOUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BE79F91724667A35006545F2 /* TOUserModel.m */; };
+		BE79F91B24667EC3006545F2 /* TOVerifyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE79F91A24667EC3006545F2 /* TOVerifyViewController.m */; };
+		BE79F91E24668602006545F2 /* TORedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE79F91D24668602006545F2 /* TORedViewController.m */; };
+		BE79F92124668618006545F2 /* TORedView.m in Sources */ = {isa = PBXBuildFile; fileRef = BE79F92024668618006545F2 /* TORedView.m */; };
+		BE79F92424669691006545F2 /* TOUserCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BE79F92324669691006545F2 /* TOUserCell.m */; };
+		BE79F9282466A069006545F2 /* TORedTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = BE79F9272466A069006545F2 /* TORedTopView.m */; };
 		BEDC76DF2463E58B0041D862 /* TOBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEDC76DE2463E58B0041D862 /* TOBaseViewController.m */; };
 		BEDC76E32463E5DB0041D862 /* UIResponder+deliver.m in Sources */ = {isa = PBXBuildFile; fileRef = BEDC76E12463E5DB0041D862 /* UIResponder+deliver.m */; };
 		BEDC76E72463E9B30041D862 /* TOMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEDC76E62463E9B30041D862 /* TOMainViewController.m */; };
@@ -89,6 +103,34 @@
 		BE59E354246559D100B3524C /* TOHotCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TOHotCell.m; sourceTree = "<group>"; };
 		BE59E357246559FA00B3524C /* UICollectionView+ARDynamicCacheHeightLayoutCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UICollectionView+ARDynamicCacheHeightLayoutCell.h"; sourceTree = "<group>"; };
 		BE59E358246559FA00B3524C /* UICollectionView+ARDynamicCacheHeightLayoutCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICollectionView+ARDynamicCacheHeightLayoutCell.m"; sourceTree = "<group>"; };
+		BE79F8F92466448F006545F2 /* UINavigationBar+iOS11Spacing.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+iOS11Spacing.h"; sourceTree = "<group>"; };
+		BE79F8FA2466448F006545F2 /* UINavigationBar+iOS11Spacing.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+iOS11Spacing.m"; sourceTree = "<group>"; };
+		BE79F8FD24664EA4006545F2 /* QiCodePreviewView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QiCodePreviewView.m; sourceTree = "<group>"; };
+		BE79F8FE24664EA4006545F2 /* QiCodeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QiCodeManager.m; sourceTree = "<group>"; };
+		BE79F8FF24664EA4006545F2 /* QiCodePreviewView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QiCodePreviewView.h; sourceTree = "<group>"; };
+		BE79F90024664EA4006545F2 /* QiCodeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QiCodeManager.h; sourceTree = "<group>"; };
+		BE79F90324664ED9006545F2 /* TOScanViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TOScanViewController.h; sourceTree = "<group>"; };
+		BE79F90424664ED9006545F2 /* TOScanViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TOScanViewController.m; sourceTree = "<group>"; };
+		BE79F90624665765006545F2 /* TOHomeNavbar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TOHomeNavbar.h; sourceTree = "<group>"; };
+		BE79F90724665765006545F2 /* TOHomeNavbar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TOHomeNavbar.m; sourceTree = "<group>"; };
+		BE79F9092466764A006545F2 /* TOLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TOLoginViewController.h; sourceTree = "<group>"; };
+		BE79F90A2466764A006545F2 /* TOLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TOLoginViewController.m; sourceTree = "<group>"; };
+		BE79F90F24667740006545F2 /* ZLTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZLTextField.h; sourceTree = "<group>"; };
+		BE79F91024667740006545F2 /* ZLTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZLTextField.m; sourceTree = "<group>"; };
+		BE79F91224667A00006545F2 /* TOSingleton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TOSingleton.h; sourceTree = "<group>"; };
+		BE79F91324667A00006545F2 /* TOSingleton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TOSingleton.m; sourceTree = "<group>"; };
+		BE79F91624667A35006545F2 /* TOUserModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TOUserModel.h; sourceTree = "<group>"; };
+		BE79F91724667A35006545F2 /* TOUserModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TOUserModel.m; sourceTree = "<group>"; };
+		BE79F91924667EC3006545F2 /* TOVerifyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TOVerifyViewController.h; sourceTree = "<group>"; };
+		BE79F91A24667EC3006545F2 /* TOVerifyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TOVerifyViewController.m; sourceTree = "<group>"; };
+		BE79F91C24668602006545F2 /* TORedViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TORedViewController.h; sourceTree = "<group>"; };
+		BE79F91D24668602006545F2 /* TORedViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TORedViewController.m; sourceTree = "<group>"; };
+		BE79F91F24668618006545F2 /* TORedView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TORedView.h; sourceTree = "<group>"; };
+		BE79F92024668618006545F2 /* TORedView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TORedView.m; sourceTree = "<group>"; };
+		BE79F92224669691006545F2 /* TOUserCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TOUserCell.h; sourceTree = "<group>"; };
+		BE79F92324669691006545F2 /* TOUserCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TOUserCell.m; sourceTree = "<group>"; };
+		BE79F9262466A069006545F2 /* TORedTopView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TORedTopView.h; sourceTree = "<group>"; };
+		BE79F9272466A069006545F2 /* TORedTopView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TORedTopView.m; sourceTree = "<group>"; };
 		BEDC76DD2463E58B0041D862 /* TOBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TOBaseViewController.h; sourceTree = "<group>"; };
 		BEDC76DE2463E58B0041D862 /* TOBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TOBaseViewController.m; sourceTree = "<group>"; };
 		BEDC76E12463E5DB0041D862 /* UIResponder+deliver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIResponder+deliver.m"; sourceTree = "<group>"; };
@@ -185,6 +227,8 @@
 			children = (
 				65B7C32124659E7C005FFD9C /* TORegionView.h */,
 				65B7C32224659E7C005FFD9C /* TORegionView.m */,
+				BE79F90624665765006545F2 /* TOHomeNavbar.h */,
+				BE79F90724665765006545F2 /* TOHomeNavbar.m */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -192,6 +236,7 @@
 		BE59E3452465499D00B3524C /* view */ = {
 			isa = PBXGroup;
 			children = (
+				BE79F9252466A054006545F2 /* 红包顶部页面 */,
 				BE59E346246549EE00B3524C /* TOWelfareHeader.h */,
 				BE59E347246549EE00B3524C /* TOWelfareHeader.m */,
 				BE59E3492465518700B3524C /* TOWalfareContentView.h */,
@@ -200,6 +245,10 @@
 				BE59E34D246552E700B3524C /* TOFreeCell.m */,
 				BE59E34F246553D500B3524C /* TOFreeHeader.h */,
 				BE59E350246553D500B3524C /* TOFreeHeader.m */,
+				BE79F91F24668618006545F2 /* TORedView.h */,
+				BE79F92024668618006545F2 /* TORedView.m */,
+				BE79F92224669691006545F2 /* TOUserCell.h */,
+				BE79F92324669691006545F2 /* TOUserCell.m */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -220,6 +269,62 @@
 				BE59E358246559FA00B3524C /* UICollectionView+ARDynamicCacheHeightLayoutCell.m */,
 			);
 			path = "UICollectionView+ARDynamicHeightLayoutCell";
+			sourceTree = "<group>";
+		};
+		BE79F8FC24664EA4006545F2 /* QiCodeReader */ = {
+			isa = PBXGroup;
+			children = (
+				BE79F8FD24664EA4006545F2 /* QiCodePreviewView.m */,
+				BE79F8FE24664EA4006545F2 /* QiCodeManager.m */,
+				BE79F8FF24664EA4006545F2 /* QiCodePreviewView.h */,
+				BE79F90024664EA4006545F2 /* QiCodeManager.h */,
+			);
+			path = QiCodeReader;
+			sourceTree = "<group>";
+		};
+		BE79F90C24667652006545F2 /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		BE79F90D24667652006545F2 /* viewcontroller */ = {
+			isa = PBXGroup;
+			children = (
+				BE79F9092466764A006545F2 /* TOLoginViewController.h */,
+				BE79F90A2466764A006545F2 /* TOLoginViewController.m */,
+				BE79F91924667EC3006545F2 /* TOVerifyViewController.h */,
+				BE79F91A24667EC3006545F2 /* TOVerifyViewController.m */,
+			);
+			path = viewcontroller;
+			sourceTree = "<group>";
+		};
+		BE79F90E24667725006545F2 /* ZLTextField */ = {
+			isa = PBXGroup;
+			children = (
+				BE79F90F24667740006545F2 /* ZLTextField.h */,
+				BE79F91024667740006545F2 /* ZLTextField.m */,
+			);
+			path = ZLTextField;
+			sourceTree = "<group>";
+		};
+		BE79F91524667A1F006545F2 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				BE79F91624667A35006545F2 /* TOUserModel.h */,
+				BE79F91724667A35006545F2 /* TOUserModel.m */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		BE79F9252466A054006545F2 /* 红包顶部页面 */ = {
+			isa = PBXGroup;
+			children = (
+				BE79F9262466A069006545F2 /* TORedTopView.h */,
+				BE79F9272466A069006545F2 /* TORedTopView.m */,
+			);
+			path = "红包顶部页面";
 			sourceTree = "<group>";
 		};
 		BEDC76D32463E5500041D862 /* 我的板块 */ = {
@@ -275,6 +380,9 @@
 		BEDC76D82463E5500041D862 /* 登录板块 */ = {
 			isa = PBXGroup;
 			children = (
+				BE79F91524667A1F006545F2 /* model */,
+				BE79F90C24667652006545F2 /* view */,
+				BE79F90D24667652006545F2 /* viewcontroller */,
 			);
 			path = "登录板块";
 			sourceTree = "<group>";
@@ -311,6 +419,8 @@
 			children = (
 				BEDC76DD2463E58B0041D862 /* TOBaseViewController.h */,
 				BEDC76DE2463E58B0041D862 /* TOBaseViewController.m */,
+				BE79F91224667A00006545F2 /* TOSingleton.h */,
+				BE79F91324667A00006545F2 /* TOSingleton.m */,
 			);
 			path = base;
 			sourceTree = "<group>";
@@ -318,11 +428,15 @@
 		BEDC76E02463E5DB0041D862 /* 工具类 */ = {
 			isa = PBXGroup;
 			children = (
+				BE79F90E24667725006545F2 /* ZLTextField */,
+				BE79F8FC24664EA4006545F2 /* QiCodeReader */,
 				BE59E356246559FA00B3524C /* UICollectionView+ARDynamicHeightLayoutCell */,
 				BEDC76E22463E5DB0041D862 /* UIResponder+deliver.h */,
 				BEDC76E12463E5DB0041D862 /* UIResponder+deliver.m */,
 				BE59E336246527B400B3524C /* TOUtils.h */,
 				BE59E337246527B400B3524C /* TOUtils.m */,
+				BE79F8F92466448F006545F2 /* UINavigationBar+iOS11Spacing.h */,
+				BE79F8FA2466448F006545F2 /* UINavigationBar+iOS11Spacing.m */,
 			);
 			path = "工具类";
 			sourceTree = "<group>";
@@ -332,6 +446,8 @@
 			children = (
 				BEDC76EC2463EC810041D862 /* TOWelfareViewController.h */,
 				BEDC76ED2463EC810041D862 /* TOWelfareViewController.m */,
+				BE79F91C24668602006545F2 /* TORedViewController.h */,
+				BE79F91D24668602006545F2 /* TORedViewController.m */,
 			);
 			path = viewcontroller;
 			sourceTree = "<group>";
@@ -350,6 +466,8 @@
 			children = (
 				BEDC76FB2463ECD90041D862 /* TOHomeViewController.h */,
 				BEDC76FC2463ECD90041D862 /* TOHomeViewController.m */,
+				BE79F90324664ED9006545F2 /* TOScanViewController.h */,
+				BE79F90424664ED9006545F2 /* TOScanViewController.m */,
 			);
 			path = viewcontroller;
 			sourceTree = "<group>";
@@ -626,31 +744,45 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE79F90824665765006545F2 /* TOHomeNavbar.m in Sources */,
 				BEDC77002463ECE40041D862 /* TOHotViewController.m in Sources */,
 				65706C5B246587780087B6C1 /* TOMessageCell.m in Sources */,
+				BE79F91124667740006545F2 /* ZLTextField.m in Sources */,
+				BE79F91424667A00006545F2 /* TOSingleton.m in Sources */,
 				BE59E348246549EE00B3524C /* TOWelfareHeader.m in Sources */,
 				BEDC76FA2463ECC90041D862 /* TOMeViewController.m in Sources */,
+				BE79F90124664EA4006545F2 /* QiCodePreviewView.m in Sources */,
 				BEDC77052463FF2D0041D862 /* TOMeHeaderView.m in Sources */,
+				BE79F8FB2466448F006545F2 /* UINavigationBar+iOS11Spacing.m in Sources */,
 				BEDC76E32463E5DB0041D862 /* UIResponder+deliver.m in Sources */,
 				BE59E34E246552E700B3524C /* TOFreeCell.m in Sources */,
 				BEDC76EA2463EBE90041D862 /* TOTabBarController.m in Sources */,
+				BE79F91E24668602006545F2 /* TORedViewController.m in Sources */,
 				BE59E359246559FA00B3524C /* UICollectionView+ARDynamicCacheHeightLayoutCell.m in Sources */,
 				65B7C32324659E7C005FFD9C /* TORegionView.m in Sources */,
+				BE79F90B2466764A006545F2 /* TOLoginViewController.m in Sources */,
 				BEDC76FD2463ECD90041D862 /* TOHomeViewController.m in Sources */,
 				BEDC76EE2463EC810041D862 /* TOWelfareViewController.m in Sources */,
 				BE59E34B2465518700B3524C /* TOWalfareContentView.m in Sources */,
 				BE59E33E2465374400B3524C /* TOMyMemberView.m in Sources */,
 				BE59E355246559D100B3524C /* TOHotCell.m in Sources */,
 				BEFE387D24639CC0009B6DD3 /* AppDelegate.m in Sources */,
+				BE79F92424669691006545F2 /* TOUserCell.m in Sources */,
 				BEFE388E24639CC4009B6DD3 /* main.m in Sources */,
 				BE59E351246553D500B3524C /* TOFreeHeader.m in Sources */,
 				BEFE388024639CC0009B6DD3 /* SceneDelegate.m in Sources */,
 				BE59E34124653AB600B3524C /* TOMerchantBusinessView.m in Sources */,
 				BEDC76DF2463E58B0041D862 /* TOBaseViewController.m in Sources */,
+				BE79F90224664EA4006545F2 /* QiCodeManager.m in Sources */,
+				BE79F91824667A35006545F2 /* TOUserModel.m in Sources */,
 				65706C582465875F0087B6C1 /* TOMessageViewController.m in Sources */,
 				BE59E33B24652BB700B3524C /* TOMyWalletView.m in Sources */,
 				BE59E3442465430000B3524C /* TOTabBarController1.m in Sources */,
+				BE79F92124668618006545F2 /* TORedView.m in Sources */,
 				BE59E338246527B400B3524C /* TOUtils.m in Sources */,
+				BE79F90524664ED9006545F2 /* TOScanViewController.m in Sources */,
+				BE79F9282466A069006545F2 /* TORedTopView.m in Sources */,
+				BE79F91B24667EC3006545F2 /* TOVerifyViewController.m in Sources */,
 				BEDC76E72463E9B30041D862 /* TOMainViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

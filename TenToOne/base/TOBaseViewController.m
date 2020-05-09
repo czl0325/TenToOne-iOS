@@ -51,10 +51,12 @@
         if ([view isKindOfClass:[UIButton class]]) {
             UIButton *btn = (UIButton*)view;
             if (btn.titleLabel.text.length <= 0 || btn.titleLabel.text == nil) {
-                btn.frame = CGRectMake(0, 0, 22, 22);
+                if (CGRectEqualToRect(btn.frame, CGRectZero)) {
+                    btn.frame = CGRectMake(0, 0, 22, 22);
+                }
                 UIView *v = [UIView new];
                 v.backgroundColor = [UIColor clearColor];
-                v.frame = CGRectMake(0, 0, 22, 22);
+                v.frame = CGRectMake(0, 0, btn.width, btn.height);
                 [v addSubview:btn];
                 [arrayButton addObject:[[UIBarButtonItem alloc] initWithCustomView:v]];
                 continue;
@@ -88,67 +90,13 @@
     }
 }
 
--(void)viewDidLayoutSubviews{
-    if (SystemVersion.floatValue < 11.0)
-        return;
-    UINavigationItem * item=self.navigationItem;
-    NSArray * array=item.leftBarButtonItems;
-    if (array&&array.count!=0){
-        UIBarButtonItem * buttonItem=array[0];
-        UIView * view =[[[buttonItem.customView superview] superview] superview];
-        NSArray * arrayConstraint=view.constraints;
-        for (NSLayoutConstraint * constant in arrayConstraint) {
-            if (fabs(constant.constant)==16) {
-                constant.constant=0;
-            }
-        }
-    }
- 
-}
--(void)viewWillAppear:(BOOL)animated{
-    [super viewWillAppear:animated];
-    if (SystemVersion.floatValue < 11.0)
-          return;
-    UINavigationItem * item=self.navigationItem;
-    NSArray * array=item.leftBarButtonItems;
-    if (array&&array.count!=0){
-        UIBarButtonItem * buttonItem=array[0];
-        UIView * view =[[[buttonItem.customView superview] superview] superview];
-        NSArray * arrayConstraint=view.constraints;
-        for (NSLayoutConstraint * constant in arrayConstraint) {
-            if (fabs(constant.constant)==16) {
-                constant.constant=0;
-            }
-        }
-    }
-    
-}
-
-//防止侧滑出现问题
-- (void)viewDidAppear:(BOOL)animated{
-    [super viewDidAppear:animated];
-    if (SystemVersion.floatValue < 11.0)
-        return;
-    UINavigationItem * item=self.navigationItem;
-    NSArray * array = item.leftBarButtonItems;
-    if (array && array.count!=0){
-        UIBarButtonItem * buttonItem = array[0];
-        UIView * view = [[[buttonItem.customView superview] superview] superview];
-        NSArray * arrayConstraint=view.constraints;
-        for (NSLayoutConstraint * constant in arrayConstraint) {
-            if (fabs(constant.constant)==16) {
-                constant.constant=0;
-            }
-        }
-    }
-    NSArray * array2 = item.rightBarButtonItems;
-    if (array2 && array2.count!=0){
-        UIBarButtonItem * buttonItem = array2[0];
-        UIView * view = [[[buttonItem.customView superview] superview] superview];
-        NSArray * arrayConstraint = view.constraints;
-        for (NSLayoutConstraint * constant in arrayConstraint) {
-            if (fabs(constant.constant) == 16) {
-                constant.constant=0;
+-(void)NavigationBarClear:(UINavigationBar *)navigationBar hidden:(BOOL) hidden {
+    if ([navigationBar respondsToSelector:@selector( setBackgroundImage:forBarMetrics:)]){
+        NSArray *list = navigationBar.subviews;
+        for (id obj in list) {
+            if ([obj isKindOfClass:[UIImageView class]]) {
+                UIImageView *imageView = (UIImageView *)obj;
+                imageView.hidden = hidden;
             }
         }
     }

@@ -7,6 +7,7 @@
 //
 
 #import "TOMeHeaderView.h"
+#import "TOLoginViewController.h"
 
 @interface TOMeHeaderView ()
 
@@ -221,6 +222,16 @@
             UILabel * object = [[UILabel alloc]init];
             object.textColor = [UIColor whiteColor];
             object.text = @"登录/注册";
+            object.userInteractionEnabled = YES;
+            WeakSelf;
+            UITapGestureRecognizer* tap = [[UITapGestureRecognizer alloc]init];
+            [[tap rac_gestureSignal] subscribeNext:^(__kindof UIGestureRecognizer * _Nullable x) {
+                if ([TOSingleton sharedInstance].userInfo == nil) {
+                    TOLoginViewController* vc = [[TOLoginViewController alloc]init];
+                    [weakSelf.viewController.navigationController pushViewController:vc animated:YES];
+                }
+            }];
+            [object addGestureRecognizer:tap];
             object;
        });
     }

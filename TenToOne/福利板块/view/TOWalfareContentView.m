@@ -9,6 +9,9 @@
 #import "TOWalfareContentView.h"
 #import "TOFreeHeader.h"
 #import "TOFreeCell.h"
+#import "TORedView.h"
+#import "zhPopupController.h"
+#import "TORedViewController.h"
 
 @interface TOWalfareContentView ()
 <UITableViewDelegate>
@@ -52,6 +55,21 @@
     return header;
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    TORedView * redView = [[TORedView alloc]initWithFrame:CGRectMake(0, 0, 684/2, 1040/2)];
+    WeakSelf;
+    zhPopupController* popup = [[zhPopupController alloc] initWithView:redView size:redView.bounds.size];
+    popup.presentationStyle = zhPopupSlideStyleTransform;
+    popup.dismissonStyle = zhPopupSlideStyleTransform;
+    [popup showInView:self.viewController.view.window completion:NULL];
+    redView.onKai = ^{
+        [popup dismiss];
+        TORedViewController* vc = [[TORedViewController alloc]init];
+        [weakSelf.viewController.navigationController pushViewController:vc animated:YES];
+    };
+}
+
 - (UITableView *)tableViewFree{
     if(!_tableViewFree){
         _tableViewFree = ({
@@ -70,7 +88,7 @@
     if(!_dataSource){
         _dataSource = ({
             ZLCellDataSource * object = [[ZLCellDataSource alloc]initWithItems:self.arrayFrees cellIdentifier:@"TOFreeCell" configureCellBlock:^(TOFreeCell* cell, id item, NSIndexPath *indexPath) {
-                
+                cell.selectionStyle = UITableViewCellSelectionStyleNone;
             }];
             object;
        });
