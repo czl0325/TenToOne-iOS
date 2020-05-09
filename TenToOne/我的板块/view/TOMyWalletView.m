@@ -7,6 +7,7 @@
 //
 
 #import "TOMyWalletView.h"
+#import "TOMyWallerViewController.h"
 
 @interface TOMyWalletView ()
 
@@ -22,6 +23,8 @@
     if (self == [super initWithFrame:frame]) {
         self.backgroundColor = [UIColor whiteColor];
         
+        WeakSelf;
+        
         UIButton* btTitle = to_create_button_left(@"我的钱包", @"icon_mywallet");
         [self addSubview:btTitle];
         [btTitle mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -34,6 +37,10 @@
         [btLook mas_makeConstraints:^(MASConstraintMaker *make) {
             make.centerY.top.mas_equalTo(btTitle);
             make.right.mas_equalTo(-20);
+        }];
+        [[btLook rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(__kindof UIControl * _Nullable x) {
+            TOMyWallerViewController* vc = [[TOMyWallerViewController alloc]init];
+            [weakSelf.viewController.navigationController pushViewController:vc animated:YES];
         }];
         
         UILabel* l1 = to_createLabel_black(@"可提现资产");

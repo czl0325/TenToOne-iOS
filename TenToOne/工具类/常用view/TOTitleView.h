@@ -15,6 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (instancetype)initWithTitle:(NSString*)title;
 - (instancetype)initWithTitle:(NSString*)title detail:(NSString*)detail;
 - (instancetype)initWithTitle:(NSString*)title detail:(NSString*)detail showLine:(BOOL)show;
+- (instancetype)initWithTitle:(NSString*)title detail:(NSString*)detail showLine:(BOOL)show showArraw:(BOOL)show2;
 
 @end
 

@@ -7,6 +7,7 @@
 //
 
 #import "TOMyMemberView.h"
+#import "TOMyTeamViewController.h"
 
 @interface TOMyMemberView ()
 
@@ -21,6 +22,8 @@
     if (self == [super initWithFrame:frame]) {
         self.backgroundColor = [UIColor whiteColor];
         
+        WeakSelf;
+        
         UIButton* btTitle = to_create_button_left(@"我的团队", @"icon_mymember");
         [self addSubview:btTitle];
         [btTitle mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -33,6 +36,10 @@
         [btLook mas_makeConstraints:^(MASConstraintMaker *make) {
             make.centerY.top.mas_equalTo(btTitle);
             make.right.mas_equalTo(-20);
+        }];
+        [[btLook rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(__kindof UIControl * _Nullable x) {
+            TOMyTeamViewController* vc = [[TOMyTeamViewController alloc]init];
+            [weakSelf.viewController.navigationController pushViewController:vc animated:YES];
         }];
         
         UILabel* l1 = to_createLabel_black(@"当前团队人数");

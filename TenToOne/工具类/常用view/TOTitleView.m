@@ -26,22 +26,27 @@
 }
 
 - (instancetype)initWithTitle:(NSString*)title detail:(NSString*)detail showLine:(BOOL)show {
+    return [self initWithTitle:title detail:detail showLine:show showArraw:YES];
+}
+
+- (instancetype)initWithTitle:(NSString*)title detail:(NSString*)detail showLine:(BOOL)show showArraw:(BOOL)show2 {
     if (self == [super initWithFrame:CGRectZero]) {
         [self addSubview:self.tvTitle];
-       [self.tvTitle mas_makeConstraints:^(MASConstraintMaker *make) {
-           make.centerY.mas_equalTo(self);
-           make.left.mas_equalTo(10);
-       }];
-       self.tvTitle.text = title;
+        [self.tvTitle mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.centerY.mas_equalTo(self);
+            make.left.mas_equalTo(10);
+        }];
+        self.tvTitle.text = title;
        
-       UIImageView* iv = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"icon_arrowright"]];;
-       [self addSubview:iv];
-       [iv mas_makeConstraints:^(MASConstraintMaker *make) {
-           make.centerY.mas_equalTo(self);
-           make.right.mas_equalTo(-10);
-       }];
+        UIImageView* iv = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"icon_arrowright"]];
+        [self addSubview:iv];
+        [iv mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.centerY.mas_equalTo(self);
+            make.right.mas_equalTo(-10);
+        }];
+        iv.hidden = !show2;
         
-         [self addSubview:self.tvDetail];
+        [self addSubview:self.tvDetail];
         [self.tvDetail mas_makeConstraints:^(MASConstraintMaker *make) {
             make.centerY.mas_equalTo(self);
             make.right.mas_equalTo(iv.mas_left).offset(-10);

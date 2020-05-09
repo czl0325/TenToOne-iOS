@@ -18,6 +18,9 @@
 		65CC72BF2466EC71000B2D61 /* TOOrderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 65CC72BE2466EC71000B2D61 /* TOOrderCell.m */; };
 		65CC72C22466F185000B2D61 /* TOOrderListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65CC72C12466F185000B2D61 /* TOOrderListViewController.m */; };
 		65CC72C52466FD00000B2D61 /* ZLButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 65CC72C42466FD00000B2D61 /* ZLButton.m */; };
+		65CC72CB246705A4000B2D61 /* TOMyWallerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65CC72CA246705A4000B2D61 /* TOMyWallerViewController.m */; };
+		65CC72D124670C5E000B2D61 /* TOMyTeamViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65CC72D024670C5E000B2D61 /* TOMyTeamViewController.m */; };
+		65CC72D424670CA6000B2D61 /* TOMyTeamTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 65CC72D324670CA6000B2D61 /* TOMyTeamTopView.m */; };
 		82DCE963C7645315EABDAFF8 /* Pods_TenToOne.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 283066B6D0F43245AE27F49F /* Pods_TenToOne.framework */; };
 		BE59E338246527B400B3524C /* TOUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = BE59E337246527B400B3524C /* TOUtils.m */; };
 		BE59E33B24652BB700B3524C /* TOMyWalletView.m in Sources */ = {isa = PBXBuildFile; fileRef = BE59E33A24652BB700B3524C /* TOMyWalletView.m */; };
@@ -107,6 +110,12 @@
 		65CC72C12466F185000B2D61 /* TOOrderListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TOOrderListViewController.m; sourceTree = "<group>"; };
 		65CC72C32466FD00000B2D61 /* ZLButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZLButton.h; sourceTree = "<group>"; };
 		65CC72C42466FD00000B2D61 /* ZLButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZLButton.m; sourceTree = "<group>"; };
+		65CC72C9246705A4000B2D61 /* TOMyWallerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TOMyWallerViewController.h; sourceTree = "<group>"; };
+		65CC72CA246705A4000B2D61 /* TOMyWallerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TOMyWallerViewController.m; sourceTree = "<group>"; };
+		65CC72CF24670C5E000B2D61 /* TOMyTeamViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TOMyTeamViewController.h; sourceTree = "<group>"; };
+		65CC72D024670C5E000B2D61 /* TOMyTeamViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TOMyTeamViewController.m; sourceTree = "<group>"; };
+		65CC72D224670CA6000B2D61 /* TOMyTeamTopView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TOMyTeamTopView.h; sourceTree = "<group>"; };
+		65CC72D324670CA6000B2D61 /* TOMyTeamTopView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TOMyTeamTopView.m; sourceTree = "<group>"; };
 		684F99793778088B742E8D2E /* Pods-TenToOne.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TenToOne.release.xcconfig"; path = "Target Support Files/Pods-TenToOne/Pods-TenToOne.release.xcconfig"; sourceTree = "<group>"; };
 		BE59E336246527B400B3524C /* TOUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TOUtils.h; sourceTree = "<group>"; };
 		BE59E337246527B400B3524C /* TOUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TOUtils.m; sourceTree = "<group>"; };
@@ -325,6 +334,58 @@
 			path = viewcontroller;
 			sourceTree = "<group>";
 		};
+		65CC72C62467058C000B2D61 /* 我的钱包 */ = {
+			isa = PBXGroup;
+			children = (
+				65CC72C72467058C000B2D61 /* view */,
+				65CC72C82467058C000B2D61 /* viewcontroller */,
+			);
+			path = "我的钱包";
+			sourceTree = "<group>";
+		};
+		65CC72C72467058C000B2D61 /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		65CC72C82467058C000B2D61 /* viewcontroller */ = {
+			isa = PBXGroup;
+			children = (
+				65CC72C9246705A4000B2D61 /* TOMyWallerViewController.h */,
+				65CC72CA246705A4000B2D61 /* TOMyWallerViewController.m */,
+			);
+			path = viewcontroller;
+			sourceTree = "<group>";
+		};
+		65CC72CC24670C4A000B2D61 /* 我的团队 */ = {
+			isa = PBXGroup;
+			children = (
+				65CC72CD24670C4A000B2D61 /* view */,
+				65CC72CE24670C4A000B2D61 /* viewcontroller */,
+			);
+			path = "我的团队";
+			sourceTree = "<group>";
+		};
+		65CC72CD24670C4A000B2D61 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				65CC72D224670CA6000B2D61 /* TOMyTeamTopView.h */,
+				65CC72D324670CA6000B2D61 /* TOMyTeamTopView.m */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		65CC72CE24670C4A000B2D61 /* viewcontroller */ = {
+			isa = PBXGroup;
+			children = (
+				65CC72CF24670C5E000B2D61 /* TOMyTeamViewController.h */,
+				65CC72D024670C5E000B2D61 /* TOMyTeamViewController.m */,
+			);
+			path = viewcontroller;
+			sourceTree = "<group>";
+		};
 		BE59E3452465499D00B3524C /* view */ = {
 			isa = PBXGroup;
 			children = (
@@ -494,6 +555,8 @@
 		BEDC76D62463E5500041D862 /* viewcontroller */ = {
 			isa = PBXGroup;
 			children = (
+				65CC72CC24670C4A000B2D61 /* 我的团队 */,
+				65CC72C62467058C000B2D61 /* 我的钱包 */,
 				65CC72B72466EC49000B2D61 /* 我的订单 */,
 				BE79F9292466AA4E006545F2 /* 设置板块 */,
 				BEDC76F82463ECC90041D862 /* TOMeViewController.h */,
@@ -895,10 +958,12 @@
 				BE79F8FB2466448F006545F2 /* UINavigationBar+iOS11Spacing.m in Sources */,
 				65CC72AA2466DF89000B2D61 /* TONewAddressViewController.m in Sources */,
 				BEDC76E32463E5DB0041D862 /* UIResponder+deliver.m in Sources */,
+				65CC72D424670CA6000B2D61 /* TOMyTeamTopView.m in Sources */,
 				BE59E34E246552E700B3524C /* TOFreeCell.m in Sources */,
 				BEDC76EA2463EBE90041D862 /* TOTabBarController.m in Sources */,
 				65CC72BF2466EC71000B2D61 /* TOOrderCell.m in Sources */,
 				BE79F91E24668602006545F2 /* TORedViewController.m in Sources */,
+				65CC72CB246705A4000B2D61 /* TOMyWallerViewController.m in Sources */,
 				BE59E359246559FA00B3524C /* UICollectionView+ARDynamicCacheHeightLayoutCell.m in Sources */,
 				65B7C32324659E7C005FFD9C /* TORegionView.m in Sources */,
 				BE79F90B2466764A006545F2 /* TOLoginViewController.m in Sources */,
@@ -919,6 +984,7 @@
 				BEDC76DF2463E58B0041D862 /* TOBaseViewController.m in Sources */,
 				BE79F90224664EA4006545F2 /* QiCodeManager.m in Sources */,
 				BE79F91824667A35006545F2 /* TOUserModel.m in Sources */,
+				65CC72D124670C5E000B2D61 /* TOMyTeamViewController.m in Sources */,
 				65706C582465875F0087B6C1 /* TOMessageViewController.m in Sources */,
 				65CC72C52466FD00000B2D61 /* ZLButton.m in Sources */,
 				BE59E33B24652BB700B3524C /* TOMyWalletView.m in Sources */,
