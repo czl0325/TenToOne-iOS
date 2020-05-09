@@ -36,6 +36,9 @@
 		BE79F92124668618006545F2 /* TORedView.m in Sources */ = {isa = PBXBuildFile; fileRef = BE79F92024668618006545F2 /* TORedView.m */; };
 		BE79F92424669691006545F2 /* TOUserCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BE79F92324669691006545F2 /* TOUserCell.m */; };
 		BE79F9282466A069006545F2 /* TORedTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = BE79F9272466A069006545F2 /* TORedTopView.m */; };
+		BE79F92C2466AA64006545F2 /* TOSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE79F92B2466AA64006545F2 /* TOSettingViewController.m */; };
+		BE79F9322466AECC006545F2 /* TOMyAddressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE79F9312466AECC006545F2 /* TOMyAddressViewController.m */; };
+		BE79F9352466AEE7006545F2 /* TOAddressCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BE79F9342466AEE7006545F2 /* TOAddressCell.m */; };
 		BEDC76DF2463E58B0041D862 /* TOBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEDC76DE2463E58B0041D862 /* TOBaseViewController.m */; };
 		BEDC76E32463E5DB0041D862 /* UIResponder+deliver.m in Sources */ = {isa = PBXBuildFile; fileRef = BEDC76E12463E5DB0041D862 /* UIResponder+deliver.m */; };
 		BEDC76E72463E9B30041D862 /* TOMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEDC76E62463E9B30041D862 /* TOMainViewController.m */; };
@@ -131,6 +134,12 @@
 		BE79F92324669691006545F2 /* TOUserCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TOUserCell.m; sourceTree = "<group>"; };
 		BE79F9262466A069006545F2 /* TORedTopView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TORedTopView.h; sourceTree = "<group>"; };
 		BE79F9272466A069006545F2 /* TORedTopView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TORedTopView.m; sourceTree = "<group>"; };
+		BE79F92A2466AA64006545F2 /* TOSettingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TOSettingViewController.h; sourceTree = "<group>"; };
+		BE79F92B2466AA64006545F2 /* TOSettingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TOSettingViewController.m; sourceTree = "<group>"; };
+		BE79F9302466AECC006545F2 /* TOMyAddressViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TOMyAddressViewController.h; sourceTree = "<group>"; };
+		BE79F9312466AECC006545F2 /* TOMyAddressViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TOMyAddressViewController.m; sourceTree = "<group>"; };
+		BE79F9332466AEE7006545F2 /* TOAddressCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TOAddressCell.h; sourceTree = "<group>"; };
+		BE79F9342466AEE7006545F2 /* TOAddressCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TOAddressCell.m; sourceTree = "<group>"; };
 		BEDC76DD2463E58B0041D862 /* TOBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TOBaseViewController.h; sourceTree = "<group>"; };
 		BEDC76DE2463E58B0041D862 /* TOBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TOBaseViewController.m; sourceTree = "<group>"; };
 		BEDC76E12463E5DB0041D862 /* UIResponder+deliver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIResponder+deliver.m"; sourceTree = "<group>"; };
@@ -327,6 +336,43 @@
 			path = "红包顶部页面";
 			sourceTree = "<group>";
 		};
+		BE79F9292466AA4E006545F2 /* 设置板块 */ = {
+			isa = PBXGroup;
+			children = (
+				BE79F92D2466AEBA006545F2 /* 地址管理 */,
+				BE79F92A2466AA64006545F2 /* TOSettingViewController.h */,
+				BE79F92B2466AA64006545F2 /* TOSettingViewController.m */,
+			);
+			path = "设置板块";
+			sourceTree = "<group>";
+		};
+		BE79F92D2466AEBA006545F2 /* 地址管理 */ = {
+			isa = PBXGroup;
+			children = (
+				BE79F92E2466AEBA006545F2 /* view */,
+				BE79F92F2466AEBA006545F2 /* viewcontroller */,
+			);
+			path = "地址管理";
+			sourceTree = "<group>";
+		};
+		BE79F92E2466AEBA006545F2 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				BE79F9332466AEE7006545F2 /* TOAddressCell.h */,
+				BE79F9342466AEE7006545F2 /* TOAddressCell.m */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		BE79F92F2466AEBA006545F2 /* viewcontroller */ = {
+			isa = PBXGroup;
+			children = (
+				BE79F9302466AECC006545F2 /* TOMyAddressViewController.h */,
+				BE79F9312466AECC006545F2 /* TOMyAddressViewController.m */,
+			);
+			path = viewcontroller;
+			sourceTree = "<group>";
+		};
 		BEDC76D32463E5500041D862 /* 我的板块 */ = {
 			isa = PBXGroup;
 			children = (
@@ -362,6 +408,7 @@
 		BEDC76D62463E5500041D862 /* viewcontroller */ = {
 			isa = PBXGroup;
 			children = (
+				BE79F9292466AA4E006545F2 /* 设置板块 */,
 				BEDC76F82463ECC90041D862 /* TOMeViewController.h */,
 				BEDC76F92463ECC90041D862 /* TOMeViewController.m */,
 			);
@@ -749,6 +796,7 @@
 				65706C5B246587780087B6C1 /* TOMessageCell.m in Sources */,
 				BE79F91124667740006545F2 /* ZLTextField.m in Sources */,
 				BE79F91424667A00006545F2 /* TOSingleton.m in Sources */,
+				BE79F9352466AEE7006545F2 /* TOAddressCell.m in Sources */,
 				BE59E348246549EE00B3524C /* TOWelfareHeader.m in Sources */,
 				BEDC76FA2463ECC90041D862 /* TOMeViewController.m in Sources */,
 				BE79F90124664EA4006545F2 /* QiCodePreviewView.m in Sources */,
@@ -762,6 +810,7 @@
 				65B7C32324659E7C005FFD9C /* TORegionView.m in Sources */,
 				BE79F90B2466764A006545F2 /* TOLoginViewController.m in Sources */,
 				BEDC76FD2463ECD90041D862 /* TOHomeViewController.m in Sources */,
+				BE79F9322466AECC006545F2 /* TOMyAddressViewController.m in Sources */,
 				BEDC76EE2463EC810041D862 /* TOWelfareViewController.m in Sources */,
 				BE59E34B2465518700B3524C /* TOWalfareContentView.m in Sources */,
 				BE59E33E2465374400B3524C /* TOMyMemberView.m in Sources */,
@@ -769,6 +818,7 @@
 				BEFE387D24639CC0009B6DD3 /* AppDelegate.m in Sources */,
 				BE79F92424669691006545F2 /* TOUserCell.m in Sources */,
 				BEFE388E24639CC4009B6DD3 /* main.m in Sources */,
+				BE79F92C2466AA64006545F2 /* TOSettingViewController.m in Sources */,
 				BE59E351246553D500B3524C /* TOFreeHeader.m in Sources */,
 				BEFE388024639CC0009B6DD3 /* SceneDelegate.m in Sources */,
 				BE59E34124653AB600B3524C /* TOMerchantBusinessView.m in Sources */,

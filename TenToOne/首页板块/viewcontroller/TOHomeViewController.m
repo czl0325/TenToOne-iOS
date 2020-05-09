@@ -65,8 +65,7 @@
     [self.navigationController setNavigationBarHidden:NO];
 }
 
-
-- (QMapView *)mapView{
+- (QMapView *)mapView {
     if(!_mapView){
         _mapView = ({
             QMapView* object = [[QMapView alloc] initWithFrame:self.view.bounds];

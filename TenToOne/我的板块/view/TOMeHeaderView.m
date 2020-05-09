@@ -8,6 +8,7 @@
 
 #import "TOMeHeaderView.h"
 #import "TOLoginViewController.h"
+#import "TOSettingViewController.h"
 
 @interface TOMeHeaderView ()
 
@@ -31,6 +32,8 @@
 
 - (instancetype)initWithFrame:(CGRect)frame {
     if (self == [super initWithFrame:frame]) {
+        WeakSelf;
+        
         UIImageView* back = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"back_meheader"]];
         [self addSubview:back];
         [back mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -42,7 +45,8 @@
         UIButton* btSetting = [UIButton buttonWithType:UIButtonTypeCustom];
         [btSetting setBackgroundImage:[UIImage imageNamed:@"icon_setting"] forState:UIControlStateNormal];
         [[btSetting rac_signalForControlEvents:UIControlEventTouchUpInside]subscribeNext:^(__kindof UIControl * _Nullable x) {
-            
+            TOSettingViewController* vc = [[TOSettingViewController alloc]init];
+            [weakSelf.viewController.navigationController pushViewController:vc animated:YES];
         }];
         [self addSubview:btSetting];
         [btSetting mas_makeConstraints:^(MASConstraintMaker *make) {
