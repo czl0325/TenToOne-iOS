@@ -10,6 +10,7 @@
 #import "ZLCollectionViewVerticalLayout.h"
 #import "UICollectionView+ARDynamicCacheHeightLayoutCell.h"
 #import "TOHotCell.h"
+#import "TOGoodDetailViewController.h"
 
 @interface TOHotViewController ()
 <UICollectionViewDelegate, ZLCollectionViewBaseFlowLayoutDelegate, UICollectionViewDelegate>
@@ -17,19 +18,43 @@
 @property(nonatomic,strong)UICollectionView* collectionViewHot;
 @property(nonatomic,strong)ZLCellDataSource* dataSource;
 @property(nonatomic,strong)NSMutableArray* arrayHots;
+@property(nonatomic,assign)BOOL isHistory;
 
 @end
 
 @implementation TOHotViewController
 
+- (instancetype)init {
+    if (self == [super init]) {
+        self.isHistory = NO;
+    }
+    return self;
+}
+
+- (instancetype)initWithHistory:(BOOL)history {
+    if (self == [super init]) {
+        self.isHistory = history;
+    }
+    return self;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    self.title = @"热卖";
-    UIButton* btHistory = to_create_button_left(@"历史记录", @"icon_history");
-    [btHistory setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    [self addRightNavigationButtons:@[btHistory]];
+    WeakSelf;
+    if (self.isHistory) {
+        self.title = @"历史记录";
+    } else {
+        self.title = @"热卖";
+        UIButton* btHistory = to_create_button_left(@"历史记录", @"icon_history");
+        [btHistory setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+        [self addRightNavigationButtons:@[btHistory]];
+        [[btHistory rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(__kindof UIControl * _Nullable x) {
+            TOHotViewController* vc = [[TOHotViewController alloc]initWithHistory:YES];
+            [weakSelf.navigationController pushViewController:vc animated:YES];
+        }];
+    }
     
     [self.view addSubview:self.collectionViewHot];
     [self.collectionViewHot mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -41,6 +66,11 @@
     return [collectionView ar_sizeForCellWithIdentifier:@"TOHotCell" indexPath:indexPath fixedWidth:collectionView.frame.size.width/2-15 configuration:^(__kindof TOHotCell *cell) {
         [cell updateHotCell];
     }];
+}
+
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+    TOGoodDetailViewController* vc = [[TOGoodDetailViewController alloc]init];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (UICollectionView *)collectionViewHot{

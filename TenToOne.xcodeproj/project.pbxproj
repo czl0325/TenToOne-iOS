@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		65706C582465875F0087B6C1 /* TOMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65706C562465875F0087B6C1 /* TOMessageViewController.m */; };
 		65706C5B246587780087B6C1 /* TOMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 65706C5A246587780087B6C1 /* TOMessageCell.m */; };
+		65768F6024683B1900A7E804 /* TOGoodDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65768F5F24683B1900A7E804 /* TOGoodDetailViewController.m */; };
+		65768F6324683DE700A7E804 /* TOTitleView1.m in Sources */ = {isa = PBXBuildFile; fileRef = 65768F6224683DE700A7E804 /* TOTitleView1.m */; };
+		65768F662468409900A7E804 /* TOBannerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 65768F652468409900A7E804 /* TOBannerCell.m */; };
+		65768F69246843C700A7E804 /* TOGoodTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 65768F68246843C700A7E804 /* TOGoodTitleView.m */; };
+		65768F6F24684FAE00A7E804 /* TOSpecificationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 65768F6E24684FAE00A7E804 /* TOSpecificationView.m */; };
 		65B7C32324659E7C005FFD9C /* TORegionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 65B7C32224659E7C005FFD9C /* TORegionView.m */; };
 		65CC72AA2466DF89000B2D61 /* TONewAddressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65CC72A92466DF89000B2D61 /* TONewAddressViewController.m */; };
 		65CC72AE2466E0CA000B2D61 /* TOTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 65CC72AD2466E0CA000B2D61 /* TOTitleView.m */; };
@@ -92,6 +97,16 @@
 		65706C562465875F0087B6C1 /* TOMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOMessageViewController.m; sourceTree = "<group>"; };
 		65706C59246587770087B6C1 /* TOMessageCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TOMessageCell.h; sourceTree = "<group>"; };
 		65706C5A246587780087B6C1 /* TOMessageCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TOMessageCell.m; sourceTree = "<group>"; };
+		65768F5E24683B1900A7E804 /* TOGoodDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TOGoodDetailViewController.h; sourceTree = "<group>"; };
+		65768F5F24683B1900A7E804 /* TOGoodDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TOGoodDetailViewController.m; sourceTree = "<group>"; };
+		65768F6124683DE700A7E804 /* TOTitleView1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TOTitleView1.h; sourceTree = "<group>"; };
+		65768F6224683DE700A7E804 /* TOTitleView1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TOTitleView1.m; sourceTree = "<group>"; };
+		65768F642468409900A7E804 /* TOBannerCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TOBannerCell.h; sourceTree = "<group>"; };
+		65768F652468409900A7E804 /* TOBannerCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TOBannerCell.m; sourceTree = "<group>"; };
+		65768F67246843C700A7E804 /* TOGoodTitleView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TOGoodTitleView.h; sourceTree = "<group>"; };
+		65768F68246843C700A7E804 /* TOGoodTitleView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TOGoodTitleView.m; sourceTree = "<group>"; };
+		65768F6D24684FAE00A7E804 /* TOSpecificationView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TOSpecificationView.h; sourceTree = "<group>"; };
+		65768F6E24684FAE00A7E804 /* TOSpecificationView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TOSpecificationView.m; sourceTree = "<group>"; };
 		65B7C32124659E7C005FFD9C /* TORegionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TORegionView.h; sourceTree = "<group>"; };
 		65B7C32224659E7C005FFD9C /* TORegionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TORegionView.m; sourceTree = "<group>"; };
 		65CC72A82466DF89000B2D61 /* TONewAddressViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TONewAddressViewController.h; sourceTree = "<group>"; };
@@ -264,6 +279,60 @@
 			path = view;
 			sourceTree = "<group>";
 		};
+		65768F5B24683A1200A7E804 /* 商品详情 */ = {
+			isa = PBXGroup;
+			children = (
+				65768F5C24683A1200A7E804 /* view */,
+				65768F5D24683A1200A7E804 /* viewcontroller */,
+			);
+			path = "商品详情";
+			sourceTree = "<group>";
+		};
+		65768F5C24683A1200A7E804 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				65768F642468409900A7E804 /* TOBannerCell.h */,
+				65768F652468409900A7E804 /* TOBannerCell.m */,
+				65768F67246843C700A7E804 /* TOGoodTitleView.h */,
+				65768F68246843C700A7E804 /* TOGoodTitleView.m */,
+				65768F6D24684FAE00A7E804 /* TOSpecificationView.h */,
+				65768F6E24684FAE00A7E804 /* TOSpecificationView.m */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		65768F5D24683A1200A7E804 /* viewcontroller */ = {
+			isa = PBXGroup;
+			children = (
+				65768F5E24683B1900A7E804 /* TOGoodDetailViewController.h */,
+				65768F5F24683B1900A7E804 /* TOGoodDetailViewController.m */,
+			);
+			path = viewcontroller;
+			sourceTree = "<group>";
+		};
+		65768F6A24684F9000A7E804 /* 创建订单 */ = {
+			isa = PBXGroup;
+			children = (
+				65768F6B24684F9000A7E804 /* view */,
+				65768F6C24684F9000A7E804 /* viewcontroller */,
+			);
+			path = "创建订单";
+			sourceTree = "<group>";
+		};
+		65768F6B24684F9000A7E804 /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		65768F6C24684F9000A7E804 /* viewcontroller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = viewcontroller;
+			sourceTree = "<group>";
+		};
 		65B7C32024659E4C005FFD9C /* view */ = {
 			isa = PBXGroup;
 			children = (
@@ -284,6 +353,8 @@
 				65CC72B02466E0DC000B2D61 /* TOSwitchView.m */,
 				65CC72C32466FD00000B2D61 /* ZLButton.h */,
 				65CC72C42466FD00000B2D61 /* ZLButton.m */,
+				65768F6124683DE700A7E804 /* TOTitleView1.h */,
+				65768F6224683DE700A7E804 /* TOTitleView1.m */,
 			);
 			path = "常用view";
 			sourceTree = "<group>";
@@ -596,6 +667,8 @@
 		BEDC76DA2463E5500041D862 /* 热卖板块 */ = {
 			isa = PBXGroup;
 			children = (
+				65768F6A24684F9000A7E804 /* 创建订单 */,
+				65768F5B24683A1200A7E804 /* 商品详情 */,
 				BE59E352246559BA00B3524C /* view */,
 				BEDC76F22463EC9F0041D862 /* viewcontroller */,
 			);
@@ -942,6 +1015,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65768F662468409900A7E804 /* TOBannerCell.m in Sources */,
 				BE79F90824665765006545F2 /* TOHomeNavbar.m in Sources */,
 				BEDC77002463ECE40041D862 /* TOHotViewController.m in Sources */,
 				65706C5B246587780087B6C1 /* TOMessageCell.m in Sources */,
@@ -950,6 +1024,7 @@
 				BE79F9352466AEE7006545F2 /* TOAddressCell.m in Sources */,
 				BE59E348246549EE00B3524C /* TOWelfareHeader.m in Sources */,
 				BEDC76FA2463ECC90041D862 /* TOMeViewController.m in Sources */,
+				65768F69246843C700A7E804 /* TOGoodTitleView.m in Sources */,
 				65CC72AE2466E0CA000B2D61 /* TOTitleView.m in Sources */,
 				65CC72B62466E2D7000B2D61 /* TOPushManageViewController.m in Sources */,
 				65CC72C22466F185000B2D61 /* TOOrderListViewController.m in Sources */,
@@ -961,6 +1036,7 @@
 				65CC72D424670CA6000B2D61 /* TOMyTeamTopView.m in Sources */,
 				BE59E34E246552E700B3524C /* TOFreeCell.m in Sources */,
 				BEDC76EA2463EBE90041D862 /* TOTabBarController.m in Sources */,
+				65768F6024683B1900A7E804 /* TOGoodDetailViewController.m in Sources */,
 				65CC72BF2466EC71000B2D61 /* TOOrderCell.m in Sources */,
 				BE79F91E24668602006545F2 /* TORedViewController.m in Sources */,
 				65CC72CB246705A4000B2D61 /* TOMyWallerViewController.m in Sources */,
@@ -972,9 +1048,11 @@
 				BEDC76EE2463EC810041D862 /* TOWelfareViewController.m in Sources */,
 				BE59E34B2465518700B3524C /* TOWalfareContentView.m in Sources */,
 				BE59E33E2465374400B3524C /* TOMyMemberView.m in Sources */,
+				65768F6F24684FAE00A7E804 /* TOSpecificationView.m in Sources */,
 				BE59E355246559D100B3524C /* TOHotCell.m in Sources */,
 				BEFE387D24639CC0009B6DD3 /* AppDelegate.m in Sources */,
 				BE79F92424669691006545F2 /* TOUserCell.m in Sources */,
+				65768F6324683DE700A7E804 /* TOTitleView1.m in Sources */,
 				BEFE388E24639CC4009B6DD3 /* main.m in Sources */,
 				BE79F92C2466AA64006545F2 /* TOSettingViewController.m in Sources */,
 				BE59E351246553D500B3524C /* TOFreeHeader.m in Sources */,

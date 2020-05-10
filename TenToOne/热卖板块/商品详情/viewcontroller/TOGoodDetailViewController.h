@@ -1,8 +1,8 @@
 //
-//  TOHotViewController.h
+//  TOGoodDetailViewController.h
 //  TenToOne
 //
-//  Created by zhaoliang chen on 2020/5/7.
+//  Created by hqtech on 2020/5/10.
 //  Copyright © 2020 zhaoliang chen. All rights reserved.
 //
 
@@ -10,9 +10,9 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface TOHotViewController : TOBaseViewController
+@interface TOGoodDetailViewController : TOBaseViewController
 
-- (instancetype)initWithHistory:(BOOL)history;
+
 
 @end
 
