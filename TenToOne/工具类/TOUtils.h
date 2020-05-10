@@ -20,6 +20,7 @@ UIButton* to_create_button_Right(NSString* title,NSString* imageName );
 UIButton* to_create_button_normal(NSString* title);
 UIButton* to_create_button_image(NSString* imageName);
 UIButton* to_create_button_backImage(NSString* imageName);
+UIImageView* to_create_imageview(NSString* imageName);
 
 
 NS_ASSUME_NONNULL_END

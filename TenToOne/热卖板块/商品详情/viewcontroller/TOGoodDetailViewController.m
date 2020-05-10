@@ -11,6 +11,9 @@
 #import "ZLCollectionViewHorzontalLayout.h"
 #import "TOBannerCell.h"
 #import "TOGoodTitleView.h"
+#import "TOSpecificationView.h"
+#import "zhPopupController.h"
+#import "TOCreateOrderViewController.h"
 
 @interface TOGoodDetailViewController ()
 <ZLCollectionViewBaseFlowLayoutDelegate, UICollectionViewDelegate>
@@ -33,6 +36,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.fd_prefersNavigationBarHidden = YES;
     
     [self.view addSubview:self.cvBanner];
     [self.cvBanner mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -210,6 +214,18 @@
     if(!_vSpecification){
         _vSpecification = ({
             TOTitleView1 * object = [[TOTitleView1 alloc]initWithTitle:@"已选规格" detail:@""];
+            UITapGestureRecognizer* tap = [[UITapGestureRecognizer alloc]init];
+            WeakSelf;
+            [[tap rac_gestureSignal] subscribeNext:^(__kindof UIGestureRecognizer * _Nullable x) {
+                TOSpecificationView * redView = [[TOSpecificationView alloc]initWithFrame:CGRectMake(0, 0, self.view.width, 500)];
+                zhPopupController* popup = [[zhPopupController alloc] initWithView:redView size:redView.bounds.size];
+                popup.presentationStyle = zhPopupSlideStyleFromBottom;
+                popup.dismissonStyle = zhPopupSlideStyleFromBottom;
+                popup.layoutType = zhPopupLayoutTypeBottom;
+                [popup showInView:weakSelf.view.window completion:NULL];
+                
+            }];
+            [object addGestureRecognizer:tap];
             object;
        });
     }
@@ -230,6 +246,11 @@
     if(!_btBuy){
         _btBuy = ({
             UIButton * object = to_create_button_normal(@"购买");
+            WeakSelf;
+            [[object rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(__kindof UIControl * _Nullable x) {
+                TOCreateOrderViewController* vc = [[TOCreateOrderViewController alloc]init];
+                [weakSelf.navigationController pushViewController:vc animated:YES];
+            }];
             object;
        });
     }

@@ -78,3 +78,8 @@ UIButton* to_create_button_backImage(NSString* imageName) {
     return button;
 }
 
+UIImageView* to_create_imageview(NSString* imageName) {
+    UIImageView* imageView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:imageName]];
+    imageView.contentMode = UIViewContentModeScaleAspectFill;
+    return imageView;
+}

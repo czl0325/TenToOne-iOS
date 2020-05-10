@@ -14,6 +14,8 @@
 		65768F662468409900A7E804 /* TOBannerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 65768F652468409900A7E804 /* TOBannerCell.m */; };
 		65768F69246843C700A7E804 /* TOGoodTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 65768F68246843C700A7E804 /* TOGoodTitleView.m */; };
 		65768F6F24684FAE00A7E804 /* TOSpecificationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 65768F6E24684FAE00A7E804 /* TOSpecificationView.m */; };
+		65768F722468529F00A7E804 /* TOCreateOrderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65768F712468529F00A7E804 /* TOCreateOrderViewController.m */; };
+		65768F752468553300A7E804 /* TOOrderAddressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 65768F742468553300A7E804 /* TOOrderAddressView.m */; };
 		65B7C32324659E7C005FFD9C /* TORegionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 65B7C32224659E7C005FFD9C /* TORegionView.m */; };
 		65CC72AA2466DF89000B2D61 /* TONewAddressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65CC72A92466DF89000B2D61 /* TONewAddressViewController.m */; };
 		65CC72AE2466E0CA000B2D61 /* TOTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 65CC72AD2466E0CA000B2D61 /* TOTitleView.m */; };
@@ -107,6 +109,10 @@
 		65768F68246843C700A7E804 /* TOGoodTitleView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TOGoodTitleView.m; sourceTree = "<group>"; };
 		65768F6D24684FAE00A7E804 /* TOSpecificationView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TOSpecificationView.h; sourceTree = "<group>"; };
 		65768F6E24684FAE00A7E804 /* TOSpecificationView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TOSpecificationView.m; sourceTree = "<group>"; };
+		65768F702468529F00A7E804 /* TOCreateOrderViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TOCreateOrderViewController.h; sourceTree = "<group>"; };
+		65768F712468529F00A7E804 /* TOCreateOrderViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TOCreateOrderViewController.m; sourceTree = "<group>"; };
+		65768F732468553300A7E804 /* TOOrderAddressView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TOOrderAddressView.h; sourceTree = "<group>"; };
+		65768F742468553300A7E804 /* TOOrderAddressView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TOOrderAddressView.m; sourceTree = "<group>"; };
 		65B7C32124659E7C005FFD9C /* TORegionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TORegionView.h; sourceTree = "<group>"; };
 		65B7C32224659E7C005FFD9C /* TORegionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TORegionView.m; sourceTree = "<group>"; };
 		65CC72A82466DF89000B2D61 /* TONewAddressViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TONewAddressViewController.h; sourceTree = "<group>"; };
@@ -322,6 +328,8 @@
 		65768F6B24684F9000A7E804 /* view */ = {
 			isa = PBXGroup;
 			children = (
+				65768F732468553300A7E804 /* TOOrderAddressView.h */,
+				65768F742468553300A7E804 /* TOOrderAddressView.m */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -329,6 +337,8 @@
 		65768F6C24684F9000A7E804 /* viewcontroller */ = {
 			isa = PBXGroup;
 			children = (
+				65768F702468529F00A7E804 /* TOCreateOrderViewController.h */,
+				65768F712468529F00A7E804 /* TOCreateOrderViewController.m */,
 			);
 			path = viewcontroller;
 			sourceTree = "<group>";
@@ -1041,6 +1051,8 @@
 				BE79F91E24668602006545F2 /* TORedViewController.m in Sources */,
 				65CC72CB246705A4000B2D61 /* TOMyWallerViewController.m in Sources */,
 				BE59E359246559FA00B3524C /* UICollectionView+ARDynamicCacheHeightLayoutCell.m in Sources */,
+				65768F752468553300A7E804 /* TOOrderAddressView.m in Sources */,
+				65768F722468529F00A7E804 /* TOCreateOrderViewController.m in Sources */,
 				65B7C32324659E7C005FFD9C /* TORegionView.m in Sources */,
 				BE79F90B2466764A006545F2 /* TOLoginViewController.m in Sources */,
 				BEDC76FD2463ECD90041D862 /* TOHomeViewController.m in Sources */,
