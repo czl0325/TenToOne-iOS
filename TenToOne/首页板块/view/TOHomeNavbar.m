@@ -10,6 +10,7 @@
 #import "TORegionView.h"
 #import "PopoverView.h"
 #import "TOScanViewController.h"
+#import "TOSearchViewController.h"
 
 @interface TOHomeNavbar ()
 
@@ -47,6 +48,13 @@
         UIButton* btSearch = to_create_button_left(@"搜索关键字", @"icon_search");
         btSearch.backgroundColor = [UIColor whiteColor];
         btSearch.layer.cornerRadius = 4;
+        [btSearch setContentHorizontalAlignment:UIControlContentHorizontalAlignmentLeft];
+        btSearch.imageEdgeInsets = UIEdgeInsetsMake(0, 10, 0, 0);
+        btSearch.titleEdgeInsets = UIEdgeInsetsMake(0, 15, 0, 0);
+        [[btSearch rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(__kindof UIControl * _Nullable x) {
+            TOSearchViewController* vc = [[TOSearchViewController alloc]init];
+            [weakSelf.viewController.navigationController pushViewController:vc animated:YES];
+        }];
         [self addSubview:btSearch];
         [btSearch mas_makeConstraints:^(MASConstraintMaker *make) {
             make.right.mas_equalTo(btMore.mas_left).offset(0);

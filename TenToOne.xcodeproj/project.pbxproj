@@ -12,6 +12,9 @@
 		6564D32A246990BF00EA23D8 /* TORedPhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6564D329246990BF00EA23D8 /* TORedPhotoCell.m */; };
 		6564D32D24699E1C00EA23D8 /* TOChooseSendObjectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6564D32C24699E1C00EA23D8 /* TOChooseSendObjectViewController.m */; };
 		6564D33024699E6300EA23D8 /* TOSendObjectCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6564D32F24699E6300EA23D8 /* TOSendObjectCell.m */; };
+		6564D3362469A66A00EA23D8 /* TOSearchNavbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 6564D3352469A66A00EA23D8 /* TOSearchNavbar.m */; };
+		6564D3392469A76800EA23D8 /* TOSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6564D3382469A76800EA23D8 /* TOSearchViewController.m */; };
+		6564D33C2469ADEF00EA23D8 /* TOSearchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6564D33B2469ADEF00EA23D8 /* TOSearchCell.m */; };
 		65706C582465875F0087B6C1 /* TOMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65706C562465875F0087B6C1 /* TOMessageViewController.m */; };
 		65706C5B246587780087B6C1 /* TOMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 65706C5A246587780087B6C1 /* TOMessageCell.m */; };
 		65768F6024683B1900A7E804 /* TOGoodDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65768F5F24683B1900A7E804 /* TOGoodDetailViewController.m */; };
@@ -117,6 +120,12 @@
 		6564D32C24699E1C00EA23D8 /* TOChooseSendObjectViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TOChooseSendObjectViewController.m; sourceTree = "<group>"; };
 		6564D32E24699E6300EA23D8 /* TOSendObjectCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TOSendObjectCell.h; sourceTree = "<group>"; };
 		6564D32F24699E6300EA23D8 /* TOSendObjectCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TOSendObjectCell.m; sourceTree = "<group>"; };
+		6564D3342469A66A00EA23D8 /* TOSearchNavbar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TOSearchNavbar.h; sourceTree = "<group>"; };
+		6564D3352469A66A00EA23D8 /* TOSearchNavbar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TOSearchNavbar.m; sourceTree = "<group>"; };
+		6564D3372469A76800EA23D8 /* TOSearchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TOSearchViewController.h; sourceTree = "<group>"; };
+		6564D3382469A76800EA23D8 /* TOSearchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TOSearchViewController.m; sourceTree = "<group>"; };
+		6564D33A2469ADEF00EA23D8 /* TOSearchCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TOSearchCell.h; sourceTree = "<group>"; };
+		6564D33B2469ADEF00EA23D8 /* TOSearchCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TOSearchCell.m; sourceTree = "<group>"; };
 		65706C552465875F0087B6C1 /* TOMessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOMessageViewController.h; sourceTree = "<group>"; };
 		65706C562465875F0087B6C1 /* TOMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOMessageViewController.m; sourceTree = "<group>"; };
 		65706C59246587770087B6C1 /* TOMessageCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TOMessageCell.h; sourceTree = "<group>"; };
@@ -332,6 +341,35 @@
 				6564D3262469870A00EA23D8 /* TOSendRedViewController.m */,
 				6564D32B24699E1B00EA23D8 /* TOChooseSendObjectViewController.h */,
 				6564D32C24699E1C00EA23D8 /* TOChooseSendObjectViewController.m */,
+			);
+			path = viewcontroller;
+			sourceTree = "<group>";
+		};
+		6564D3312469A65400EA23D8 /* 搜索 */ = {
+			isa = PBXGroup;
+			children = (
+				6564D3322469A65400EA23D8 /* view */,
+				6564D3332469A65400EA23D8 /* viewcontroller */,
+			);
+			path = "搜索";
+			sourceTree = "<group>";
+		};
+		6564D3322469A65400EA23D8 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				6564D3342469A66A00EA23D8 /* TOSearchNavbar.h */,
+				6564D3352469A66A00EA23D8 /* TOSearchNavbar.m */,
+				6564D33A2469ADEF00EA23D8 /* TOSearchCell.h */,
+				6564D33B2469ADEF00EA23D8 /* TOSearchCell.m */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		6564D3332469A65400EA23D8 /* viewcontroller */ = {
+			isa = PBXGroup;
+			children = (
+				6564D3372469A76800EA23D8 /* TOSearchViewController.h */,
+				6564D3382469A76800EA23D8 /* TOSearchViewController.m */,
 			);
 			path = viewcontroller;
 			sourceTree = "<group>";
@@ -778,6 +816,7 @@
 		BEDC76DB2463E5500041D862 /* 首页板块 */ = {
 			isa = PBXGroup;
 			children = (
+				6564D3312469A65400EA23D8 /* 搜索 */,
 				6564D31F2469869700EA23D8 /* 发红包 */,
 				65B7C32024659E4C005FFD9C /* view */,
 				BEDC76F32463ECA60041D862 /* viewcontroller */,
@@ -1124,12 +1163,14 @@
 				65706C5B246587780087B6C1 /* TOMessageCell.m in Sources */,
 				6564D33024699E6300EA23D8 /* TOSendObjectCell.m in Sources */,
 				BE79F91124667740006545F2 /* ZLTextField.m in Sources */,
+				6564D3392469A76800EA23D8 /* TOSearchViewController.m in Sources */,
 				BE79F91424667A00006545F2 /* TOSingleton.m in Sources */,
 				BE79F9352466AEE7006545F2 /* TOAddressCell.m in Sources */,
 				BECD4BF124691FF800DDBB36 /* zhImageButton.m in Sources */,
 				BE59E348246549EE00B3524C /* TOWelfareHeader.m in Sources */,
 				BECD4BE22468EB3F00DDBB36 /* TOOrderGoodInfoView.m in Sources */,
 				BEDC76FA2463ECC90041D862 /* TOMeViewController.m in Sources */,
+				6564D33C2469ADEF00EA23D8 /* TOSearchCell.m in Sources */,
 				65768F69246843C700A7E804 /* TOGoodTitleView.m in Sources */,
 				65CC72AE2466E0CA000B2D61 /* TOTitleView.m in Sources */,
 				65CC72B62466E2D7000B2D61 /* TOPushManageViewController.m in Sources */,
@@ -1161,6 +1202,7 @@
 				BE59E34B2465518700B3524C /* TOWalfareContentView.m in Sources */,
 				BE59E33E2465374400B3524C /* TOMyMemberView.m in Sources */,
 				65768F6F24684FAE00A7E804 /* TOSpecificationView.m in Sources */,
+				6564D3362469A66A00EA23D8 /* TOSearchNavbar.m in Sources */,
 				BE59E355246559D100B3524C /* TOHotCell.m in Sources */,
 				BEFE387D24639CC0009B6DD3 /* AppDelegate.m in Sources */,
 				6564D32D24699E1C00EA23D8 /* TOChooseSendObjectViewController.m in Sources */,

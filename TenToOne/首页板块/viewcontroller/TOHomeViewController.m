@@ -59,9 +59,7 @@
     if (@available(iOS 11.0, *)) {
         safeAreaInsets = self.view.safeAreaInsets;
     }
-    CGFloat statusHeight = self.view.window.windowScene.statusBarManager.statusBarFrame.size.height;
     CGRect navRect = self.navigationController.navigationBar.frame;
-    NSLog(@"%.2f",statusHeight+navRect.size.height+safeAreaInsets.top);
     [self.homeNavbar mas_remakeConstraints:^(MASConstraintMaker *make) {
         make.right.left.top.mas_equalTo(self.view);
         make.height.mas_equalTo(navRect.size.height+safeAreaInsets.top);

@@ -29,8 +29,8 @@
     self = [self init];
     if (self) {
         UIImageView *userNameLeftView = [[UIImageView alloc]initWithFrame:CGRectMake(10,0,20,20)];
-        userNameLeftView.contentMode= UIViewContentModeScaleAspectFit;
-        userNameLeftView.image=[UIImage imageNamed:imageName];
+        userNameLeftView.contentMode = UIViewContentModeCenter;
+        userNameLeftView.image = [UIImage imageNamed:imageName];
         self.leftViewMode= UITextFieldViewModeAlways;
         self.leftView= userNameLeftView;
         self.placeholder = placeholder;
@@ -186,15 +186,23 @@
 
 - (CGRect)rightViewRectForBounds:(CGRect)bounds {
     CGRect textRect = [super rightViewRectForBounds:bounds];
-    //textRect.origin.x -= 10;
-    //textRect.size.height = self.frame.size.height;
+    if (@available(iOS 13.0, *)) {
+        CGFloat left = self.frame.size.width - self.rightView.frame.size.width;
+        CGFloat top = round((self.frame.size.height - self.rightView.frame.size.height)/2.0);
+        textRect = CGRectMake(left, top, self.rightView.frame.size.width , self.rightView.frame.size.height);
+    }
     return textRect;
 }
 
 - (CGRect)leftViewRectForBounds:(CGRect)bounds {
     CGRect textRect = [super leftViewRectForBounds:bounds];
-    //textRect.origin.x += 10;
-    //textRect.size.height = self.frame.size.height;
+    if (@available(iOS 13.0, *)) {
+        CGFloat top = round((self.frame.size.height - self.leftView.frame.size.height)/2.0);
+        textRect = CGRectMake(0, top, self.leftView.frame.size.width, self.leftView.frame.size.height);
+        textRect = CGRectMake(0, 0, self.frame.size.height, self.frame.size.height);
+    } else {
+        
+    }
     return textRect;
 }
 
