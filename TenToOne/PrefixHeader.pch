@@ -39,6 +39,9 @@
 
 #define SYSTEM_VERSION_GREATER_THAN(v) ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedDescending)
 
+//是否ipad
+#define IsiPad ([[UIDevice currentDevice].model isEqualToString:@"iPod touch"] || [[UIDevice currentDevice].model isEqualToString:@"iPad"])
+
 #endif
 
 #endif /* PrefixHeader_pch */

@@ -23,6 +23,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    //self.navigationItem.title = @"福利";
     self.title = @"福利";
     
     UIButton* btQuestion = to_create_button_image(@"icon_question");

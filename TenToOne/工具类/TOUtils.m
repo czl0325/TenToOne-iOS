@@ -65,6 +65,15 @@ UIButton* to_create_button_normal(NSString* title) {
     return button;
 }
 
+UIButton* to_create_button_white(NSString* title) {
+    UIButton* button = [UIButton buttonWithType:UIButtonTypeCustom];
+    [button setTitle:title forState:UIControlStateNormal];
+    [button setTitleColor:DefaultTextColor forState:UIControlStateNormal];
+    button.titleLabel.font = [UIFont systemFontOfSize:14];
+    button.backgroundColor = [UIColor whiteColor];
+    return button;
+}
+
 UIButton* to_create_button_image(NSString* imageName) {
     UIButton* button = [UIButton buttonWithType:UIButtonTypeCustom];
     [button setImage:[UIImage imageNamed:imageName] forState:UIControlStateNormal];

@@ -18,6 +18,7 @@ UILabel* to_createLabel_text_color_font(NSString* text, UIColor* color, CGFloat 
 UIButton* to_create_button_left(NSString* title,NSString* imageName );
 UIButton* to_create_button_Right(NSString* title,NSString* imageName );
 UIButton* to_create_button_normal(NSString* title);
+UIButton* to_create_button_white(NSString* title);
 UIButton* to_create_button_image(NSString* imageName);
 UIButton* to_create_button_backImage(NSString* imageName);
 UIImageView* to_create_imageview(NSString* imageName);

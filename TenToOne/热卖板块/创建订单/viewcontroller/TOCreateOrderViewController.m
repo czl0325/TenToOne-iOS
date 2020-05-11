@@ -8,11 +8,17 @@
 
 #import "TOCreateOrderViewController.h"
 #import "TOOrderAddressView.h"
+#import "TOOrderGoodInfoView.h"
+#import "TOOrderGoodSpacView.h"
+#import "TOOrderOtherView.h"
 
 @interface TOCreateOrderViewController ()
 
 @property(nonatomic,strong)UILabel* tvAmount;
 @property(nonatomic,strong)TOOrderAddressView* vAddress;
+@property(nonatomic,strong)TOOrderGoodInfoView* vGoodInfo;
+@property(nonatomic,strong)TOOrderGoodSpacView* vGoodSpac;
+@property(nonatomic,strong)TOOrderOtherView* vGoodOther;
 
 @end
 
@@ -72,6 +78,28 @@
         make.top.left.mas_equalTo(5);
         make.right.mas_equalTo(-5);
     }];
+    
+    [contentView addSubview:self.vGoodInfo];
+    [self.vGoodInfo mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.right.left.mas_equalTo(self.vAddress);
+        make.top.mas_equalTo(self.vAddress.mas_bottom).offset(5);
+    }];
+    
+    [contentView addSubview:self.vGoodSpac];
+    [self.vGoodSpac mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.right.left.mas_equalTo(self.vAddress);
+        make.top.mas_equalTo(self.vGoodInfo.mas_bottom).offset(5);
+    }];
+    
+    [contentView addSubview:self.vGoodOther];
+     [self.vGoodOther mas_makeConstraints:^(MASConstraintMaker *make) {
+         make.right.left.mas_equalTo(self.vAddress);
+         make.top.mas_equalTo(self.vGoodSpac.mas_bottom).offset(5);
+     }];
+    
+    [contentView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.bottom.mas_equalTo(self.vGoodOther.mas_bottom).offset(10);
+    }];
 }
 
 - (UILabel *)tvAmount{
@@ -94,4 +122,34 @@
     return _vAddress;
 }
 
+
+- (TOOrderGoodInfoView *)vGoodInfo{
+    if(!_vGoodInfo){
+        _vGoodInfo = ({
+            TOOrderGoodInfoView * object = [[TOOrderGoodInfoView alloc]init];
+            object;
+       });
+    }
+    return _vGoodInfo;
+}
+
+- (TOOrderGoodSpacView *)vGoodSpac{
+    if(!_vGoodSpac){
+        _vGoodSpac = ({
+            TOOrderGoodSpacView * object = [[TOOrderGoodSpacView alloc]init];
+            object;
+       });
+    }
+    return _vGoodSpac;
+}
+
+- (TOOrderOtherView *)vGoodOther{
+    if(!_vGoodOther){
+        _vGoodOther = ({
+            TOOrderOtherView * object = [[TOOrderOtherView alloc]init];
+            object;
+       });
+    }
+    return _vGoodOther;
+}
 @end

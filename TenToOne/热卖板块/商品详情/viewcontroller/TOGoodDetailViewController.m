@@ -14,6 +14,7 @@
 #import "TOSpecificationView.h"
 #import "zhPopupController.h"
 #import "TOCreateOrderViewController.h"
+#import "TOShareView.h"
 
 @interface TOGoodDetailViewController ()
 <ZLCollectionViewBaseFlowLayoutDelegate, UICollectionViewDelegate>
@@ -174,6 +175,10 @@
     if(!_btBack){
         _btBack = ({
             UIButton * object = to_create_button_backImage(@"icon_backalpha");
+            WeakSelf;
+            [[object rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(__kindof UIControl * _Nullable x) {
+                [weakSelf.navigationController popViewControllerAnimated:YES];
+            }];
             object;
        });
     }
@@ -194,6 +199,18 @@
     if(!_btShare){
         _btShare = ({
             UIButton * object = to_create_button_backImage(@"icon_sharealpha");
+            WeakSelf;
+            [[object rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(__kindof UIControl * _Nullable x) {
+                TOShareView * shareView = [[TOShareView alloc]initWithFrame:CGRectMake(0, 0, self.view.width, 180+self.view.safeAreaInsets.bottom)];
+                zhPopupController* popup = [[zhPopupController alloc] initWithView:shareView size:shareView.bounds.size];
+                popup.presentationStyle = zhPopupSlideStyleFromBottom;
+                popup.dismissonStyle = zhPopupSlideStyleFromBottom;
+                popup.layoutType = zhPopupLayoutTypeBottom;
+                popup.willPresentBlock = ^(zhPopupController * _Nonnull popupController) {
+                    [shareView startAnimationsCompletion:nil];
+                };
+                [popup showInView:weakSelf.view.window completion:NULL];
+            }];
             object;
        });
     }

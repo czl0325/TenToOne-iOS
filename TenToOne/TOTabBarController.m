@@ -95,17 +95,15 @@
    NSMutableDictionary *selectedAttrs = [NSMutableDictionary dictionary];
    selectedAttrs[NSForegroundColorAttributeName] = MainColor;
     
-    if (@available(iOS 13.0, *)) {
+    if (@available(iOS 13.0, *) && !IsiPad) {
         UITabBarItemAppearance *inlineLayoutAppearance = [[UITabBarItemAppearance  alloc] init];
-        // set the text Attributes
-        // 设置文字属性
         [inlineLayoutAppearance.normal setTitleTextAttributes:normalAttrs];
         [inlineLayoutAppearance.selected setTitleTextAttributes:selectedAttrs];
 
         UITabBarAppearance *standardAppearance = [[UITabBarAppearance alloc] init];
         standardAppearance.stackedLayoutAppearance = inlineLayoutAppearance;
         standardAppearance.backgroundColor = [UIColor cyl_systemBackgroundColor];
-        standardAppearance.shadowColor = [UIColor cyl_systemGreenColor];
+        standardAppearance.shadowColor = UIColorFromRGB(0x999999);
         self.tabBar.standardAppearance = standardAppearance;
     } else {
         UITabBarItem *tabBar = [UITabBarItem appearance];

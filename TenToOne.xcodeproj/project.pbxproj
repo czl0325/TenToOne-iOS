@@ -57,6 +57,13 @@
 		BE79F92C2466AA64006545F2 /* TOSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE79F92B2466AA64006545F2 /* TOSettingViewController.m */; };
 		BE79F9322466AECC006545F2 /* TOMyAddressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE79F9312466AECC006545F2 /* TOMyAddressViewController.m */; };
 		BE79F9352466AEE7006545F2 /* TOAddressCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BE79F9342466AEE7006545F2 /* TOAddressCell.m */; };
+		BECD4BDF2468E45800DDBB36 /* UITabBarController+TabButtonType.m in Sources */ = {isa = PBXBuildFile; fileRef = BECD4BDE2468E45800DDBB36 /* UITabBarController+TabButtonType.m */; };
+		BECD4BE22468EB3F00DDBB36 /* TOOrderGoodInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = BECD4BE12468EB3F00DDBB36 /* TOOrderGoodInfoView.m */; };
+		BECD4BE52468EF6800DDBB36 /* TOOrderGoodSpacView.m in Sources */ = {isa = PBXBuildFile; fileRef = BECD4BE42468EF6700DDBB36 /* TOOrderGoodSpacView.m */; };
+		BECD4BE82468F12500DDBB36 /* TOInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = BECD4BE72468F12500DDBB36 /* TOInputView.m */; };
+		BECD4BEB2468F36600DDBB36 /* TOOrderOtherView.m in Sources */ = {isa = PBXBuildFile; fileRef = BECD4BEA2468F36600DDBB36 /* TOOrderOtherView.m */; };
+		BECD4BEE2468FF7F00DDBB36 /* TOShareView.m in Sources */ = {isa = PBXBuildFile; fileRef = BECD4BED2468FF7F00DDBB36 /* TOShareView.m */; };
+		BECD4BF124691FF800DDBB36 /* zhImageButton.m in Sources */ = {isa = PBXBuildFile; fileRef = BECD4BF024691FF800DDBB36 /* zhImageButton.m */; };
 		BEDC76DF2463E58B0041D862 /* TOBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEDC76DE2463E58B0041D862 /* TOBaseViewController.m */; };
 		BEDC76E32463E5DB0041D862 /* UIResponder+deliver.m in Sources */ = {isa = PBXBuildFile; fileRef = BEDC76E12463E5DB0041D862 /* UIResponder+deliver.m */; };
 		BEDC76E72463E9B30041D862 /* TOMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEDC76E62463E9B30041D862 /* TOMainViewController.m */; };
@@ -194,6 +201,20 @@
 		BE79F9312466AECC006545F2 /* TOMyAddressViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TOMyAddressViewController.m; sourceTree = "<group>"; };
 		BE79F9332466AEE7006545F2 /* TOAddressCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TOAddressCell.h; sourceTree = "<group>"; };
 		BE79F9342466AEE7006545F2 /* TOAddressCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TOAddressCell.m; sourceTree = "<group>"; };
+		BECD4BDD2468E45800DDBB36 /* UITabBarController+TabButtonType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITabBarController+TabButtonType.h"; sourceTree = "<group>"; };
+		BECD4BDE2468E45800DDBB36 /* UITabBarController+TabButtonType.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITabBarController+TabButtonType.m"; sourceTree = "<group>"; };
+		BECD4BE02468EB3F00DDBB36 /* TOOrderGoodInfoView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TOOrderGoodInfoView.h; sourceTree = "<group>"; };
+		BECD4BE12468EB3F00DDBB36 /* TOOrderGoodInfoView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TOOrderGoodInfoView.m; sourceTree = "<group>"; };
+		BECD4BE32468EF6700DDBB36 /* TOOrderGoodSpacView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TOOrderGoodSpacView.h; sourceTree = "<group>"; };
+		BECD4BE42468EF6700DDBB36 /* TOOrderGoodSpacView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TOOrderGoodSpacView.m; sourceTree = "<group>"; };
+		BECD4BE62468F12500DDBB36 /* TOInputView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TOInputView.h; sourceTree = "<group>"; };
+		BECD4BE72468F12500DDBB36 /* TOInputView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TOInputView.m; sourceTree = "<group>"; };
+		BECD4BE92468F36600DDBB36 /* TOOrderOtherView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TOOrderOtherView.h; sourceTree = "<group>"; };
+		BECD4BEA2468F36600DDBB36 /* TOOrderOtherView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TOOrderOtherView.m; sourceTree = "<group>"; };
+		BECD4BEC2468FF7F00DDBB36 /* TOShareView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TOShareView.h; sourceTree = "<group>"; };
+		BECD4BED2468FF7F00DDBB36 /* TOShareView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TOShareView.m; sourceTree = "<group>"; };
+		BECD4BEF24691FF800DDBB36 /* zhImageButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zhImageButton.h; sourceTree = "<group>"; };
+		BECD4BF024691FF800DDBB36 /* zhImageButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = zhImageButton.m; sourceTree = "<group>"; };
 		BEDC76DD2463E58B0041D862 /* TOBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TOBaseViewController.h; sourceTree = "<group>"; };
 		BEDC76DE2463E58B0041D862 /* TOBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TOBaseViewController.m; sourceTree = "<group>"; };
 		BEDC76E12463E5DB0041D862 /* UIResponder+deliver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIResponder+deliver.m"; sourceTree = "<group>"; };
@@ -214,7 +235,7 @@
 		BEDC77012463F4B60041D862 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		BEDC77032463FF2D0041D862 /* TOMeHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TOMeHeaderView.h; sourceTree = "<group>"; };
 		BEDC77042463FF2D0041D862 /* TOMeHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TOMeHeaderView.m; sourceTree = "<group>"; };
-		BEFE387824639CC0009B6DD3 /* TenToOne.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TenToOne.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEFE387824639CC0009B6DD3 /* 奇十友.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "奇十友.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEFE387B24639CC0009B6DD3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BEFE387C24639CC0009B6DD3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		BEFE387E24639CC0009B6DD3 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
@@ -303,6 +324,8 @@
 				65768F68246843C700A7E804 /* TOGoodTitleView.m */,
 				65768F6D24684FAE00A7E804 /* TOSpecificationView.h */,
 				65768F6E24684FAE00A7E804 /* TOSpecificationView.m */,
+				BECD4BEC2468FF7F00DDBB36 /* TOShareView.h */,
+				BECD4BED2468FF7F00DDBB36 /* TOShareView.m */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -330,6 +353,12 @@
 			children = (
 				65768F732468553300A7E804 /* TOOrderAddressView.h */,
 				65768F742468553300A7E804 /* TOOrderAddressView.m */,
+				BECD4BE02468EB3F00DDBB36 /* TOOrderGoodInfoView.h */,
+				BECD4BE12468EB3F00DDBB36 /* TOOrderGoodInfoView.m */,
+				BECD4BE32468EF6700DDBB36 /* TOOrderGoodSpacView.h */,
+				BECD4BE42468EF6700DDBB36 /* TOOrderGoodSpacView.m */,
+				BECD4BE92468F36600DDBB36 /* TOOrderOtherView.h */,
+				BECD4BEA2468F36600DDBB36 /* TOOrderOtherView.m */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -357,6 +386,8 @@
 		65CC72AB2466E0CA000B2D61 /* 常用view */ = {
 			isa = PBXGroup;
 			children = (
+				BECD4BEF24691FF800DDBB36 /* zhImageButton.h */,
+				BECD4BF024691FF800DDBB36 /* zhImageButton.m */,
 				65CC72AC2466E0CA000B2D61 /* TOTitleView.h */,
 				65CC72AD2466E0CA000B2D61 /* TOTitleView.m */,
 				65CC72AF2466E0DC000B2D61 /* TOSwitchView.h */,
@@ -365,6 +396,8 @@
 				65CC72C42466FD00000B2D61 /* ZLButton.m */,
 				65768F6124683DE700A7E804 /* TOTitleView1.h */,
 				65768F6224683DE700A7E804 /* TOTitleView1.m */,
+				BECD4BE62468F12500DDBB36 /* TOInputView.h */,
+				BECD4BE72468F12500DDBB36 /* TOInputView.m */,
 			);
 			path = "常用view";
 			sourceTree = "<group>";
@@ -601,6 +634,15 @@
 			path = viewcontroller;
 			sourceTree = "<group>";
 		};
+		BECD4BDC2468E43600DDBB36 /* 分类 */ = {
+			isa = PBXGroup;
+			children = (
+				BECD4BDD2468E45800DDBB36 /* UITabBarController+TabButtonType.h */,
+				BECD4BDE2468E45800DDBB36 /* UITabBarController+TabButtonType.m */,
+			);
+			path = "分类";
+			sourceTree = "<group>";
+		};
 		BEDC76D32463E5500041D862 /* 我的板块 */ = {
 			isa = PBXGroup;
 			children = (
@@ -708,6 +750,7 @@
 		BEDC76E02463E5DB0041D862 /* 工具类 */ = {
 			isa = PBXGroup;
 			children = (
+				BECD4BDC2468E43600DDBB36 /* 分类 */,
 				65CC72AB2466E0CA000B2D61 /* 常用view */,
 				BE79F90E24667725006545F2 /* ZLTextField */,
 				BE79F8FC24664EA4006545F2 /* QiCodeReader */,
@@ -768,7 +811,7 @@
 		BEFE387924639CC0009B6DD3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BEFE387824639CC0009B6DD3 /* TenToOne.app */,
+				BEFE387824639CC0009B6DD3 /* 奇十友.app */,
 				BEFE389324639CC5009B6DD3 /* TenToOneTests.xctest */,
 				BEFE389E24639CC5009B6DD3 /* TenToOneUITests.xctest */,
 			);
@@ -852,7 +895,7 @@
 			);
 			name = TenToOne;
 			productName = TenToOne;
-			productReference = BEFE387824639CC0009B6DD3 /* TenToOne.app */;
+			productReference = BEFE387824639CC0009B6DD3 /* 奇十友.app */;
 			productType = "com.apple.product-type.application";
 		};
 		BEFE389224639CC5009B6DD3 /* TenToOneTests */ = {
@@ -1032,11 +1075,14 @@
 				BE79F91124667740006545F2 /* ZLTextField.m in Sources */,
 				BE79F91424667A00006545F2 /* TOSingleton.m in Sources */,
 				BE79F9352466AEE7006545F2 /* TOAddressCell.m in Sources */,
+				BECD4BF124691FF800DDBB36 /* zhImageButton.m in Sources */,
 				BE59E348246549EE00B3524C /* TOWelfareHeader.m in Sources */,
+				BECD4BE22468EB3F00DDBB36 /* TOOrderGoodInfoView.m in Sources */,
 				BEDC76FA2463ECC90041D862 /* TOMeViewController.m in Sources */,
 				65768F69246843C700A7E804 /* TOGoodTitleView.m in Sources */,
 				65CC72AE2466E0CA000B2D61 /* TOTitleView.m in Sources */,
 				65CC72B62466E2D7000B2D61 /* TOPushManageViewController.m in Sources */,
+				BECD4BEB2468F36600DDBB36 /* TOOrderOtherView.m in Sources */,
 				65CC72C22466F185000B2D61 /* TOOrderListViewController.m in Sources */,
 				BE79F90124664EA4006545F2 /* QiCodePreviewView.m in Sources */,
 				BEDC77052463FF2D0041D862 /* TOMeHeaderView.m in Sources */,
@@ -1050,6 +1096,7 @@
 				65CC72BF2466EC71000B2D61 /* TOOrderCell.m in Sources */,
 				BE79F91E24668602006545F2 /* TORedViewController.m in Sources */,
 				65CC72CB246705A4000B2D61 /* TOMyWallerViewController.m in Sources */,
+				BECD4BE82468F12500DDBB36 /* TOInputView.m in Sources */,
 				BE59E359246559FA00B3524C /* UICollectionView+ARDynamicCacheHeightLayoutCell.m in Sources */,
 				65768F752468553300A7E804 /* TOOrderAddressView.m in Sources */,
 				65768F722468529F00A7E804 /* TOCreateOrderViewController.m in Sources */,
@@ -1074,13 +1121,16 @@
 				BEDC76DF2463E58B0041D862 /* TOBaseViewController.m in Sources */,
 				BE79F90224664EA4006545F2 /* QiCodeManager.m in Sources */,
 				BE79F91824667A35006545F2 /* TOUserModel.m in Sources */,
+				BECD4BDF2468E45800DDBB36 /* UITabBarController+TabButtonType.m in Sources */,
 				65CC72D124670C5E000B2D61 /* TOMyTeamViewController.m in Sources */,
 				65706C582465875F0087B6C1 /* TOMessageViewController.m in Sources */,
 				65CC72C52466FD00000B2D61 /* ZLButton.m in Sources */,
+				BECD4BEE2468FF7F00DDBB36 /* TOShareView.m in Sources */,
 				BE59E33B24652BB700B3524C /* TOMyWalletView.m in Sources */,
 				65CC72BC2466EC58000B2D61 /* TOMyOrderViewController.m in Sources */,
 				BE59E3442465430000B3524C /* TOTabBarController1.m in Sources */,
 				BE79F92124668618006545F2 /* TORedView.m in Sources */,
+				BECD4BE52468EF6800DDBB36 /* TOOrderGoodSpacView.m in Sources */,
 				BE59E338246527B400B3524C /* TOUtils.m in Sources */,
 				BE79F90524664ED9006545F2 /* TOScanViewController.m in Sources */,
 				BE79F9282466A069006545F2 /* TORedTopView.m in Sources */,
@@ -1257,7 +1307,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.github.TenToOne;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "奇十友";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -1277,7 +1327,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.github.TenToOne;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "奇十友";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
