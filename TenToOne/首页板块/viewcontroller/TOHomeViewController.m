@@ -9,6 +9,7 @@
 #import "TOHomeViewController.h"
 #import <QMapKit/QMapKit.h>
 #import "TOHomeNavbar.h"
+#import "TOSendRedViewController.h"
 
 @interface TOHomeViewController ()
 <QMapViewDelegate, UISearchBarDelegate>
@@ -25,6 +26,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    WeakSelf;
+    
     [self.view addSubview:self.homeNavbar];
     [self.homeNavbar mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.top.right.mas_equalTo(self.view);
@@ -37,6 +40,17 @@
         make.top.mas_equalTo(self.homeNavbar.mas_bottom);
     }];
 
+    UIButton* btSend = to_create_button_backImage(@"icon_sendred");
+    [[btSend rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(__kindof UIControl * _Nullable x) {
+        TOSendRedViewController* vc = [[TOSendRedViewController alloc]init];
+        [weakSelf.navigationController pushViewController:vc animated:YES];
+    }];
+    [self.view addSubview:btSend];
+    [btSend mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.centerX.mas_equalTo(self.view);
+        make.bottom.mas_equalTo(-10);
+        make.size.mas_equalTo(65);
+    }];
 }
 
 - (void)viewWillLayoutSubviews {

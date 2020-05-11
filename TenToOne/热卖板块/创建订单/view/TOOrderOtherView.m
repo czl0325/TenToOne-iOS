@@ -63,7 +63,7 @@
 - (TOInputView *)vFreight{
     if(!_vFreight){
         _vFreight = ({
-            TOInputView * object = [[TOInputView alloc]initWithTitle:@"运费" placeholder:@"" detail:@"免运费" canEdit:NO];
+            TOInputView * object = [[TOInputView alloc]initWithTitle:@"运费" placeholder:@"" detail:@"免运费" unit:@"" canEdit:NO];
             object;
        });
     }

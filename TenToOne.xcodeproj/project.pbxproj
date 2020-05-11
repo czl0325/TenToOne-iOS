@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6564D324246986F600EA23D8 /* TOSendRedHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 6564D323246986F600EA23D8 /* TOSendRedHeader.m */; };
+		6564D3272469870A00EA23D8 /* TOSendRedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6564D3262469870A00EA23D8 /* TOSendRedViewController.m */; };
+		6564D32A246990BF00EA23D8 /* TORedPhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6564D329246990BF00EA23D8 /* TORedPhotoCell.m */; };
+		6564D32D24699E1C00EA23D8 /* TOChooseSendObjectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6564D32C24699E1C00EA23D8 /* TOChooseSendObjectViewController.m */; };
+		6564D33024699E6300EA23D8 /* TOSendObjectCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6564D32F24699E6300EA23D8 /* TOSendObjectCell.m */; };
 		65706C582465875F0087B6C1 /* TOMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65706C562465875F0087B6C1 /* TOMessageViewController.m */; };
 		65706C5B246587780087B6C1 /* TOMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 65706C5A246587780087B6C1 /* TOMessageCell.m */; };
 		65768F6024683B1900A7E804 /* TOGoodDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65768F5F24683B1900A7E804 /* TOGoodDetailViewController.m */; };
@@ -102,6 +107,16 @@
 
 /* Begin PBXFileReference section */
 		283066B6D0F43245AE27F49F /* Pods_TenToOne.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TenToOne.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6564D322246986F600EA23D8 /* TOSendRedHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TOSendRedHeader.h; sourceTree = "<group>"; };
+		6564D323246986F600EA23D8 /* TOSendRedHeader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TOSendRedHeader.m; sourceTree = "<group>"; };
+		6564D3252469870A00EA23D8 /* TOSendRedViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TOSendRedViewController.h; sourceTree = "<group>"; };
+		6564D3262469870A00EA23D8 /* TOSendRedViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TOSendRedViewController.m; sourceTree = "<group>"; };
+		6564D328246990BF00EA23D8 /* TORedPhotoCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TORedPhotoCell.h; sourceTree = "<group>"; };
+		6564D329246990BF00EA23D8 /* TORedPhotoCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TORedPhotoCell.m; sourceTree = "<group>"; };
+		6564D32B24699E1B00EA23D8 /* TOChooseSendObjectViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TOChooseSendObjectViewController.h; sourceTree = "<group>"; };
+		6564D32C24699E1C00EA23D8 /* TOChooseSendObjectViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TOChooseSendObjectViewController.m; sourceTree = "<group>"; };
+		6564D32E24699E6300EA23D8 /* TOSendObjectCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TOSendObjectCell.h; sourceTree = "<group>"; };
+		6564D32F24699E6300EA23D8 /* TOSendObjectCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TOSendObjectCell.m; sourceTree = "<group>"; };
 		65706C552465875F0087B6C1 /* TOMessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOMessageViewController.h; sourceTree = "<group>"; };
 		65706C562465875F0087B6C1 /* TOMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOMessageViewController.m; sourceTree = "<group>"; };
 		65706C59246587770087B6C1 /* TOMessageCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TOMessageCell.h; sourceTree = "<group>"; };
@@ -286,6 +301,39 @@
 				684F99793778088B742E8D2E /* Pods-TenToOne.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		6564D31F2469869700EA23D8 /* 发红包 */ = {
+			isa = PBXGroup;
+			children = (
+				6564D3202469869700EA23D8 /* view */,
+				6564D3212469869700EA23D8 /* viewcontroller */,
+			);
+			path = "发红包";
+			sourceTree = "<group>";
+		};
+		6564D3202469869700EA23D8 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				6564D322246986F600EA23D8 /* TOSendRedHeader.h */,
+				6564D323246986F600EA23D8 /* TOSendRedHeader.m */,
+				6564D328246990BF00EA23D8 /* TORedPhotoCell.h */,
+				6564D329246990BF00EA23D8 /* TORedPhotoCell.m */,
+				6564D32E24699E6300EA23D8 /* TOSendObjectCell.h */,
+				6564D32F24699E6300EA23D8 /* TOSendObjectCell.m */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		6564D3212469869700EA23D8 /* viewcontroller */ = {
+			isa = PBXGroup;
+			children = (
+				6564D3252469870A00EA23D8 /* TOSendRedViewController.h */,
+				6564D3262469870A00EA23D8 /* TOSendRedViewController.m */,
+				6564D32B24699E1B00EA23D8 /* TOChooseSendObjectViewController.h */,
+				6564D32C24699E1C00EA23D8 /* TOChooseSendObjectViewController.m */,
+			);
+			path = viewcontroller;
 			sourceTree = "<group>";
 		};
 		65706C542465875F0087B6C1 /* viewcontroller */ = {
@@ -730,6 +778,7 @@
 		BEDC76DB2463E5500041D862 /* 首页板块 */ = {
 			isa = PBXGroup;
 			children = (
+				6564D31F2469869700EA23D8 /* 发红包 */,
 				65B7C32024659E4C005FFD9C /* view */,
 				BEDC76F32463ECA60041D862 /* viewcontroller */,
 			);
@@ -1069,9 +1118,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				65768F662468409900A7E804 /* TOBannerCell.m in Sources */,
+				6564D3272469870A00EA23D8 /* TOSendRedViewController.m in Sources */,
 				BE79F90824665765006545F2 /* TOHomeNavbar.m in Sources */,
 				BEDC77002463ECE40041D862 /* TOHotViewController.m in Sources */,
 				65706C5B246587780087B6C1 /* TOMessageCell.m in Sources */,
+				6564D33024699E6300EA23D8 /* TOSendObjectCell.m in Sources */,
 				BE79F91124667740006545F2 /* ZLTextField.m in Sources */,
 				BE79F91424667A00006545F2 /* TOSingleton.m in Sources */,
 				BE79F9352466AEE7006545F2 /* TOAddressCell.m in Sources */,
@@ -1090,9 +1141,11 @@
 				65CC72AA2466DF89000B2D61 /* TONewAddressViewController.m in Sources */,
 				BEDC76E32463E5DB0041D862 /* UIResponder+deliver.m in Sources */,
 				65CC72D424670CA6000B2D61 /* TOMyTeamTopView.m in Sources */,
+				6564D32A246990BF00EA23D8 /* TORedPhotoCell.m in Sources */,
 				BE59E34E246552E700B3524C /* TOFreeCell.m in Sources */,
 				BEDC76EA2463EBE90041D862 /* TOTabBarController.m in Sources */,
 				65768F6024683B1900A7E804 /* TOGoodDetailViewController.m in Sources */,
+				6564D324246986F600EA23D8 /* TOSendRedHeader.m in Sources */,
 				65CC72BF2466EC71000B2D61 /* TOOrderCell.m in Sources */,
 				BE79F91E24668602006545F2 /* TORedViewController.m in Sources */,
 				65CC72CB246705A4000B2D61 /* TOMyWallerViewController.m in Sources */,
@@ -1110,6 +1163,7 @@
 				65768F6F24684FAE00A7E804 /* TOSpecificationView.m in Sources */,
 				BE59E355246559D100B3524C /* TOHotCell.m in Sources */,
 				BEFE387D24639CC0009B6DD3 /* AppDelegate.m in Sources */,
+				6564D32D24699E1C00EA23D8 /* TOChooseSendObjectViewController.m in Sources */,
 				BE79F92424669691006545F2 /* TOUserCell.m in Sources */,
 				65768F6324683DE700A7E804 /* TOTitleView1.m in Sources */,
 				BEFE388E24639CC4009B6DD3 /* main.m in Sources */,

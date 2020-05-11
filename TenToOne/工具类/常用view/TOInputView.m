@@ -12,6 +12,7 @@
 
 @property(nonatomic,strong)UILabel* tvTitle;
 @property(nonatomic,strong)UITextField* tfDetail;
+@property(nonatomic,strong)UILabel* tvUnit;
 
 @end
 
@@ -22,14 +23,18 @@
 }
 
 - (instancetype)initWithTitle:(NSString*)title placeholder:(NSString*)placeholder detail:(NSString*)detail {
-    return [self initWithTitle:title placeholder:placeholder detail:detail canEdit:YES];
+    return [self initWithTitle:title placeholder:placeholder detail:detail unit:@""];
 }
 
-- (instancetype)initWithTitle:(NSString*)title placeholder:(NSString*)placeholder detail:(NSString*)detail canEdit:(BOOL)canEdit {
-    return [self initWithTitle:title placeholder:placeholder detail:detail canEdit:canEdit showLine:YES];
+- (instancetype)initWithTitle:(NSString*)title placeholder:(NSString*)placeholder detail:(NSString*)detail unit:(NSString*)unit {
+    return [self initWithTitle:title placeholder:placeholder detail:detail unit:unit canEdit:YES];
 }
 
-- (instancetype)initWithTitle:(NSString*)title placeholder:(NSString*)placeholder detail:(NSString*)detail canEdit:(BOOL)canEdit  showLine:(BOOL)show {
+- (instancetype)initWithTitle:(NSString*)title placeholder:(NSString*)placeholder detail:(NSString*)detail unit:(NSString*)unit canEdit:(BOOL)canEdit {
+    return [self initWithTitle:title placeholder:placeholder detail:detail unit:unit canEdit:canEdit showLine:YES];
+}
+
+- (instancetype)initWithTitle:(NSString*)title placeholder:(NSString*)placeholder detail:(NSString*)detail unit:(NSString*)unit canEdit:(BOOL)canEdit showLine:(BOOL)show {
     if (self == [super initWithFrame:CGRectZero]) {
         self.backgroundColor = [UIColor whiteColor];
         
@@ -41,6 +46,13 @@
             make.width.mas_lessThanOrEqualTo(100);
         }];
         
+        [self addSubview:self.tvUnit];
+        [self.tvUnit mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.centerY.mas_equalTo(self);
+            make.right.mas_equalTo(-10);
+        }];
+        self.tvUnit.text = unit;
+        
         [self addSubview:self.tfDetail];
         self.tfDetail.placeholder = placeholder;
         self.tfDetail.text = detail;
@@ -48,7 +60,11 @@
         [self.tfDetail mas_makeConstraints:^(MASConstraintMaker *make) {
             make.top.mas_equalTo(5);
             make.bottom.mas_equalTo(-5);
-            make.right.mas_equalTo(-10);
+            if (self.tvUnit.text.length > 0) {
+                make.right.mas_equalTo(self.tvUnit.mas_left).offset(-10);
+            } else {
+                make.right.mas_equalTo(-10);
+            }
             make.left.mas_equalTo(self.tvTitle.mas_right).offset(10);
         }];
         
@@ -61,6 +77,10 @@
         line.hidden = !show;
     }
     return self;
+}
+
+- (void)setKeyboard:(UIKeyboardType)keyboard {
+    self.tfDetail.keyboardType = keyboard;
 }
 
 
@@ -90,4 +110,17 @@
     }
     return _tfDetail;
 }
+
+- (UILabel *)tvUnit{
+    if(!_tvUnit){
+        _tvUnit = ({
+            UILabel * object = to_createLabel_black(@"");
+            [object setContentHuggingPriority:UILayoutPriorityRequired forAxis:UILayoutConstraintAxisHorizontal];
+            object;
+       });
+    }
+    return _tvUnit;
+}
+
+
 @end

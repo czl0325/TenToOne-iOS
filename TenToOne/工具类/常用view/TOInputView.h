@@ -14,8 +14,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (instancetype)initWithTitle:(NSString*)title placeholder:(NSString*)placeholder;
 - (instancetype)initWithTitle:(NSString*)title placeholder:(NSString*)placeholder detail:(NSString*)detail;
-- (instancetype)initWithTitle:(NSString*)title placeholder:(NSString*)placeholder detail:(NSString*)detail canEdit:(BOOL)canEdit;
-- (instancetype)initWithTitle:(NSString*)title placeholder:(NSString*)placeholder detail:(NSString*)detail canEdit:(BOOL)canEdit showLine:(BOOL)show;
+- (instancetype)initWithTitle:(NSString*)title placeholder:(NSString*)placeholder detail:(NSString*)detail unit:(NSString*)unit;
+- (instancetype)initWithTitle:(NSString*)title placeholder:(NSString*)placeholder detail:(NSString*)detail unit:(NSString*)unit canEdit:(BOOL)canEdit;
+- (instancetype)initWithTitle:(NSString*)title placeholder:(NSString*)placeholder detail:(NSString*)detail unit:(NSString*)unit canEdit:(BOOL)canEdit showLine:(BOOL)show;
+
+- (void)setKeyboard:(UIKeyboardType)keyboard;
 
 @end
 

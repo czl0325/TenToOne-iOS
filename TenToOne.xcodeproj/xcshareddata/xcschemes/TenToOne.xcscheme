@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "BEFE387724639CC0009B6DD3"
-               BuildableName = "TenToOne.app"
+               BuildableName = "&#x5947;&#x5341;&#x53cb;.app"
                BlueprintName = "TenToOne"
                ReferencedContainer = "container:TenToOne.xcodeproj">
             </BuildableReference>
@@ -65,7 +65,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "BEFE387724639CC0009B6DD3"
-            BuildableName = "TenToOne.app"
+            BuildableName = "&#x5947;&#x5341;&#x53cb;.app"
             BlueprintName = "TenToOne"
             ReferencedContainer = "container:TenToOne.xcodeproj">
          </BuildableReference>
@@ -82,7 +82,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "BEFE387724639CC0009B6DD3"
-            BuildableName = "TenToOne.app"
+            BuildableName = "&#x5947;&#x5341;&#x53cb;.app"
             BlueprintName = "TenToOne"
             ReferencedContainer = "container:TenToOne.xcodeproj">
          </BuildableReference>

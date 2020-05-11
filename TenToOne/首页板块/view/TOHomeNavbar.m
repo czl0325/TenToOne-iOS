@@ -32,16 +32,16 @@
         }];
         
         WeakSelf;
-        UIButton* btMore = to_create_button_backImage(@"icon_more");
-        btMore.frame = CGRectMake(0, 0, 132/5.0, 33/5.0);
+        UIButton* btMore = [UIButton buttonWithType:UIButtonTypeCustom];
+        [btMore setImage:[UIImage imageNamed:@"icon_more"] forState:UIControlStateNormal];
         [[btMore rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(__kindof UIControl * _Nullable x) {
             [weakSelf showMore:x];
         }];
         [self addSubview:btMore];
         [btMore mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.right.mas_equalTo(-5);
+            make.right.mas_equalTo(0);
             make.centerY.mas_equalTo(self.regionView);
-            make.size.mas_equalTo(CGSizeMake(132/5.0, 33/5.0));
+            make.size.mas_equalTo(44);
         }];
         
         UIButton* btSearch = to_create_button_left(@"搜索关键字", @"icon_search");
@@ -49,7 +49,7 @@
         btSearch.layer.cornerRadius = 4;
         [self addSubview:btSearch];
         [btSearch mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.right.mas_equalTo(btMore.mas_left).offset(-10);
+            make.right.mas_equalTo(btMore.mas_left).offset(0);
             make.centerY.mas_equalTo(self.regionView);
             make.left.mas_equalTo(self.regionView.mas_right).offset(10);
             make.height.mas_equalTo(34);
