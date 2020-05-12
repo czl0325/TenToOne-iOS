@@ -27,6 +27,7 @@
     // Do any additional setup after loading the view.
     
     WeakSelf;
+    self.fd_prefersNavigationBarHidden = YES;
     
     [self.view addSubview:self.homeNavbar];
     [self.homeNavbar mas_makeConstraints:^(MASConstraintMaker *make) {

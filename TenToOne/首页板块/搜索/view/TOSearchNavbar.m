@@ -21,9 +21,13 @@
     if (self == [super initWithFrame:frame]) {
         self.backgroundColor = MainColor;
         
+        WeakSelf;
         UIButton* btCancel = to_create_button_normal(@"取消");
         btCancel.backgroundColor = UIColorFromRGB(0xE7ECF0);
         [btCancel setTitleColor:UIColorFromRGB(0x999999) forState:UIControlStateNormal];
+        [[btCancel rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(__kindof UIControl * _Nullable x) {
+            [weakSelf.viewController.navigationController popViewControllerAnimated:YES];
+        }];
         [self addSubview:btCancel];
         [btCancel mas_makeConstraints:^(MASConstraintMaker *make) {
             make.right.mas_equalTo(-10);

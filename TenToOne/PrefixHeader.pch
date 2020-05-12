@@ -25,6 +25,7 @@
 #import "TOUtils.h"
 #import "TOSingleton.h"
 #import "TOTitleView.h"
+#import "zhImageButton.h"
 
 #define MainColor           UIColorFromRGB(0xe02e24)
 #define DividerColor        UIColorFromRGB(0xf2f2f2)

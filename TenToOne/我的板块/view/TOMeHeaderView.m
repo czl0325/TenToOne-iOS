@@ -44,7 +44,7 @@
         }];
         
         UIButton* btSetting = [UIButton buttonWithType:UIButtonTypeCustom];
-        [btSetting setBackgroundImage:[UIImage imageNamed:@"icon_setting"] forState:UIControlStateNormal];
+        [btSetting setImage:[UIImage imageNamed:@"icon_setting"] forState:UIControlStateNormal];
         [[btSetting rac_signalForControlEvents:UIControlEventTouchUpInside]subscribeNext:^(__kindof UIControl * _Nullable x) {
             TOSettingViewController* vc = [[TOSettingViewController alloc]init];
             [weakSelf.viewController.navigationController pushViewController:vc animated:YES];
@@ -52,8 +52,8 @@
         [self addSubview:btSetting];
         [btSetting mas_makeConstraints:^(MASConstraintMaker *make) {
             make.right.mas_equalTo(-10);
-            make.size.mas_equalTo(20);
-            make.top.mas_equalTo(30);
+            make.size.mas_equalTo(40);
+            make.top.mas_equalTo(40);
         }];
         
         [self addSubview:self.ivAvatar];

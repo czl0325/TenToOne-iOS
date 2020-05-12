@@ -21,7 +21,7 @@
 
 - (instancetype)initWithFrame:(CGRect)frame {
     if (self == [super initWithFrame:frame]) {
-        UIImageView* back1 = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"back_redtop"]];
+        UIImageView* back1 = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"back_redtopsmall"]];
         [self addSubview:back1];
         [back1 mas_makeConstraints:^(MASConstraintMaker *make) {
             make.left.top.right.mas_equalTo(self);

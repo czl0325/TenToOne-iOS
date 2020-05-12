@@ -37,6 +37,9 @@
 		65CC72D124670C5E000B2D61 /* TOMyTeamViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65CC72D024670C5E000B2D61 /* TOMyTeamViewController.m */; };
 		65CC72D424670CA6000B2D61 /* TOMyTeamTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 65CC72D324670CA6000B2D61 /* TOMyTeamTopView.m */; };
 		82DCE963C7645315EABDAFF8 /* Pods_TenToOne.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 283066B6D0F43245AE27F49F /* Pods_TenToOne.framework */; };
+		BE403FD3246A3D79003CD9BE /* TOTitleHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = BE403FD2246A3D79003CD9BE /* TOTitleHeader.m */; };
+		BE403FD6246A3EFA003CD9BE /* TOHotSearchView.m in Sources */ = {isa = PBXBuildFile; fileRef = BE403FD5246A3EFA003CD9BE /* TOHotSearchView.m */; };
+		BE403FD9246A405E003CD9BE /* TOLabelCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BE403FD8246A405E003CD9BE /* TOLabelCell.m */; };
 		BE59E338246527B400B3524C /* TOUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = BE59E337246527B400B3524C /* TOUtils.m */; };
 		BE59E33B24652BB700B3524C /* TOMyWalletView.m in Sources */ = {isa = PBXBuildFile; fileRef = BE59E33A24652BB700B3524C /* TOMyWalletView.m */; };
 		BE59E33E2465374400B3524C /* TOMyMemberView.m in Sources */ = {isa = PBXBuildFile; fileRef = BE59E33D2465374400B3524C /* TOMyMemberView.m */; };
@@ -169,6 +172,12 @@
 		65CC72D224670CA6000B2D61 /* TOMyTeamTopView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TOMyTeamTopView.h; sourceTree = "<group>"; };
 		65CC72D324670CA6000B2D61 /* TOMyTeamTopView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TOMyTeamTopView.m; sourceTree = "<group>"; };
 		684F99793778088B742E8D2E /* Pods-TenToOne.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TenToOne.release.xcconfig"; path = "Target Support Files/Pods-TenToOne/Pods-TenToOne.release.xcconfig"; sourceTree = "<group>"; };
+		BE403FD1246A3D79003CD9BE /* TOTitleHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TOTitleHeader.h; sourceTree = "<group>"; };
+		BE403FD2246A3D79003CD9BE /* TOTitleHeader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TOTitleHeader.m; sourceTree = "<group>"; };
+		BE403FD4246A3EFA003CD9BE /* TOHotSearchView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TOHotSearchView.h; sourceTree = "<group>"; };
+		BE403FD5246A3EFA003CD9BE /* TOHotSearchView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TOHotSearchView.m; sourceTree = "<group>"; };
+		BE403FD7246A405E003CD9BE /* TOLabelCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TOLabelCell.h; sourceTree = "<group>"; };
+		BE403FD8246A405E003CD9BE /* TOLabelCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TOLabelCell.m; sourceTree = "<group>"; };
 		BE59E336246527B400B3524C /* TOUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TOUtils.h; sourceTree = "<group>"; };
 		BE59E337246527B400B3524C /* TOUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TOUtils.m; sourceTree = "<group>"; };
 		BE59E33924652BB700B3524C /* TOMyWalletView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TOMyWalletView.h; sourceTree = "<group>"; };
@@ -361,6 +370,12 @@
 				6564D3352469A66A00EA23D8 /* TOSearchNavbar.m */,
 				6564D33A2469ADEF00EA23D8 /* TOSearchCell.h */,
 				6564D33B2469ADEF00EA23D8 /* TOSearchCell.m */,
+				BE403FD1246A3D79003CD9BE /* TOTitleHeader.h */,
+				BE403FD2246A3D79003CD9BE /* TOTitleHeader.m */,
+				BE403FD4246A3EFA003CD9BE /* TOHotSearchView.h */,
+				BE403FD5246A3EFA003CD9BE /* TOHotSearchView.m */,
+				BE403FD7246A405E003CD9BE /* TOLabelCell.h */,
+				BE403FD8246A405E003CD9BE /* TOLabelCell.m */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -1166,6 +1181,7 @@
 				6564D3392469A76800EA23D8 /* TOSearchViewController.m in Sources */,
 				BE79F91424667A00006545F2 /* TOSingleton.m in Sources */,
 				BE79F9352466AEE7006545F2 /* TOAddressCell.m in Sources */,
+				BE403FD3246A3D79003CD9BE /* TOTitleHeader.m in Sources */,
 				BECD4BF124691FF800DDBB36 /* zhImageButton.m in Sources */,
 				BE59E348246549EE00B3524C /* TOWelfareHeader.m in Sources */,
 				BECD4BE22468EB3F00DDBB36 /* TOOrderGoodInfoView.m in Sources */,
@@ -1210,6 +1226,7 @@
 				65768F6324683DE700A7E804 /* TOTitleView1.m in Sources */,
 				BEFE388E24639CC4009B6DD3 /* main.m in Sources */,
 				BE79F92C2466AA64006545F2 /* TOSettingViewController.m in Sources */,
+				BE403FD6246A3EFA003CD9BE /* TOHotSearchView.m in Sources */,
 				BE59E351246553D500B3524C /* TOFreeHeader.m in Sources */,
 				BEFE388024639CC0009B6DD3 /* SceneDelegate.m in Sources */,
 				BE59E34124653AB600B3524C /* TOMerchantBusinessView.m in Sources */,
@@ -1220,6 +1237,7 @@
 				BECD4BDF2468E45800DDBB36 /* UITabBarController+TabButtonType.m in Sources */,
 				65CC72D124670C5E000B2D61 /* TOMyTeamViewController.m in Sources */,
 				65706C582465875F0087B6C1 /* TOMessageViewController.m in Sources */,
+				BE403FD9246A405E003CD9BE /* TOLabelCell.m in Sources */,
 				65CC72C52466FD00000B2D61 /* ZLButton.m in Sources */,
 				BECD4BEE2468FF7F00DDBB36 /* TOShareView.m in Sources */,
 				BE59E33B24652BB700B3524C /* TOMyWalletView.m in Sources */,
