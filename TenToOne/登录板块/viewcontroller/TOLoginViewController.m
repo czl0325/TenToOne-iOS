@@ -114,6 +114,18 @@
     [self.navigationController setNavigationBarHidden:NO];
 }
 
+- (void)viewDidLayoutSubviews {
+    [super viewDidLayoutSubviews];
+    UIEdgeInsets inset = UIEdgeInsetsZero;
+    if (@available(iOS 11, *)) {
+        inset = self.view.safeAreaInsets;
+    }
+    [self.btAgree mas_remakeConstraints:^(MASConstraintMaker *make) {
+        make.bottom.mas_equalTo(-15-inset.bottom);
+        make.centerX.mas_equalTo(self.view);
+    }];
+}
+
 - (void)dealloc {
     
 }
@@ -148,10 +160,15 @@
             [object setBackgroundImage:imageWithColor(MainColor, CGSizeMake(230, 40), 1) forState:UIControlStateNormal];
             [object setBackgroundImage:imageWithColor(UIColorFromRGB(0xFFA19C), CGSizeMake(230, 40), 1) forState:UIControlStateDisabled];
             object.enabled = NO;
+            object.layer.cornerRadius = 5;
             WeakSelf;
             [[object rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(__kindof UIControl * _Nullable x) {
-                TOVerifyViewController* vc = [[TOVerifyViewController alloc]init];
-                [weakSelf.navigationController pushViewController:vc animated:YES];
+                [weakSelf.view endEditing:YES];
+                [MBProgressHUD showHUDAddedTo:topViewController().view animated:YES];
+                [TOWebManager getSmsCode:weakSelf.tfMobile.text success:^(id  _Nonnull data) {
+                    TOVerifyViewController* vc = [[TOVerifyViewController alloc]init];
+                    [weakSelf.navigationController pushViewController:vc animated:YES];
+                } failure:nil];
             }];
             object;
        });

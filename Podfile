@@ -9,21 +9,22 @@ target 'TenToOne' do
   use_frameworks!
 
   pod 'AFNetworking'        # 网络通讯的库
+  pod 'BANetManager'
   pod 'SDWebImage'          # 加载网络图片
   pod 'MJRefresh'           # 列表上拉下拉刷新
   pod 'Masonry'             # autolayout布局
   pod 'MJExtension'         # json字符串转模型
+  pod 'MBProgressHUD'
   pod 'SDCycleScrollView'   # 轮播图
-  pod 'SVProgressHUD'       # hud提示框
   pod 'FDFullscreenPopGesture'# 侧滑返回手势
-  pod 'IQKeyboardManager'	# 软键盘弹出自适应高度的库
-  pod 'PLeakSniffer'  		# 检测内存泄漏
+  pod 'IQKeyboardManager'	  # 软键盘弹出自适应高度的库
+  pod 'PLeakSniffer'  		  # 检测内存泄漏
   pod 'ReactiveObjC'
-  pod 'ZLCellDataSource'	# 简化列表视图代码的库
-  pod 'ZLCategory'			# 常用Category集合的库
+  pod 'ZLCellDataSource'	  # 简化列表视图代码的库
+  pod 'ZLCategory'			    # 常用Category集合的库
   pod 'ZLCollectionViewFlowLayout'
   pod 'ZLPhotoBrowser'
-  pod 'JXCategoryView'		# tablayout
+  pod 'JXCategoryView'		  # tablayout
   pod 'CYLTabBarController'	# tabbar
   pod 'FTPopOverMenu'
   pod 'AXWebViewController'
@@ -32,3 +33,10 @@ target 'TenToOne' do
   # pod 'WMZDialog'
   pod 'zhPopupController'
 end
+
+
+
+
+
+
+

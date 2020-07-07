@@ -40,6 +40,7 @@
 		BE403FD3246A3D79003CD9BE /* TOTitleHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = BE403FD2246A3D79003CD9BE /* TOTitleHeader.m */; };
 		BE403FD6246A3EFA003CD9BE /* TOHotSearchView.m in Sources */ = {isa = PBXBuildFile; fileRef = BE403FD5246A3EFA003CD9BE /* TOHotSearchView.m */; };
 		BE403FD9246A405E003CD9BE /* TOLabelCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BE403FD8246A405E003CD9BE /* TOLabelCell.m */; };
+		BE58824224B2FB55005449F6 /* TOWebManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BE58824124B2FB55005449F6 /* TOWebManager.m */; };
 		BE59E338246527B400B3524C /* TOUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = BE59E337246527B400B3524C /* TOUtils.m */; };
 		BE59E33B24652BB700B3524C /* TOMyWalletView.m in Sources */ = {isa = PBXBuildFile; fileRef = BE59E33A24652BB700B3524C /* TOMyWalletView.m */; };
 		BE59E33E2465374400B3524C /* TOMyMemberView.m in Sources */ = {isa = PBXBuildFile; fileRef = BE59E33D2465374400B3524C /* TOMyMemberView.m */; };
@@ -51,6 +52,7 @@
 		BE59E351246553D500B3524C /* TOFreeHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = BE59E350246553D500B3524C /* TOFreeHeader.m */; };
 		BE59E355246559D100B3524C /* TOHotCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BE59E354246559D100B3524C /* TOHotCell.m */; };
 		BE59E359246559FA00B3524C /* UICollectionView+ARDynamicCacheHeightLayoutCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BE59E358246559FA00B3524C /* UICollectionView+ARDynamicCacheHeightLayoutCell.m */; };
+		BE7253B424B408BF00B82BC0 /* TONetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BE7253B324B408BF00B82BC0 /* TONetManager.m */; };
 		BE79F8FB2466448F006545F2 /* UINavigationBar+iOS11Spacing.m in Sources */ = {isa = PBXBuildFile; fileRef = BE79F8FA2466448F006545F2 /* UINavigationBar+iOS11Spacing.m */; };
 		BE79F90124664EA4006545F2 /* QiCodePreviewView.m in Sources */ = {isa = PBXBuildFile; fileRef = BE79F8FD24664EA4006545F2 /* QiCodePreviewView.m */; };
 		BE79F90224664EA4006545F2 /* QiCodeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BE79F8FE24664EA4006545F2 /* QiCodeManager.m */; };
@@ -68,6 +70,9 @@
 		BE79F92C2466AA64006545F2 /* TOSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE79F92B2466AA64006545F2 /* TOSettingViewController.m */; };
 		BE79F9322466AECC006545F2 /* TOMyAddressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE79F9312466AECC006545F2 /* TOMyAddressViewController.m */; };
 		BE79F9352466AEE7006545F2 /* TOAddressCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BE79F9342466AEE7006545F2 /* TOAddressCell.m */; };
+		BE80CFD124B4272800D0994A /* TOBaseResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = BE80CFD024B4272800D0994A /* TOBaseResponse.m */; };
+		BE80CFE724B470FE00D0994A /* MBProgressHUD+function.m in Sources */ = {isa = PBXBuildFile; fileRef = BE80CFE524B470FE00D0994A /* MBProgressHUD+function.m */; };
+		BE80CFE924B473C300D0994A /* MBProgressHUD+JDragon.bundle in Resources */ = {isa = PBXBuildFile; fileRef = BE80CFE824B473C200D0994A /* MBProgressHUD+JDragon.bundle */; };
 		BECD4BDF2468E45800DDBB36 /* UITabBarController+TabButtonType.m in Sources */ = {isa = PBXBuildFile; fileRef = BECD4BDE2468E45800DDBB36 /* UITabBarController+TabButtonType.m */; };
 		BECD4BE22468EB3F00DDBB36 /* TOOrderGoodInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = BECD4BE12468EB3F00DDBB36 /* TOOrderGoodInfoView.m */; };
 		BECD4BE52468EF6800DDBB36 /* TOOrderGoodSpacView.m in Sources */ = {isa = PBXBuildFile; fileRef = BECD4BE42468EF6700DDBB36 /* TOOrderGoodSpacView.m */; };
@@ -178,6 +183,8 @@
 		BE403FD5246A3EFA003CD9BE /* TOHotSearchView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TOHotSearchView.m; sourceTree = "<group>"; };
 		BE403FD7246A405E003CD9BE /* TOLabelCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TOLabelCell.h; sourceTree = "<group>"; };
 		BE403FD8246A405E003CD9BE /* TOLabelCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TOLabelCell.m; sourceTree = "<group>"; };
+		BE58824024B2FB55005449F6 /* TOWebManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TOWebManager.h; sourceTree = "<group>"; };
+		BE58824124B2FB55005449F6 /* TOWebManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TOWebManager.m; sourceTree = "<group>"; };
 		BE59E336246527B400B3524C /* TOUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TOUtils.h; sourceTree = "<group>"; };
 		BE59E337246527B400B3524C /* TOUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TOUtils.m; sourceTree = "<group>"; };
 		BE59E33924652BB700B3524C /* TOMyWalletView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TOMyWalletView.h; sourceTree = "<group>"; };
@@ -200,6 +207,8 @@
 		BE59E354246559D100B3524C /* TOHotCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TOHotCell.m; sourceTree = "<group>"; };
 		BE59E357246559FA00B3524C /* UICollectionView+ARDynamicCacheHeightLayoutCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UICollectionView+ARDynamicCacheHeightLayoutCell.h"; sourceTree = "<group>"; };
 		BE59E358246559FA00B3524C /* UICollectionView+ARDynamicCacheHeightLayoutCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICollectionView+ARDynamicCacheHeightLayoutCell.m"; sourceTree = "<group>"; };
+		BE7253B224B408BE00B82BC0 /* TONetManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TONetManager.h; sourceTree = "<group>"; };
+		BE7253B324B408BF00B82BC0 /* TONetManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TONetManager.m; sourceTree = "<group>"; };
 		BE79F8F92466448F006545F2 /* UINavigationBar+iOS11Spacing.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+iOS11Spacing.h"; sourceTree = "<group>"; };
 		BE79F8FA2466448F006545F2 /* UINavigationBar+iOS11Spacing.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+iOS11Spacing.m"; sourceTree = "<group>"; };
 		BE79F8FD24664EA4006545F2 /* QiCodePreviewView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QiCodePreviewView.m; sourceTree = "<group>"; };
@@ -234,6 +243,11 @@
 		BE79F9312466AECC006545F2 /* TOMyAddressViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TOMyAddressViewController.m; sourceTree = "<group>"; };
 		BE79F9332466AEE7006545F2 /* TOAddressCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TOAddressCell.h; sourceTree = "<group>"; };
 		BE79F9342466AEE7006545F2 /* TOAddressCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TOAddressCell.m; sourceTree = "<group>"; };
+		BE80CFCF24B4272800D0994A /* TOBaseResponse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TOBaseResponse.h; sourceTree = "<group>"; };
+		BE80CFD024B4272800D0994A /* TOBaseResponse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TOBaseResponse.m; sourceTree = "<group>"; };
+		BE80CFE524B470FE00D0994A /* MBProgressHUD+function.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+function.m"; sourceTree = "<group>"; };
+		BE80CFE624B470FE00D0994A /* MBProgressHUD+function.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+function.h"; sourceTree = "<group>"; };
+		BE80CFE824B473C200D0994A /* MBProgressHUD+JDragon.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = "MBProgressHUD+JDragon.bundle"; sourceTree = "<group>"; };
 		BECD4BDD2468E45800DDBB36 /* UITabBarController+TabButtonType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITabBarController+TabButtonType.h"; sourceTree = "<group>"; };
 		BECD4BDE2468E45800DDBB36 /* UITabBarController+TabButtonType.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITabBarController+TabButtonType.m"; sourceTree = "<group>"; };
 		BECD4BE02468EB3F00DDBB36 /* TOOrderGoodInfoView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TOOrderGoodInfoView.h; sourceTree = "<group>"; };
@@ -601,6 +615,19 @@
 			path = viewcontroller;
 			sourceTree = "<group>";
 		};
+		BE58823F24B2FB39005449F6 /* 网络接口 */ = {
+			isa = PBXGroup;
+			children = (
+				BE58824024B2FB55005449F6 /* TOWebManager.h */,
+				BE58824124B2FB55005449F6 /* TOWebManager.m */,
+				BE7253B224B408BE00B82BC0 /* TONetManager.h */,
+				BE7253B324B408BF00B82BC0 /* TONetManager.m */,
+				BE80CFCF24B4272800D0994A /* TOBaseResponse.h */,
+				BE80CFD024B4272800D0994A /* TOBaseResponse.m */,
+			);
+			path = "网络接口";
+			sourceTree = "<group>";
+		};
 		BE59E3452465499D00B3524C /* view */ = {
 			isa = PBXGroup;
 			children = (
@@ -735,6 +762,16 @@
 			path = viewcontroller;
 			sourceTree = "<group>";
 		};
+		BE80CFE424B470FE00D0994A /* MBProgressHUD分类 */ = {
+			isa = PBXGroup;
+			children = (
+				BE80CFE824B473C200D0994A /* MBProgressHUD+JDragon.bundle */,
+				BE80CFE624B470FE00D0994A /* MBProgressHUD+function.h */,
+				BE80CFE524B470FE00D0994A /* MBProgressHUD+function.m */,
+			);
+			path = "MBProgressHUD分类";
+			sourceTree = "<group>";
+		};
 		BECD4BDC2468E43600DDBB36 /* 分类 */ = {
 			isa = PBXGroup;
 			children = (
@@ -853,6 +890,7 @@
 		BEDC76E02463E5DB0041D862 /* 工具类 */ = {
 			isa = PBXGroup;
 			children = (
+				BE80CFE424B470FE00D0994A /* MBProgressHUD分类 */,
 				BECD4BDC2468E43600DDBB36 /* 分类 */,
 				65CC72AB2466E0CA000B2D61 /* 常用view */,
 				BE79F90E24667725006545F2 /* ZLTextField */,
@@ -924,6 +962,7 @@
 		BEFE387A24639CC0009B6DD3 /* TenToOne */ = {
 			isa = PBXGroup;
 			children = (
+				BE58823F24B2FB39005449F6 /* 网络接口 */,
 				BEDC77012463F4B60041D862 /* Main.storyboard */,
 				BEDC76D82463E5500041D862 /* 登录板块 */,
 				BEDC76D92463E5500041D862 /* 福利板块 */,
@@ -1086,6 +1125,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BEDC77022463F4B60041D862 /* Main.storyboard in Resources */,
+				BE80CFE924B473C300D0994A /* MBProgressHUD+JDragon.bundle in Resources */,
 				BEFE388B24639CC4009B6DD3 /* LaunchScreen.storyboard in Resources */,
 				BEFE388824639CC4009B6DD3 /* Assets.xcassets in Resources */,
 			);
@@ -1176,6 +1216,7 @@
 				BE79F90824665765006545F2 /* TOHomeNavbar.m in Sources */,
 				BEDC77002463ECE40041D862 /* TOHotViewController.m in Sources */,
 				65706C5B246587780087B6C1 /* TOMessageCell.m in Sources */,
+				BE58824224B2FB55005449F6 /* TOWebManager.m in Sources */,
 				6564D33024699E6300EA23D8 /* TOSendObjectCell.m in Sources */,
 				BE79F91124667740006545F2 /* ZLTextField.m in Sources */,
 				6564D3392469A76800EA23D8 /* TOSearchViewController.m in Sources */,
@@ -1210,11 +1251,13 @@
 				BE59E359246559FA00B3524C /* UICollectionView+ARDynamicCacheHeightLayoutCell.m in Sources */,
 				65768F752468553300A7E804 /* TOOrderAddressView.m in Sources */,
 				65768F722468529F00A7E804 /* TOCreateOrderViewController.m in Sources */,
+				BE80CFD124B4272800D0994A /* TOBaseResponse.m in Sources */,
 				65B7C32324659E7C005FFD9C /* TORegionView.m in Sources */,
 				BE79F90B2466764A006545F2 /* TOLoginViewController.m in Sources */,
 				BEDC76FD2463ECD90041D862 /* TOHomeViewController.m in Sources */,
 				BE79F9322466AECC006545F2 /* TOMyAddressViewController.m in Sources */,
 				BEDC76EE2463EC810041D862 /* TOWelfareViewController.m in Sources */,
+				BE7253B424B408BF00B82BC0 /* TONetManager.m in Sources */,
 				BE59E34B2465518700B3524C /* TOWalfareContentView.m in Sources */,
 				BE59E33E2465374400B3524C /* TOMyMemberView.m in Sources */,
 				65768F6F24684FAE00A7E804 /* TOSpecificationView.m in Sources */,
@@ -1232,6 +1275,7 @@
 				BE59E34124653AB600B3524C /* TOMerchantBusinessView.m in Sources */,
 				65CC72B12466E0DC000B2D61 /* TOSwitchView.m in Sources */,
 				BEDC76DF2463E58B0041D862 /* TOBaseViewController.m in Sources */,
+				BE80CFE724B470FE00D0994A /* MBProgressHUD+function.m in Sources */,
 				BE79F90224664EA4006545F2 /* QiCodeManager.m in Sources */,
 				BE79F91824667A35006545F2 /* TOUserModel.m in Sources */,
 				BECD4BDF2468E45800DDBB36 /* UITabBarController+TabButtonType.m in Sources */,
