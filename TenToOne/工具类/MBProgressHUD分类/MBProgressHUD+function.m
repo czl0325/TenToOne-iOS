@@ -12,10 +12,14 @@
 
 + (MBProgressHUD*)createMBProgressHUDviewWithMessage:(NSString*)message isWindiw:(BOOL)isWindow {
     UIView  *view = isWindow ? (UIView*)[self getCurrentWindow]:[self getCurrentUIVC].view;
+    [MBProgressHUD hideHUD];
     MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:view animated:YES];
-    hud.label.text = message?message:@"加载中.....";
+    hud.label.text = message ? message : @"加载中.....";
     hud.label.font = [UIFont systemFontOfSize:15];
     hud.removeFromSuperViewOnHide = YES;
+    hud.bezelView.blurEffectStyle = UIBlurEffectStyleDark;
+    hud.bezelView.style = MBProgressHUDBackgroundStyleBlur;
+    hud.contentColor = [UIColor whiteColor];
     return hud;
 }
 #pragma mark-------------------- show Tip----------------------------
@@ -40,6 +44,7 @@
 {
     MBProgressHUD *hud = [self createMBProgressHUDviewWithMessage:message isWindiw:isWindow];
     hud.mode = MBProgressHUDModeText;
+    hud.offset = CGPointMake(0.f, MBProgressMaxOffset);
     [hud hideAnimated:YES afterDelay:aTimer];
 }
 #pragma mark-------------------- show Activity----------------------------
@@ -112,7 +117,6 @@
     [MBProgressHUD hideHUDForView:(UIView*)[self getCurrentWindow] animated:YES];
 }
 #pragma mark --- 获取当前Window试图---------
-
 + (UIWindow*)getCurrentWindow {
     UIWindow * window  = nil;
     if (@available(iOS 13.0, *)) {

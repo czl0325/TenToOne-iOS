@@ -43,13 +43,21 @@
 }
 
 + (BAURLSessionTask*)to_post:(NSString*)url params:(id)parameters success:(TOResponseSuccessBlock)success failure:(TOResponseFailureBlock)failure {
+    // 自定义超时设置
+    BANetManagerShare.timeoutInterval = 15;
+    
+    // 自定义添加请求头
+    NSDictionary *headerDict = @{@"Accept":@"application/json", @"Accept-Encoding":@"gzip", @"charset":@"utf-8"};
+    BANetManagerShare.httpHeaderFieldDictionary = headerDict;
+    
     BADataEntity *entity = [BADataEntity new];
     if (![url hasPrefix:@"http"]) {
         url = [base_url stringByAppendingString:url];
     }
     entity.urlString = url;
-    entity.parameters = parameters;
+    entity.parameters = [parameters mj_JSONString];
     entity.needCache = NO;
+    entity.isSetQueryStringSerialization = YES;
     return [BANetManager ba_request_POSTWithEntity:entity successBlock:^(id response) {
         TOBaseResponse* result = [TOBaseResponse mj_objectWithKeyValues:response];
         if (result.code == 0) {

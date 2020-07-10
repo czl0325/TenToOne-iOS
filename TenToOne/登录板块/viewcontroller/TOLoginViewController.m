@@ -164,7 +164,7 @@
             WeakSelf;
             [[object rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(__kindof UIControl * _Nullable x) {
                 [weakSelf.view endEditing:YES];
-                [MBProgressHUD showHUDAddedTo:topViewController().view animated:YES];
+                [MBProgressHUD showActivityMessageInView:@"获取短信验证码"];
                 [TOWebManager getSmsCode:weakSelf.tfMobile.text success:^(id  _Nonnull data) {
                     TOVerifyViewController* vc = [[TOVerifyViewController alloc]init];
                     [weakSelf.navigationController pushViewController:vc animated:YES];
