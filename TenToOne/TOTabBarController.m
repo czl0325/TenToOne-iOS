@@ -12,6 +12,7 @@
 #import "TOHomeViewController.h"
 #import "TOMessageViewController.h"
 #import "TOMeViewController.h"
+#import "TOLoginViewController.h"
 
 @interface TOTabBarController ()
 <UITabBarControllerDelegate, CYLTabBarControllerDelegate>
@@ -40,22 +41,22 @@
     self.selectedIndex = 2;
 }
 
-//- (void)viewWillDisappear:(BOOL)animated {
-//    [super viewWillDisappear:animated];
-//    [self.navigationController setNavigationBarHidden:NO];
-//}
-
 - (NSArray *)viewControllersForTabBar {
     TOWelfareViewController *vc1 = [[TOWelfareViewController alloc] init];
     CYLBaseNavigationController *nav1 = [[CYLBaseNavigationController alloc]initWithRootViewController:vc1];
+    
     TOHotViewController *vc2 = [[TOHotViewController alloc] init];
     CYLBaseNavigationController *nav2 = [[CYLBaseNavigationController alloc]initWithRootViewController:vc2];
+    
     TOHomeViewController *vc3 = [[TOHomeViewController alloc] init];
     CYLBaseNavigationController *nav3 = [[CYLBaseNavigationController alloc]initWithRootViewController:vc3];
+    
     TOMessageViewController *vc4 = [[TOMessageViewController alloc] init];
     CYLBaseNavigationController *nav4 = [[CYLBaseNavigationController alloc]initWithRootViewController:vc4];
+    
     TOMeViewController *vc5 = [[TOMeViewController alloc] init];
     CYLBaseNavigationController *nav5 = [[CYLBaseNavigationController alloc]initWithRootViewController:vc5];
+    
     NSArray *viewControllers = @[nav1, nav2, nav3, nav4, nav5];
     return viewControllers;
 }
@@ -95,7 +96,7 @@
    NSMutableDictionary *selectedAttrs = [NSMutableDictionary dictionary];
    selectedAttrs[NSForegroundColorAttributeName] = MainColor;
     
-    if (@available(iOS 13.0, *) && !IsiPad) {
+    if (@available(iOS 13.0, *)) {
         UITabBarItemAppearance *inlineLayoutAppearance = [[UITabBarItemAppearance  alloc] init];
         [inlineLayoutAppearance.normal setTitleTextAttributes:normalAttrs];
         [inlineLayoutAppearance.selected setTitleTextAttributes:selectedAttrs];
@@ -109,6 +110,19 @@
         UITabBarItem *tabBar = [UITabBarItem appearance];
         [tabBar setTitleTextAttributes:normalAttrs forState:UIControlStateNormal];
         [tabBar setTitleTextAttributes:selectedAttrs forState:UIControlStateSelected];
+    }
+}
+
+- (BOOL)tabBarController:(UITabBarController *)tabBarController shouldSelectViewController:(UIViewController *)viewController {
+    CYLBaseNavigationController* nav = (CYLBaseNavigationController*)viewController;
+    if ([TOSingleton sharedInstance].userInfo == nil && ([nav.topViewController isKindOfClass:[TOMessageViewController class]] || [nav.topViewController isKindOfClass:[TOMeViewController class]])) {
+        TOLoginViewController* vc = [[TOLoginViewController alloc]init];
+        UINavigationController* nav = [[UINavigationController alloc]initWithRootViewController:vc];
+        nav.modalPresentationStyle = UIModalPresentationFullScreen;
+        [self presentViewController:nav animated:YES completion:nil];
+        return NO;
+    } else {
+        return YES;
     }
 }
 

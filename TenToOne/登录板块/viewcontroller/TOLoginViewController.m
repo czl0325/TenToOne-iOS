@@ -102,6 +102,20 @@
         make.right.mas_equalTo(self.view);
         make.height.mas_equalTo(1);
     }];
+    
+    WeakSelf;
+    UIButton* btBack = to_create_button_image(@"icon_backalpha");
+    [[btBack rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(__kindof UIControl * _Nullable x) {
+        [weakSelf dismissViewControllerAnimated:YES completion:nil];
+    }];
+    [self.view addSubview:btBack];
+    [btBack mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.size.mas_equalTo(40);
+        make.left.mas_equalTo(10);
+        make.top.mas_equalTo(30);
+    }];
+    
+    [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleDefault;
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -180,6 +194,7 @@
     if(!_btAgree){
         _btAgree = ({
             UIButton * object = to_create_button_left(@"我已经同意用户协议和隐私政策", @"icon_unselect");
+            object.layer.cornerRadius = 5;
             [object setImage:[UIImage imageNamed:@"icon_select"] forState:UIControlStateSelected];
             [[object rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(__kindof UIControl * _Nullable x) {
                 object.selected = !object.selected;

@@ -14,6 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface TOSingleton : NSObject
 
 +(instancetype)sharedInstance;
+
 @property(nonatomic,strong)TOUserModel* __nullable userInfo;
 
 @end

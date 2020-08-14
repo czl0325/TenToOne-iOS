@@ -32,6 +32,7 @@ target 'TenToOne' do
   pod 'Popover.OC'
   # pod 'WMZDialog'
   pod 'zhPopupController'
+  pod 'CRBoxInputView'     # 密文输入
 end
 
 
