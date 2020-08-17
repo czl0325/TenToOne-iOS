@@ -11,11 +11,11 @@
 @implementation TOWebManager
 
 + (BAURLSessionTask*)getSmsCode:(NSString*)mobile success:(_Nullable TOResponseSuccessBlock)success failure:(_Nullable TOResponseFailureBlock)failure {
-    return [TONetManager to_post:@"/common/sms" params:@{@"mobile":mobile} success:success failure:failure];
+    return [TONetManager to_post:@"/user/sms" params:@{@"mobile":mobile} success:success failure:failure];
 }
 
 + (BAURLSessionTask*)loginBySms:(NSString*)mobile code:(NSString*)code success:(_Nullable TOResponseSuccessBlock)success failure:(_Nullable TOResponseFailureBlock)failure {
-    return [TONetManager to_post:@"/common/login" params:@{@"mobile":mobile,@"code":code} success:success failure:failure];
+    return [TONetManager postWithBody:@"/user/login" params:@{@"mobile":mobile,@"code":code} success:success failure:failure];
 }
 
 @end

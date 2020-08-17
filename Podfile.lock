@@ -27,17 +27,19 @@ PODS:
   - BANetManager (2.4.0):
     - AFNetworking
     - YYCache
+  - CRBoxInputView (1.2.1):
+    - Masonry
   - CYLTabBarController (1.29.0):
     - CYLTabBarController/Core (= 1.29.0)
   - CYLTabBarController/Core (1.29.0)
   - FDFullscreenPopGesture (1.1)
   - FTPopOverMenu (2.1.1)
-  - IQKeyboardManager (6.5.5)
-  - JXCategoryView (1.5.5)
+  - IQKeyboardManager (6.5.6)
+  - JXCategoryView (1.5.6)
   - Masonry (1.1.0)
   - MBProgressHUD (1.2.0)
   - MJExtension (3.2.2)
-  - MJRefresh (3.4.3)
+  - MJRefresh (3.5.0)
   - NJKWebViewProgress (0.2.3):
     - NJKWebViewProgress/Core (= 0.2.3)
     - NJKWebViewProgress/ProgressView (= 0.2.3)
@@ -48,9 +50,9 @@ PODS:
   - ReactiveObjC (3.1.1)
   - SDCycleScrollView (1.80):
     - SDWebImage (>= 5.0.0)
-  - SDWebImage (5.8.3):
-    - SDWebImage/Core (= 5.8.3)
-  - SDWebImage/Core (5.8.3)
+  - SDWebImage (5.8.4):
+    - SDWebImage/Core (= 5.8.4)
+  - SDWebImage/Core (5.8.4)
   - TencentMap-SDK (4.3.7)
   - YYCache (1.0.4)
   - zhPopupController (2.0.0)
@@ -64,6 +66,7 @@ DEPENDENCIES:
   - AFNetworking
   - AXWebViewController
   - BANetManager
+  - CRBoxInputView
   - CYLTabBarController
   - FDFullscreenPopGesture
   - FTPopOverMenu
@@ -94,6 +97,7 @@ SPEC REPOS:
     - AXPracticalHUD
     - AXWebViewController
     - BANetManager
+    - CRBoxInputView
     - CYLTabBarController
     - FDFullscreenPopGesture
     - FTPopOverMenu
@@ -125,21 +129,22 @@ SPEC CHECKSUMS:
   AXPracticalHUD: 821d170b31e050c426ef8754b07b4264a8b1d861
   AXWebViewController: 96566c473fce2806f4da696132b31777f5404c9f
   BANetManager: 90216c8200587192c1f76bbd1d96f71f0094699e
+  CRBoxInputView: d73a630e5326ee70487b4a56d09daebf915d82fd
   CYLTabBarController: f5460b8446f82d016945d4d53895a1ef185b79e3
   FDFullscreenPopGesture: a8a620179e3d9c40e8e00256dcee1c1a27c6d0f0
   FTPopOverMenu: 202d46aea0656307fd463fac0340c9c8837158d2
-  IQKeyboardManager: 3a8b9e603f8b0eeaf5f096a1f2b2cfcf121992ef
-  JXCategoryView: 0293fcb356f10a5c2e679dac0a1a5f1899ee0c87
+  IQKeyboardManager: 2a6e97afdafc7becf0cb17a9a8d795e3a980717f
+  JXCategoryView: 603ccd8277a89b1a73e9cedb9d8ed4b294576008
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
   MJExtension: d9b9c74cbdeb724c1e9ecbb157b318276e62e876
-  MJRefresh: 53e3e3219f204425ee6d3e62e8733d3295944cd6
+  MJRefresh: 6afc955813966afb08305477dd7a0d9ad5e79a16
   NJKWebViewProgress: f481fd424cb5ecc27eacae11b5397db92fba9a4d
   PLeakSniffer: f7eb13cd3a36150e0a2fd5fe8a33ca83bd2646d4
   Popover.OC: bfcce8307f77593e1e1d7cf58604077f74e114bc
   ReactiveObjC: 011caa393aa0383245f2dcf9bf02e86b80b36040
   SDCycleScrollView: b3c9a5ed840c771c4938978174c7c9d9feefeb96
-  SDWebImage: 112503ec94a5a2a41869503844a15e8d8f1ead5c
+  SDWebImage: cf6922231e95550934da2ada0f20f2becf2ceba9
   TencentMap-SDK: aee7ef00c7c183de9bbfb28d6888834356139ef7
   YYCache: 8105b6638f5e849296c71f331ff83891a4942952
   zhPopupController: 600aee950c86442c5cca0b078d94c71fe0e1c51e
@@ -148,6 +153,6 @@ SPEC CHECKSUMS:
   ZLCollectionViewFlowLayout: 3d11b3fffde1fc8fb3265392e35fd8cfe5e88d77
   ZLPhotoBrowser: 3748fdbeb2b28961c2495d15131dbf413082e1b9
 
-PODFILE CHECKSUM: 17f62740ddcca11c3ac28e9aa0e223f300addbc5
+PODFILE CHECKSUM: e5038706ba4efcc1c969bded34aac7015102b9b4
 
 COCOAPODS: 1.9.3

@@ -18,7 +18,10 @@ typedef void( ^TOResponseFailureBlock)(NSString* message);
 
 + (BAURLSessionTask*)to_get:(NSString*)url params:(id)parameters success:(_Nullable TOResponseSuccessBlock)success failure:(_Nullable TOResponseFailureBlock)failure;
 + (BAURLSessionTask*)to_post:(NSString*)url params:(id)parameters success:(_Nullable TOResponseSuccessBlock)success failure:(_Nullable TOResponseFailureBlock)failure;
-
++ (NSURLSessionDataTask*)postWithBody:(NSString *)url
+                               params:(NSDictionary *)params
+                              success:(TOResponseSuccessBlock)success
+                              failure:(TOResponseFailureBlock)failure;
 @end
 
 NS_ASSUME_NONNULL_END

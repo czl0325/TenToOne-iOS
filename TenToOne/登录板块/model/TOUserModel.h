@@ -12,6 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface TOUserModel : NSObject
 
+@property(nonatomic,copy)NSString* accessToken;
+
 @end
 
 NS_ASSUME_NONNULL_END

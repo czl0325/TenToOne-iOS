@@ -12,6 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface TOVerifyViewController : TOBaseViewController
 
+- (instancetype)initWithMobile:(NSString*)mobile;
+
 @end
 
 NS_ASSUME_NONNULL_END

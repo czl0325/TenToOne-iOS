@@ -178,11 +178,11 @@
             WeakSelf;
             [[object rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(__kindof UIControl * _Nullable x) {
                 [weakSelf.view endEditing:YES];
-                [MBProgressHUD showActivityMessageInView:@"获取短信验证码"];
-                [TOWebManager getSmsCode:weakSelf.tfMobile.text success:^(id  _Nonnull data) {
-                    TOVerifyViewController* vc = [[TOVerifyViewController alloc]init];
+//                [MBProgressHUD showActivityMessageInView:@"获取短信验证码"];
+//                [TOWebManager getSmsCode:weakSelf.tfMobile.text success:^(id  _Nonnull data) {
+                    TOVerifyViewController* vc = [[TOVerifyViewController alloc]initWithMobile:weakSelf.tfMobile.text];
                     [weakSelf.navigationController pushViewController:vc animated:YES];
-                } failure:nil];
+//                } failure:nil];
             }];
             object;
        });
@@ -194,7 +194,7 @@
     if(!_btAgree){
         _btAgree = ({
             UIButton * object = to_create_button_left(@"我已经同意用户协议和隐私政策", @"icon_unselect");
-            object.layer.cornerRadius = 5;
+            object.selected = YES;
             [object setImage:[UIImage imageNamed:@"icon_select"] forState:UIControlStateSelected];
             [[object rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(__kindof UIControl * _Nullable x) {
                 object.selected = !object.selected;
